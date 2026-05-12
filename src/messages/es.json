@@ -1,0 +1,128 @@
+{
+  "Meta": {
+    "title": "NanaiCare — Belleza y cuidado facial en Ámsterdam",
+    "description": "Un estudio tranquilo y profesional en Ámsterdam para faciales, guía de salud de la piel y skincare curada—con raíz en el cuidado."
+  },
+  "Nav": {
+    "services": "Servicios",
+    "stories": "Historias",
+    "wellness": "Bienestar",
+    "shop": "Tienda skincare",
+    "book": "Reserva tu visita"
+  },
+  "Hero": {
+    "eyebrow": "Ámsterdam · facial wellness",
+    "title": "Un cuidado que encuentra tu piel donde está.",
+    "lead": "NanaiCare es un estudio boutique de belleza para faciales, tacto reparador y guía honesta—pensado para sentirse calmado, claro y cercano.",
+    "primaryCta": "Ver servicios",
+    "secondaryCta": "Leer experiencias",
+    "badge": "Nuevo · citas en la tarde",
+    "cardEyebrow": "Tarjeta ritual",
+    "weekLabel": "Esta semana",
+    "weekTitle": "Faciales con foco en barrera",
+    "mantra": "calma · claridad · cercanía"
+  },
+  "Services": {
+    "label": "Lo que ofrecemos",
+    "title": "Tratamientos con ritmo, sin prisa.",
+    "subtitle": "Cada sesión tiene tiempo para escuchar: tu vida, tu barrera, tus objetivos.",
+    "signatureChips": ["ritmo lento", "mascarillas a medida", "masaje facial"],
+    "panel": {
+      "title": "Ritmo del estudio",
+      "body": "Música suave, toallas tibias y un lenguaje claro—sin snobismo, solo cuidado.",
+      "where": "Ámsterdam",
+      "when": "Con cita"
+    },
+    "items": [
+      {
+        "tag": "Signature",
+        "title": "Ritual facial Nanai",
+        "description": "Un facial lento y en capas con masaje suave, mascarillas a medida y acabados para un brillo equilibrado."
+      },
+      {
+        "tag": "Sculpt & lift",
+        "title": "Masaje facial de contorno",
+        "description": "Técnicas manuales ligeras para aflojar tensión, apoyar la circulación y dejar el rostro más liviano."
+      },
+      {
+        "tag": "Claridad",
+        "title": "Tratamiento reset de barrera",
+        "description": "Para pieles sensibles o sobreestimuladas: pasos calmantes que reconstruyen confort y claridad con el tiempo."
+      },
+      {
+        "tag": "Educación",
+        "title": "Consulta de piel",
+        "description": "Una conversación guiada con rutina en casa práctica—menos productos, mejores decisiones."
+      }
+    ]
+  },
+  "Testimonials": {
+    "label": "Historias",
+    "title": "Palabras cálidas de quienes se sientan aquí.",
+    "items": [
+      {
+        "quote": "Salgo más suave por dentro y por fuera. El espacio se siente intencional, y el consejo nunca parece venta.",
+        "name": "Maya R.",
+        "role": "Ámsterdam · faciales regulares"
+      },
+      {
+        "quote": "Por fin un lugar que explica lo que mi piel necesita sin agobiar. La parte de masaje es increíble.",
+        "name": "Jonas V.",
+        "role": "Haarlem · primera visita"
+      },
+      {
+        "quote": "Lujoso, pero con los pies en la tierra. Mi piel con rosácea nunca había estado tan estable.",
+        "name": "Elena S.",
+        "role": "Ámsterdam · foco en barrera"
+      }
+    ]
+  },
+  "Wellness": {
+    "label": "Notas de cuidado",
+    "title": "Pequeñas recomendaciones con gran cariño.",
+    "subtitle": "Tips breves y sensatos que sí puedes sostener—hidratación, sueño, sol y cambios de estación.",
+    "cards": [
+      {
+        "title": "Luz matutina, piel más serena",
+        "body": "Diez minutos de luz natural temprana apoya el ritmo—y a menudo ayuda a pieles reactivas a mantenerse más calmadas."
+      },
+      {
+        "title": "Menos fricción, más reparación",
+        "body": "Presiona los productos; evita frotar al secar. La fricción es una fuente silenciosa de enrojecimiento."
+      },
+      {
+        "title": "Chequeo de barrera por estación",
+        "body": "Cuando el frío aprieta, cambia limpiadores agresivos por texturas en crema—barrera primero, activos después."
+      }
+    ],
+    "cta": "Explorar diario wellness"
+  },
+  "Shop": {
+    "label": "Skincare",
+    "title": "Productos curados para el cuidado en casa.",
+    "subtitle": "Una edición reducida de limpiadores, séruns y cremas de barrera que confiamos—para el clima real de Ámsterdam y vidas reales.",
+    "coming": "Boutique online muy pronto",
+    "cta": "Lista de espera",
+    "products": [
+      {
+        "name": "Leche limpiadora barrera",
+        "note": "Suave · diaria"
+      },
+      {
+        "name": "Crema recuperación ceramidas",
+        "note": "Noches de invierno · sensible"
+      },
+      {
+        "name": "Fluido SPF velo",
+        "note": "Sin cast · luz urbana"
+      }
+    ]
+  },
+  "Footer": {
+    "tagline": "NanaiCare — facial wellness y belleza boutique en Ámsterdam.",
+    "address": "Ámsterdam, Países Bajos",
+    "rights": "Todos los derechos reservados.",
+    "contact": "hello@nanaicare.example",
+    "hours": "mar–sáb · con cita"
+  }
+}

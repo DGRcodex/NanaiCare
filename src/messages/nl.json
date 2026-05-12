@@ -1,0 +1,128 @@
+{
+  "Meta": {
+    "title": "NanaiCare — Schoonheid en gezichtsverzorging in Amsterdam",
+    "description": "Een rustige, professionele studio in Amsterdam voor facials, huidadvies en geselecteerde skincare—geworteld in zorg."
+  },
+  "Nav": {
+    "services": "Behandelingen",
+    "stories": "Ervaringen",
+    "wellness": "Wellness",
+    "shop": "Skincare shop",
+    "book": "Maak een afspraak"
+  },
+  "Hero": {
+    "eyebrow": "Amsterdam · facial wellness",
+    "title": "Zorg die je huid ontmoet zoals ze is.",
+    "lead": "NanaiCare is een boutique beauty studio voor facials, herstellende aanraking en eerlijk advies—rustig, helder en dichtbij.",
+    "primaryCta": "Bekijk behandelingen",
+    "secondaryCta": "Lees verhalen",
+    "badge": "Nieuw · avondafspraken",
+    "cardEyebrow": "Ritual card",
+    "weekLabel": "Deze week",
+    "weekTitle": "Facials met focus op je huidbarrière",
+    "mantra": "rustig · helder · dichtbij"
+  },
+  "Services": {
+    "label": "Aanbod",
+    "title": "Behandelingen met ritme, zonder haast.",
+    "subtitle": "Elke sessie is ingekaderd om te luisteren: jouw leven, jouw huidbarrière, jouw doelen.",
+    "signatureChips": ["rustig tempo", "maskers op maat", "gezichtsmassage"],
+    "panel": {
+      "title": "Studio-ritme",
+      "body": "Zachte muziek, warme doeken en taal die je begrijpt—geen elitaire toon, alleen zorg.",
+      "where": "Amsterdam",
+      "when": "Op afspraak"
+    },
+    "items": [
+      {
+        "tag": "Signature",
+        "title": "Nanai facial ritual",
+        "description": "Een langzame, gelaagde facial met zachte massage, maskers op maat en een finish voor een zachte glow."
+      },
+      {
+        "tag": "Sculpt & lift",
+        "title": "Gezichtsmassage contour",
+        "description": "Lichte manuele technieken om spanning te verzachten, circulatie te ondersteunen en liftend aan te voelen."
+      },
+      {
+        "tag": "Helderheid",
+        "title": "Barrier reset behandeling",
+        "description": "Voor gevoelige of overprikkelde huid: kalmerende stappen die comfort en helderheid opbouwen."
+      },
+      {
+        "tag": "Educatie",
+        "title": "Huidconsult",
+        "description": "Een begeleid gesprek met een praktisch thuisritueel—minder producten, betere keuzes."
+      }
+    ]
+  },
+  "Testimonials": {
+    "label": "Ervaringen",
+    "title": "Hartelijke woorden van mensen in onze stoel.",
+    "items": [
+      {
+        "quote": "Ik vertrek zachter—van binnen en buiten. Alles voelt doordacht, en het advies voelt nooit als verkoop.",
+        "name": "Maya R.",
+        "role": "Amsterdam · vaste facials"
+      },
+      {
+        "quote": "Eindelijk iemand die uitlegt wat mijn huid nodig heeft zonder ruis. Het massage-deel is ongeëvenaard.",
+        "name": "Jonas V.",
+        "role": "Haarlem · eerste bezoek"
+      },
+      {
+        "quote": "Luxe, maar nuchter. Mijn rosacea-gevoelige huid is nog nooit zo stabiel geweest.",
+        "name": "Elena S.",
+        "role": "Amsterdam · barrier focus"
+      }
+    ]
+  },
+  "Wellness": {
+    "label": "Care notes",
+    "title": "Kleine aanbevelingen met grote mildheid.",
+    "subtitle": "Korte, zorgvuldige tips die je wél volhoudt—hydratatie, slaap, zon en seizoenswissels.",
+    "cards": [
+      {
+        "title": "Ochtendlicht, zachtere huid",
+        "body": "Tien minuten daglicht vroeg ondersteunt je ritme—en helpt gevoelige huid vaak rustiger door de week."
+      },
+      {
+        "title": "Minder wrijving, meer herstel",
+        "body": "Klop producten in; wrijf niet droog. Wrijving is een stille bron van roodheid die routines ontregelt."
+      },
+      {
+        "title": "Seizoenscheck voor je barrière",
+        "body": "Als het kouder wordt: minder stripende reinigers, meer crème-texturen—barrière eerst, actives daarna."
+      }
+    ],
+    "cta": "Ontdek het wellness journal"
+  },
+  "Shop": {
+    "label": "Skincare",
+    "title": "Gecureerde producten voor thuis.",
+    "subtitle": "Een strakke selectie reinigers, serums en barrier creams die we vertrouwen—voor echt Amsterdam weer en echte levens.",
+    "coming": "Online boutique binnenkort",
+    "cta": "Wachtlijst",
+    "products": [
+      {
+        "name": "Barrier melk cleanser",
+        "note": "Zacht · dagelijks"
+      },
+      {
+        "name": "Ceramide recovery cream",
+        "note": "Winternachten · gevoelig"
+      },
+      {
+        "name": "SPF fluïde sluier",
+        "note": "Geen cast · stadlicht"
+      }
+    ]
+  },
+  "Footer": {
+    "tagline": "NanaiCare — facial wellness & boutique beauty in Amsterdam.",
+    "address": "Amsterdam, Nederland",
+    "rights": "Alle rechten voorbehouden.",
+    "contact": "hello@nanaicare.example",
+    "hours": "di–za · op afspraak"
+  }
+}

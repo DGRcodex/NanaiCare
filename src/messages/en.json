@@ -1,0 +1,128 @@
+{
+  "Meta": {
+    "title": "NanaiCare — Beauty & facial care in Amsterdam",
+    "description": "A calm, professional studio in Amsterdam for facials, skin health guidance, and curated skincare—rooted in care."
+  },
+  "Nav": {
+    "services": "Services",
+    "stories": "Stories",
+    "wellness": "Wellness",
+    "shop": "Skincare shop",
+    "book": "Book a visit"
+  },
+  "Hero": {
+    "eyebrow": "Amsterdam · facial wellness",
+    "title": "Care that meets your skin where it is.",
+    "lead": "NanaiCare is a boutique beauty studio for facials, restorative touch, and honest guidance—designed to feel calm, clear, and close.",
+    "primaryCta": "View services",
+    "secondaryCta": "Read client stories",
+    "badge": "New · evening appointments",
+    "cardEyebrow": "Ritual card",
+    "weekLabel": "This week",
+    "weekTitle": "Barrier-first facials",
+    "mantra": "calm · clear · close"
+  },
+  "Services": {
+    "label": "What we offer",
+    "title": "Treatments shaped around rhythm, not rush.",
+    "subtitle": "Every session is paced for listening: your lifestyle, your barrier, your goals.",
+    "signatureChips": ["slow tempo", "tailored masks", "facial massage"],
+    "panel": {
+      "title": "Studio rhythm",
+      "body": "Quiet music, warmed towels, and language you can understand—no gatekeeping, just care.",
+      "where": "Amsterdam",
+      "when": "By appointment"
+    },
+    "items": [
+      {
+        "tag": "Signature",
+        "title": "Nanai facial ritual",
+        "description": "A slow, layered facial with gentle massage, tailored masks, and finishing care for luminous balance."
+      },
+      {
+        "tag": "Sculpt & lift",
+        "title": "Facial contour massage",
+        "description": "Light manual techniques to soften tension, support circulation, and leave the face feeling lifted and at ease."
+      },
+      {
+        "tag": "Clarity",
+        "title": "Barrier reset treatment",
+        "description": "For sensitized or over-stimulated skin: soothing steps that rebuild comfort and clarity over time."
+      },
+      {
+        "tag": "Education",
+        "title": "Skin consultation",
+        "description": "A guided conversation with a practical home routine—fewer products, better decisions."
+      }
+    ]
+  },
+  "Testimonials": {
+    "label": "Stories",
+    "title": "Warm words from people who sit in our chair.",
+    "items": [
+      {
+        "quote": "I leave softer—inside and out. The space feels intentional, and the advice never feels like a sales pitch.",
+        "name": "Maya R.",
+        "role": "Amsterdam · regular facials"
+      },
+      {
+        "quote": "Finally a place that explains what my skin needs without overwhelm. The massage portion is unreal.",
+        "name": "Jonas V.",
+        "role": "Haarlem · first-time client"
+      },
+      {
+        "quote": "Luxurious, but grounded. My rosacea-prone skin has never been this steady.",
+        "name": "Elena S.",
+        "role": "Amsterdam · barrier-focused care"
+      }
+    ]
+  },
+  "Wellness": {
+    "label": "Care notes",
+    "title": "Small recommendations with outsized kindness.",
+    "subtitle": "Short, evidence-minded tips you can actually keep—hydration, sleep, sun, and seasonal shifts.",
+    "cards": [
+      {
+        "title": "Morning light, gentler skin",
+        "body": "Ten minutes of daylight early supports rhythm—and often helps reactive skin stay calmer through the week."
+      },
+      {
+        "title": "Less friction, more repair",
+        "body": "Press products in; avoid rubbing dry. Friction is a quiet source of redness many routines overlook."
+      },
+      {
+        "title": "Seasonal barrier check",
+        "body": "When the canals bite, swap stripping cleansers for cream textures—barrier first, actives second."
+      }
+    ],
+    "cta": "Explore wellness journal"
+  },
+  "Shop": {
+    "label": "Skincare",
+    "title": "Curated products for home care.",
+    "subtitle": "A tight edit of cleansers, serums, and barrier creams we trust—chosen for real Amsterdam weather and real lives.",
+    "coming": "Online boutique opening soon",
+    "cta": "Join the waitlist",
+    "products": [
+      {
+        "name": "Barrier milk cleanser",
+        "note": "Cloud-soft · daily"
+      },
+      {
+        "name": "Ceramide recovery cream",
+        "note": "Winter nights · sensitive"
+      },
+      {
+        "name": "SPF veil fluid",
+        "note": "No cast · city light"
+      }
+    ]
+  },
+  "Footer": {
+    "tagline": "NanaiCare — facial wellness & boutique beauty in Amsterdam.",
+    "address": "Amsterdam, Netherlands",
+    "rights": "All rights reserved.",
+    "contact": "hello@nanaicare.example",
+    "hours": "Tue–Sat · by appointment"
+  }
+}

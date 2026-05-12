@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --nanai-canvas: #ffffff;
+  --nanai-blush: #f1d8d8;
+  --nanai-rose: #cbaeae;
+  --nanai-sage: #b4aa86;
+  --nanai-ink: #464c50;
+  --nanai-ink-soft: color-mix(in oklab, var(--nanai-ink) 72%, white);
+  --nanai-frost: color-mix(in oklab, white 78%, var(--nanai-blush));
+  --nanai-shadow: 0 24px 80px color-mix(in oklab, var(--nanai-ink) 12%, transparent);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-nanai-canvas: var(--nanai-canvas);
+  --color-nanai-blush: var(--nanai-blush);
+  --color-nanai-rose: var(--nanai-rose);
+  --color-nanai-sage: var(--nanai-sage);
+  --color-nanai-ink: var(--nanai-ink);
+  --color-nanai-ink-soft: var(--nanai-ink-soft);
+  --color-nanai-frost: var(--nanai-frost);
+  --font-heading: var(--font-oswald), system-ui, sans-serif;
+  --font-body: var(--font-quicksand), system-ui, sans-serif;
+  --shadow-nanai-soft: var(--nanai-shadow);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--nanai-canvas);
+    color: var(--nanai-ink);
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--nanai-blush) 85%, transparent);
+    color: var(--nanai-ink);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility font-heading {
+  font-family: var(--font-heading);
+}
+
+@utility font-body {
+  font-family: var(--font-body);
+}
+
+@utility mesh-bg {
+  background:
+    radial-gradient(120% 90% at 100% -10%, color-mix(in oklab, var(--nanai-blush) 88%, white), transparent 52%),
+    radial-gradient(70% 55% at 0% 105%, color-mix(in oklab, var(--nanai-sage) 35%, transparent), transparent 58%),
+    radial-gradient(50% 40% at 85% 75%, color-mix(in oklab, var(--nanai-rose) 22%, transparent), transparent 60%),
+    var(--nanai-canvas);
+}
+
+@layer components {
+  .nc-grain {
+    position: relative;
+  }
+
+  .nc-grain::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    opacity: 0.045;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@utility animate-float-soft {
+  animation: float-soft 7s ease-in-out infinite;
 }
