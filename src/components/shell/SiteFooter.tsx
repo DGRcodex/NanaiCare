@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Mark } from "@/components/brand/Mark";
+import { Link } from "@/i18n/navigation";
 
 export async function SiteFooter() {
   const t = await getTranslations("Footer");
@@ -31,8 +32,16 @@ export async function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-6xl border-t border-nanai-rose/25 px-4 pt-6 text-xs text-nanai-ink-soft sm:px-6 lg:px-8">
-        © {new Date().getFullYear()} NanaiCare. {t("rights")}
+      <div className="mx-auto mt-10 max-w-6xl border-t border-nanai-rose/25 px-4 pt-6 text-xs text-nanai-ink-soft sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8">
+        <span>
+          © {new Date().getFullYear()} NanaiCare. {t("rights")}
+        </span>
+        <Link
+          href="/charter"
+          className="mt-3 inline-block font-semibold text-nanai-ink underline-offset-4 hover:underline lg:mt-0"
+        >
+          {t("charter")}
+        </Link>
       </div>
     </footer>
   );

@@ -123,6 +123,70 @@
     "address": "Ámsterdam, Países Bajos",
     "rights": "Todos los derechos reservados.",
     "contact": "hello@nanaicare.example",
-    "hours": "mar–sáb · con cita"
+    "hours": "mar–sáb · con cita",
+    "charter": "Carta del proyecto"
+  },
+  "Charter": {
+    "meta": {
+      "title": "Carta del proyecto — NanaiCare",
+      "description": "Alcance, roles y referencia de presupuesto acordada para el proyecto digital NanaiCare (Sambalab · DGRcodex)."
+    },
+    "eyebrow": "Referencia interna · Sambalab × DGRcodex",
+    "title": "Carta del proyecto NanaiCare",
+    "lead": "Acuerdo en una página sobre límites de alcance, responsables y la estructura de pago acordada. Las cifras son de planificación; la factura emitida hace fe.",
+    "overviewTitle": "Propósito",
+    "overviewP1": "Alinear a NanaiCare, Sambalab y desarrollo sobre qué entra y qué no en la primera fase web, y dejar por escrito el reparto del presupuesto (50% + 50%).",
+    "overviewP2": "Visión digital: mobile-first, cercana y profesional, EN / ES / NL, servicios, historias, notas de bienestar y camino hacia una futura tienda de skincare.",
+    "partiesTitle": "Partes y roles",
+    "partyClientLabel": "Cliente / marca",
+    "partyClientName": "NanaiCare",
+    "partyClientBody": "Textos finales, tono, decisiones legales y de precios, citas, dominio y pagos acordados.",
+    "partyAgencyLabel": "Coordinación",
+    "partyAgencyName": "Sambalab",
+    "partyAgencyBody": "Interlocución con la clienta, priorización y comunicación de entregables.",
+    "partyDevLabel": "Desarrollo",
+    "partyDevName": "DGRcodex — Daniel García Rojas",
+    "partyDevBody": "Arquitectura Next.js, i18n, UI alineada al sistema de marca, despliegue y entrega técnica concisa.",
+    "briefTitle": "Brief de la clienta (NanaiCare)",
+    "briefIntro": "Cuando tengas el documento literal, pégalo o enlázalo aquí. Mientras tanto, este resumen refleja lo que estamos construyendo juntas.",
+    "briefBullets": [
+      "Estudio de belleza y facial wellness en Ámsterdam, Países Bajos.",
+      "Sitio público en inglés, español y neerlandés.",
+      "Experiencia mobile-first: servicios, testimonios, bienestar y teaser de tienda skincare.",
+      "Base escalable para reservas y e-commerce en fases posteriores."
+    ],
+    "briefPlaceholder": "Al recibir el PDF o texto completo de la clienta, sustituye este bloque o añádelo en docs/.",
+    "scopeTitle": "Límites de alcance",
+    "scopeInTitle": "Dentro del alcance (fase 1)",
+    "scopeIn": [
+      "Sitio Next.js con rutas por idioma y UI de marca compartida.",
+      "Home: hero, servicios, testimonios, franja de bienestar, teaser de tienda.",
+      "Guía de despliegue (p. ej. Vercel) y entrega del repositorio."
+    ],
+    "scopeOutTitle": "Fuera de alcance salvo acuerdo aparte",
+    "scopeOut": [
+      "Pasarela de pago completa, logística y e-commerce operativo.",
+      "Apps nativas, CRM complejo o SLA de mantenimiento 24/7.",
+      "Revisión legal especializada más allá de plantillas base de privacidad.",
+      "Fotografía de estudio a medida salvo que se aporte o acuerde stock."
+    ],
+    "changeTitle": "Control de cambios",
+    "changeBody": "Funciones no listadas aquí, o integraciones con nuevos proveedores, se cotizan como fase 2 o cambio por escrito. Trabajo que invalide entregables ya aprobados puede afectar plazo y coste.",
+    "budgetTitle": "Referencia de presupuesto (EUR)",
+    "rowBase": "Base de desarrollo",
+    "rowVat": "IVA (21% sobre la base — confirmar en factura)",
+    "rowDomain": "Dominio (estimación · 3 años)",
+    "rowTotal": "Total orientativo",
+    "budgetNote": "Dominio e IVA dependen del registrador y del tratamiento fiscal; la factura emitida es la referencia vinculante.",
+    "paymentTitle": "Hitos de pago",
+    "paymentIntro": "Estructura acordada: dos mitades del total orientativo. Primera mitad: 50%. Segunda mitad: 50% al hito de entrega acordado.",
+    "milestoneFirst": "Primera mitad (50%)",
+    "milestoneSecond": "Segunda mitad (50%)",
+    "paidToDate": "Pagado a la fecha",
+    "dueFirstHalf": "Pendiente para completar la primera mitad",
+    "dueSecondHalf": "Segunda mitad (tras la entrega acordada)",
+    "weekGoal": "Objetivo: saldar el pendiente de la primera mitad esta misma semana, según lo acordado verbalmente entre las partes.",
+    "diagramCaption": "Vista de alcance: fase 1 frente a trabajo opcional posterior.",
+    "diagramAlt": "Flujo: la fase 1 entrega sitio Next, UI de marca y deploy; la fase 2 puede incluir e-commerce, reservas y legal adicional."
   }
 }
