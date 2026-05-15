@@ -13,7 +13,6 @@ export async function Hero() {
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.85fr)] lg:items-center">
         <div className="relative z-10 space-y-8">
           <p className="inline-flex items-center gap-2 rounded-full border border-nanai-rose/40 bg-white/80 px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-nanai-ink/70 shadow-sm backdrop-blur">
-            <span className="h-1.5 w-1.5 rounded-full bg-nanai-sage" aria-hidden />
             {t("eyebrow")}
           </p>
 
@@ -27,7 +26,7 @@ export async function Hero() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
               href="/treatments"
-              className="inline-flex items-center justify-center rounded-full bg-nanai-ink px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-nanai-soft transition hover:bg-nanai-ink/90"
+              className="inline-flex items-center justify-center rounded-full bg-nanai-accent px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-nanai-soft transition hover:opacity-90"
             >
               {t("primaryCta")}
             </Link>

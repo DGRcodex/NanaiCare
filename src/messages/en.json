@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "NanaiCare — Beauty & facial care in Amsterdam",
-    "description": "A calm, professional studio in Amsterdam for facials, skin health guidance, and curated skincare—rooted in care."
+    "title": "NanaiCare, Beauty & facial care in Amsterdam",
+    "description": "A calm, professional studio in Amsterdam for facials, skin health guidance, and curated skincare, rooted in care."
   },
   "Nav": {
     "treatments": "Treatments",
@@ -15,8 +15,8 @@
   },
   "Hero": {
     "eyebrow": "Amsterdam · body & facial care · www.nanaicare.com",
-    "title": "Nanai — care that softens pain and sorrow.",
-    "lead": "Nanai (Quechua): a very tender caress used to calm pain or sorrow. NanaiCare is a warm, intuitive studio in Amsterdam for body and facial rituals—not a basic template, but a space that feels coherent, human, and close.",
+    "title": "Nanai, care that softens pain and sorrow.",
+    "lead": "Nanai (Quechua): a very tender caress used to calm pain or sorrow. NanaiCare is a warm, intuitive studio in Amsterdam for body and facial rituals, not a basic template, but a space that feels coherent, human, and close.",
     "primaryCta": "All treatments",
     "secondaryCta": "Read client stories",
     "badge": "New · evening appointments",
@@ -32,7 +32,7 @@
     "signatureChips": ["slow tempo", "tailored masks", "facial massage"],
     "panel": {
       "title": "Studio rhythm",
-      "body": "Quiet music, warmed towels, and language you can understand—no gatekeeping, just care.",
+      "body": "Quiet music, warmed towels, and language you can understand, no gatekeeping, just care.",
       "where": "Amsterdam",
       "when": "By appointment"
     },
@@ -55,7 +55,7 @@
       {
         "tag": "Education",
         "title": "Skin consultation",
-        "description": "A guided conversation with a practical home routine—fewer products, better decisions."
+        "description": "A guided conversation with a practical home routine, fewer products, better decisions."
       }
     ]
   },
@@ -64,7 +64,7 @@
     "title": "Warm words from people who sit in our chair.",
     "items": [
       {
-        "quote": "I leave softer—inside and out. The space feels intentional, and the advice never feels like a sales pitch.",
+        "quote": "I leave softer, inside and out. The space feels intentional, and the advice never feels like a sales pitch.",
         "name": "Maya R.",
         "role": "Amsterdam · regular facials"
       },
@@ -83,11 +83,11 @@
   "Wellness": {
     "label": "Care notes",
     "title": "Small recommendations with outsized kindness.",
-    "subtitle": "Short, evidence-minded tips you can actually keep—hydration, sleep, sun, and seasonal shifts.",
+    "subtitle": "Short, evidence-minded tips you can actually keep, hydration, sleep, sun, and seasonal shifts.",
     "cards": [
       {
         "title": "Morning light, gentler skin",
-        "body": "Ten minutes of daylight early supports rhythm—and often helps reactive skin stay calmer through the week."
+        "body": "Ten minutes of daylight early supports rhythm, and often helps reactive skin stay calmer through the week."
       },
       {
         "title": "Less friction, more repair",
@@ -95,7 +95,7 @@
       },
       {
         "title": "Seasonal barrier check",
-        "body": "When the canals bite, swap stripping cleansers for cream textures—barrier first, actives second."
+        "body": "When the canals bite, swap stripping cleansers for cream textures, barrier first, actives second."
       }
     ],
     "cta": "Explore wellness journal"
@@ -103,7 +103,7 @@
   "Shop": {
     "label": "Skincare",
     "title": "Curated products for home care.",
-    "subtitle": "A tight edit of cleansers, serums, and barrier creams we trust—chosen for real Amsterdam weather and real lives.",
+    "subtitle": "A tight edit of cleansers, serums, and barrier creams we trust, chosen for real Amsterdam weather and real lives.",
     "coming": "Online boutique opening soon",
     "cta": "Join the waitlist",
     "products": [
@@ -124,8 +124,8 @@
   "About": {
     "label": "The name",
     "title": "Nanai Care",
-    "meaning": "Nanai comes from Quechua: a very tender caress with which we try to calm pain or sorrow. That is the heart of this studio—touch with intention, never rush.",
-    "vision": "You asked for a friendly, intuitive, warm website—coherent and far from basic. Sacred Sound palette, Amsterdam presence, and room to grow into booking, charts, and online health forms.",
+    "meaning": "Nanai comes from Quechua: a very tender caress with which we try to calm pain or sorrow. That is the heart of this studio, touch with intention, never rush.",
+    "vision": "You asked for a friendly, intuitive, warm website, coherent and far from basic. Sacred Sound palette, Amsterdam presence, and room to grow into booking, charts, and online health forms.",
     "logoTitle": "Logo direction (options)",
     "logoBrief": "A woman’s face with a hand on her head, enclosed in a circle. The name can sit inside the mark or below it.",
     "logoOptions": [
@@ -133,7 +133,7 @@
       "Horizontal: symbol left, “Nanai Care” to the right.",
       "Stacked: symbol on top, name underneath (best for mobile header)."
     ],
-    "paletteTitle": "Sacred Sound palette",
+    "paletteTitle": "Six colors per theme, switch with the button below",
     "paletteSwatches": [
       { "label": "Canvas", "hex": "#FFFFFF" },
       { "label": "Blush", "hex": "#F1D8D8" },
@@ -144,13 +144,14 @@
   },
   "Treatments": {
     "meta": {
-      "title": "Treatments — NanaiCare",
+      "title": "Treatments, NanaiCare",
       "description": "Body, facial, seasonal packages and subscriptions at NanaiCare Amsterdam."
     },
     "label": "Treatments",
     "title": "Body, face, packages & subscriptions",
-    "lead": "Every service from your brief—corporate, facial, seasonal pairs, and memberships—listed clearly so clients can choose with calm.",
+    "lead": "Every service from your brief, corporate, facial, seasonal pairs, and memberships, listed clearly so clients can choose with calm.",
     "navLabel": "Treatment categories",
+    "viewAll": "Open full menu",
     "backHome": "Back to home",
     "categories": {
       "body": "Body treatments",
@@ -181,7 +182,7 @@
   "Roadmap": {
     "label": "Phase 2 · studio tools",
     "title": "Next: agenda, charts & health form",
-    "subtitle": "Your brief also includes operational features—we scope them as phase 2 so the public site can launch first, beautifully.",
+    "subtitle": "Your brief also includes operational features, we scope them as phase 2 so the public site can launch first, beautifully.",
     "items": [
       {
         "title": "Easy booking agenda",
@@ -201,8 +202,41 @@
       }
     ]
   },
+  "Themes": {
+    "toggleLabel": "Visual style",
+    "panelLabel": "Choose a palette & typography",
+    "panelIntro": "Six directions for NanaiCare. Compare warmth, contrast, and fonts. Nothing is final until you choose.",
+    "intensityLabel": "Intensity",
+    "contrastLabel": "Contrast",
+    "orderLabel": "Color order",
+    "orderReset": "Reset",
+    "orderHint": "Drag to reorder (mouse or finger).",
+    "saveLabel": "Save configuration (download .txt)",
+    "sixColorsTitle": "Six colors",
+    "sixColorsHint": "Use the button below to switch themes; swatches update live.",
+    "sacredSound": "Sacred Sound",
+    "sacredSoundHint": "Agreed base · soft blush, sage, calm ink",
+    "sunset": "Sunset",
+    "sunsetHint": "Pinterest dusk · rose, mauve, deep navy",
+    "twilight": "Twilight",
+    "twilightHint": "String lights · gold, seafoam, mauve",
+    "amma": "AMMA editorial",
+    "ammaHint": "Terracotta moodboard · serif luxury",
+    "nanaiRitual": "Nanai ritual",
+    "nanaiRitualHint": "Quechua tenderness + golden accent",
+    "canalCalm": "Canal calm",
+    "canalCalmHint": "Amsterdam mist · muted greens & slate",
+    "roles": {
+      "canvas": "Canvas",
+      "blush": "Blush",
+      "rose": "Rose",
+      "sage": "Sage",
+      "ink": "Ink",
+      "accent": "Accent"
+    }
+  },
   "Footer": {
-    "tagline": "NanaiCare — facial wellness & boutique beauty in Amsterdam.",
+    "tagline": "NanaiCare, facial wellness & boutique beauty in Amsterdam.",
     "address": "Amsterdam, Netherlands",
     "rights": "All rights reserved.",
     "contact": "hello@nanaicare.example",
@@ -211,7 +245,7 @@
   },
   "Charter": {
     "meta": {
-      "title": "Project charter — NanaiCare",
+      "title": "Project charter, NanaiCare",
       "description": "Scope, roles, and agreed budget reference for the NanaiCare digital project (Sambalab · DGRcodex)."
     },
     "eyebrow": "Internal reference · Sambalab × DGRcodex",
@@ -228,10 +262,10 @@
     "partyAgencyName": "Sambalab",
     "partyAgencyBody": "Client liaison, prioritisation, and communication of deliverables.",
     "partyDevLabel": "Development",
-    "partyDevName": "DGRcodex — Daniel García Rojas",
+    "partyDevName": "DGRcodex, Daniel García Rojas",
     "partyDevBody": "Next.js architecture, i18n, UI aligned with the brand system, deployment, and concise technical handover.",
     "briefTitle": "Client brief (from NanaiCare)",
-    "briefIntro": "Client brief (Nanai Care) — integrated May 2026.",
+    "briefIntro": "Client brief (Nanai Care), integrated May 2026.",
     "briefBullets": [
       "Brand: Nanai Care · Quechua Nanai = tender caress to calm pain or sorrow.",
       "Logo: woman’s face, hand on head, inside a circle; name inside or below (three layout options on site).",
@@ -249,7 +283,7 @@
       "Policies section (deposit, 24h cancellation, reschedule/transfer, studio cancellation).",
       "Charter with budget; deploy on Vercel; GitHub handover."
     ],
-    "scopeOutTitle": "Phase 2 (client brief — separate quote)",
+    "scopeOutTitle": "Phase 2 (client brief, separate quote)",
     "scopeOut": [
       "Booking agenda with easy edit, payment integrations, monthly/annual charts (treatments & revenue).",
       "Online health & aesthetics intake form.",
@@ -257,9 +291,9 @@
     ],
     "changeTitle": "Change control",
     "changeBody": "Features not listed here, or integrations that require new vendors, are quoted as phase 2 or a written change request. Work that invalidates already approved deliverables may affect timeline and cost.",
-    "budgetTitle": "Budget reference (CLP — Chilean pesos)",
+    "budgetTitle": "Budget reference (CLP, Chilean pesos)",
     "rowBase": "Development base",
-    "rowVat": "IVA (19% on base — confirm on invoice)",
+    "rowVat": "IVA (19% on base, confirm on invoice)",
     "rowDomain": "Domain (estimate · 3 years)",
     "rowTotal": "Indicative total",
     "budgetNote": "Amounts in Chilean pesos (CLP). IVA at 19% and domain cost depend on provider; the issued invoice is the binding reference.",

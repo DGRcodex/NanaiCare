@@ -3,7 +3,6 @@ import { Mark } from "@/components/brand/Mark";
 
 export async function AboutNanai() {
   const t = await getTranslations("About");
-  const palette = t.raw("paletteSwatches") as { label: string; hex: string }[];
   const logoOptions = t.raw("logoOptions") as string[];
 
   return (
@@ -22,26 +21,20 @@ export async function AboutNanai() {
           <h2 className="font-heading text-3xl font-medium tracking-tight text-nanai-ink sm:text-4xl">{t("title")}</h2>
           <p className="text-base leading-relaxed text-nanai-ink-soft">{t("meaning")}</p>
           <p className="text-sm leading-relaxed text-nanai-ink-soft">{t("vision")}</p>
-          <a href="https://www.nanaicare.com" className="inline-block text-sm font-semibold text-nanai-ink underline-offset-4 hover:underline">www.nanaicare.com</a>
+          <a
+            href="https://www.nanaicare.com"
+            className="inline-block text-sm font-semibold text-nanai-ink underline-offset-4 hover:underline"
+          >
+            www.nanaicare.com
+          </a>
           <div className="rounded-[1.25rem] border border-nanai-rose/30 bg-white/80 p-5 shadow-sm backdrop-blur">
             <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-nanai-ink-soft">{t("logoTitle")}</h3>
             <p className="mt-2 text-sm text-nanai-ink-soft">{t("logoBrief")}</p>
             <ul className="mt-3 space-y-2 text-sm text-nanai-ink">
               {logoOptions.map((opt) => (
-                <li key={opt} className="flex gap-2"><span className="text-nanai-sage" aria-hidden>◦</span>{opt}</li>
+                <li key={opt}>{opt}</li>
               ))}
             </ul>
-          </div>
-          <div className="space-y-3">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-nanai-ink-soft">{t("paletteTitle")}</h3>
-            <div className="flex flex-wrap gap-3">
-              {palette.map((swatch) => (
-                <div className="flex items-center gap-2" key={swatch.hex}>
-                  <span className="h-9 w-9 rounded-full ring-1 ring-nanai-rose/35" style={{ backgroundColor: swatch.hex }} aria-hidden />
-                  <span className="text-xs text-nanai-ink-soft">{swatch.label} · {swatch.hex}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "NanaiCare — Schoonheid en gezichtsverzorging in Amsterdam",
-    "description": "Een rustige, professionele studio in Amsterdam voor facials, huidadvies en geselecteerde skincare—geworteld in zorg."
+    "title": "NanaiCare, Schoonheid en gezichtsverzorging in Amsterdam",
+    "description": "Een rustige, professionele studio in Amsterdam voor facials, huidadvies en geselecteerde skincare, geworteld in zorg."
   },
   "Nav": {
     "services": "Behandelingen",
@@ -15,8 +15,8 @@
   },
   "Hero": {
     "eyebrow": "Amsterdam · lichaam & gezicht · www.nanaicare.com",
-    "title": "Nanai — zorg die pijn en verdriet verzacht.",
-    "lead": "Nanai (Quechua): een zeer tedere streling om pijn of verdriet te kalmeren. NanaiCare is een warme, intuïtieve studio in Amsterdam—coherent en ver van basic.",
+    "title": "Nanai, zorg die pijn en verdriet verzacht.",
+    "lead": "Nanai (Quechua): een zeer tedere streling om pijn of verdriet te kalmeren. NanaiCare is een warme, intuïtieve studio in Amsterdam, coherent en ver van basic.",
     "primaryCta": "Alle behandelingen",
     "secondaryCta": "Lees verhalen",
     "badge": "Nieuw · avondafspraken",
@@ -36,7 +36,7 @@
     ],
     "panel": {
       "title": "Studio-ritme",
-      "body": "Zachte muziek, warme doeken en taal die je begrijpt—geen elitaire toon, alleen zorg.",
+      "body": "Zachte muziek, warme doeken en taal die je begrijpt, geen elitaire toon, alleen zorg.",
       "where": "Amsterdam",
       "when": "Op afspraak"
     },
@@ -59,7 +59,7 @@
       {
         "tag": "Educatie",
         "title": "Huidconsult",
-        "description": "Een begeleid gesprek met een praktisch thuisritueel—minder producten, betere keuzes."
+        "description": "Een begeleid gesprek met een praktisch thuisritueel, minder producten, betere keuzes."
       }
     ]
   },
@@ -68,7 +68,7 @@
     "title": "Hartelijke woorden van mensen in onze stoel.",
     "items": [
       {
-        "quote": "Ik vertrek zachter—van binnen en buiten. Alles voelt doordacht, en het advies voelt nooit als verkoop.",
+        "quote": "Ik vertrek zachter, van binnen en buiten. Alles voelt doordacht, en het advies voelt nooit als verkoop.",
         "name": "Maya R.",
         "role": "Amsterdam · vaste facials"
       },
@@ -87,11 +87,11 @@
   "Wellness": {
     "label": "Care notes",
     "title": "Kleine aanbevelingen met grote mildheid.",
-    "subtitle": "Korte, zorgvuldige tips die je wél volhoudt—hydratatie, slaap, zon en seizoenswissels.",
+    "subtitle": "Korte, zorgvuldige tips die je wél volhoudt, hydratatie, slaap, zon en seizoenswissels.",
     "cards": [
       {
         "title": "Ochtendlicht, zachtere huid",
-        "body": "Tien minuten daglicht vroeg ondersteunt je ritme—en helpt gevoelige huid vaak rustiger door de week."
+        "body": "Tien minuten daglicht vroeg ondersteunt je ritme, en helpt gevoelige huid vaak rustiger door de week."
       },
       {
         "title": "Minder wrijving, meer herstel",
@@ -99,7 +99,7 @@
       },
       {
         "title": "Seizoenscheck voor je barrière",
-        "body": "Als het kouder wordt: minder stripende reinigers, meer crème-texturen—barrière eerst, actives daarna."
+        "body": "Als het kouder wordt: minder stripende reinigers, meer crème-texturen, barrière eerst, actives daarna."
       }
     ],
     "cta": "Ontdek het wellness journal"
@@ -107,7 +107,7 @@
   "Shop": {
     "label": "Skincare",
     "title": "Gecureerde producten voor thuis.",
-    "subtitle": "Een strakke selectie reinigers, serums en barrier creams die we vertrouwen—voor echt Amsterdam weer en echte levens.",
+    "subtitle": "Een strakke selectie reinigers, serums en barrier creams die we vertrouwen, voor echt Amsterdam weer en echte levens.",
     "coming": "Online boutique binnenkort",
     "cta": "Wachtlijst",
     "products": [
@@ -126,7 +126,7 @@
     ]
   },
   "Footer": {
-    "tagline": "NanaiCare — facial wellness & boutique beauty in Amsterdam.",
+    "tagline": "NanaiCare, facial wellness & boutique beauty in Amsterdam.",
     "address": "Amsterdam, Nederland",
     "rights": "Alle rechten voorbehouden.",
     "contact": "hello@nanaicare.example",
@@ -135,7 +135,7 @@
   },
   "Charter": {
     "meta": {
-      "title": "Project charter — NanaiCare",
+      "title": "Project charter, NanaiCare",
       "description": "Scope, rollen en afgesproken budgetreferentie voor het NanaiCare digitale project (Sambalab · DGRcodex)."
     },
     "eyebrow": "Interne referentie · Sambalab × DGRcodex",
@@ -152,10 +152,10 @@
     "partyAgencyName": "Sambalab",
     "partyAgencyBody": "Aanspreekpunt richting klant, prioritering en communicatie van opleveringen.",
     "partyDevLabel": "Ontwikkeling",
-    "partyDevName": "DGRcodex — Daniel García Rojas",
+    "partyDevName": "DGRcodex, Daniel García Rojas",
     "partyDevBody": "Next.js-architectuur, i18n, UI volgens het merksysteem, deployment en beknopte technische overdracht.",
     "briefTitle": "Brief van de klant (NanaiCare)",
-    "briefIntro": "Klantbrief (Nanai Care) — geïntegreerd mei 2026.",
+    "briefIntro": "Klantbrief (Nanai Care), geïntegreerd mei 2026.",
     "briefBullets": [
       "Merk Nanai Care · Nanai (Quechua) = tedere streling.",
       "Logo: gezicht, hand op hoofd, cirkel; naam binnen of onder.",
@@ -179,9 +179,9 @@
     ],
     "changeTitle": "Wijzigingen",
     "changeBody": "Features die hier niet staan, of integraties met nieuwe leveranciers, worden als fase 2 of schriftelijke change aangeboden. Werk dat goedgekeurde opleveringen terugdraait, kan planning en kosten beïnvloeden.",
-    "budgetTitle": "Budgetreferentie (CLP — Chileense peso's)",
+    "budgetTitle": "Budgetreferentie (CLP, Chileense peso's)",
     "rowBase": "Ontwikkel-basis",
-    "rowVat": "IVA (19% op basis — bevestig op factuur)",
+    "rowVat": "IVA (19% op basis, bevestig op factuur)",
     "rowDomain": "Domein (indicatie · 3 jaar)",
     "rowTotal": "Indicatief totaal",
     "budgetNote": "Bedragen in Chileense peso's (CLP). IVA 19% en domein volgens provider; de factuur is leidend.",
@@ -200,7 +200,7 @@
     "label": "De naam",
     "title": "Nanai Care",
     "meaning": "Nanai komt uit het Quechua: een tedere streling om pijn of verdriet te kalmeren. Dat is het hart van de studio.",
-    "vision": "Een vriendelijke, intuïtieve, warme site—niet basic. Sacred Sound-palet, Amsterdam, en ruimte voor agenda, grafieken en gezondheidsformulier.",
+    "vision": "Een vriendelijke, intuïtieve, warme site, niet basic. Sacred Sound-palet, Amsterdam, en ruimte voor agenda, grafieken en gezondheidsformulier.",
     "logoTitle": "Logo-richting (opties)",
     "logoBrief": "Vrouwengezicht met hand op het hoofd in een cirkel. Naam binnenin of eronder.",
     "logoOptions": [
@@ -208,7 +208,7 @@
       "Horizontaal: symbool links, naam rechts.",
       "Gestapeld: symbool boven, naam onder."
     ],
-    "paletteTitle": "Sacred Sound-palet",
+    "paletteTitle": "Zes kleuren per thema (wissel via de knop onderaan)",
     "paletteSwatches": [
       {
         "label": "Canvas",
@@ -234,12 +234,12 @@
   },
   "Treatments": {
     "meta": {
-      "title": "Behandelingen — NanaiCare",
+      "title": "Behandelingen, NanaiCare",
       "description": "Lichaam, gezicht, pakketten en abonnementen in Amsterdam."
     },
     "label": "Behandelingen",
     "title": "Lichaam, gezicht, pakketten & abonnementen",
-    "lead": "Alle diensten uit je brief—duidelijk en rustig gepresenteerd.",
+    "lead": "Alle diensten uit je brief, duidelijk en rustig gepresenteerd.",
     "navLabel": "Categorieën",
     "backHome": "Terug naar home",
     "categories": {
@@ -247,7 +247,8 @@
       "facial": "Gezichtsbehandelingen",
       "packages": "Pakketten",
       "subscriptions": "Abonnementen"
-    }
+    },
+    "viewAll": "Volledig menu"
   },
   "Policies": {
     "label": "Boeken & betaling",
@@ -271,7 +272,7 @@
   "Roadmap": {
     "label": "Fase 2 · studio-tools",
     "title": "Volgende: agenda, grafieken & formulier",
-    "subtitle": "Agenda, maand/jaar-grafieken, betalingen en gezondheidsformulier—fase 2.",
+    "subtitle": "Agenda, maand/jaar-grafieken, betalingen en gezondheidsformulier, fase 2.",
     "items": [
       {
         "title": "Boekingsagenda",
@@ -290,5 +291,38 @@
         "body": "Online intake vóór het bezoek."
       }
     ]
+  },
+  "Themes": {
+    "toggleLabel": "Visuele stijl",
+    "panelLabel": "Kies palet en typografie",
+    "panelIntro": "Zes richtingen voor NanaiCare. Vergelijk warmte, contrast en lettertypen.",
+    "intensityLabel": "Intensiteit",
+    "contrastLabel": "Contrast",
+    "orderLabel": "Kleurvolgorde",
+    "orderReset": "Reset",
+    "orderHint": "Sleep om volgorde te wijzigen (muis of vinger).",
+    "saveLabel": "Configuratie opslaan (download .txt)",
+    "sixColorsTitle": "Zes kleuren",
+    "sixColorsHint": "Gebruik de knop onderaan om van thema te wisselen.",
+    "sacredSound": "Sacred Sound",
+    "sacredSoundHint": "Afgesproken basis · blush, sage, rustige inkt",
+    "sunset": "Zonsondergang",
+    "sunsetHint": "Pinterest · roos, mauve, diep navy",
+    "twilight": "Schemering",
+    "twilightHint": "Lichtsnoer · goud, seafoam",
+    "amma": "AMMA editorial",
+    "ammaHint": "Terracotta moodboard · serif luxe",
+    "nanaiRitual": "Nanai ritueel",
+    "nanaiRitualHint": "Quechua tederheid · gouden accent",
+    "canalCalm": "Grachtenrust",
+    "canalCalmHint": "Amsterdam mist · gedempt groen",
+    "roles": {
+      "canvas": "Canvas",
+      "blush": "Blush",
+      "rose": "Roos",
+      "sage": "Sage",
+      "ink": "Inkt",
+      "accent": "Accent"
+    }
   }
 }
