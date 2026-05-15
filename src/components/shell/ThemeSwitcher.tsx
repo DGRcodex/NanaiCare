@@ -29,6 +29,7 @@ export function ThemeSwitcher() {
   const [colorOrder, setColorOrder] = useState<Role[]>(DEFAULT_ORDER);
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
   const [overIndex, setOverIndex] = useState<number | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const touchRef = useRef<{ index: number } | null>(null);
 
   useEffect(() => {
@@ -285,25 +286,45 @@ export function ThemeSwitcher() {
                 {t("orderReset")}
               </button>
             </div>
-            <div className="flex gap-1.5 touch-none select-none">
-              {colorOrder.map((role, i) => (
-                <div
-                  key={i}
-                  data-swatch-index={i}
-                  onPointerDown={(e) => onPointerDown(e, i)}
-                  onPointerMove={onPointerMove}
-                  onPointerUp={onPointerUp}
-                  onPointerCancel={onPointerCancel}
-                  className={[
-                    "h-8 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-transform touch-none select-none",
-                    draggedIndex === i ? "opacity-40 scale-95" : "",
-                    overIndex === i && draggedIndex !== i ? "ring-2 ring-nanai-sage scale-110" : "",
-                  ].join(" ")}
-                  style={{ backgroundColor: getThemeById(active).colors[role] }}
-                  title={t(`roles.${role}`)}
-                  aria-label={t(`roles.${role}`)}
-                />
-              ))}
+            <div className="relative">
+              {(() => {
+                const focus = overIndex ?? hoveredIndex;
+                if (focus === null) return null;
+                const role = colorOrder[focus];
+                return (
+                  <div
+                    className="pointer-events-none absolute -top-1 left-1/2 z-10 -translate-x-1/2 -translate-y-full rounded-md bg-nanai-ink px-2 py-1 text-center shadow-md"
+                    role="tooltip"
+                  >
+                    <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white">
+                      {t(`roles.${role}`)}
+                    </div>
+                    <div className="text-[10px] text-white/80">{t(`roleHints.${role}`)}</div>
+                  </div>
+                );
+              })()}
+              <div className="flex gap-1.5 touch-none select-none">
+                {colorOrder.map((role, i) => (
+                  <div
+                    key={i}
+                    data-swatch-index={i}
+                    onPointerDown={(e) => onPointerDown(e, i)}
+                    onPointerMove={onPointerMove}
+                    onPointerUp={onPointerUp}
+                    onPointerCancel={onPointerCancel}
+                    onMouseEnter={() => setHoveredIndex(i)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                    className={[
+                      "h-8 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-transform touch-none select-none",
+                      draggedIndex === i ? "opacity-40 scale-95" : "",
+                      overIndex === i && draggedIndex !== i ? "ring-2 ring-nanai-sage scale-110" : "",
+                      hoveredIndex === i && draggedIndex === null ? "ring-2 ring-nanai-ink/40" : "",
+                    ].join(" ")}
+                    style={{ backgroundColor: getThemeById(active).colors[role] }}
+                    aria-label={`${t(`roles.${role}`)}: ${t(`roleHints.${role}`)}`}
+                  />
+                ))}
+              </div>
             </div>
             <p className="mt-1.5 text-[10px] leading-snug text-nanai-ink-soft">{t("orderHint")}</p>
           </div>

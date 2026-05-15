@@ -226,6 +226,14 @@
     "nanaiRitualHint": "Quechua tenderness + golden accent",
     "canalCalm": "Canal calm",
     "canalCalmHint": "Amsterdam mist · muted greens & slate",
+    "roleHints": {
+      "canvas": "Main page background",
+      "blush": "Soft fills: cards, glows, badges",
+      "rose": "Thin borders and dividers",
+      "sage": "Eyebrows and secondary accents",
+      "ink": "Headings and body text color",
+      "accent": "CTA buttons and strong accents"
+    },
     "roles": {
       "canvas": "Canvas",
       "blush": "Blush",

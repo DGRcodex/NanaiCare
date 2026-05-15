@@ -316,6 +316,14 @@
     "nanaiRitualHint": "Quechua tederheid · gouden accent",
     "canalCalm": "Grachtenrust",
     "canalCalmHint": "Amsterdam mist · gedempt groen",
+    "roleHints": {
+      "canvas": "Hoofdachtergrond van de pagina",
+      "blush": "Zachte vlakken: cards, gloed, badges",
+      "rose": "Dunne randen en scheidingslijnen",
+      "sage": "Eyebrows en secundaire accenten",
+      "ink": "Koppen en bodytekst",
+      "accent": "CTA-knoppen en sterke accenten"
+    },
     "roles": {
       "canvas": "Canvas",
       "blush": "Blush",

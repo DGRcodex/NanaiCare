@@ -323,6 +323,14 @@
       "sage": "Sage",
       "ink": "Tinta",
       "accent": "Acento"
+    },
+    "roleHints": {
+      "canvas": "Fondo principal de la página",
+      "blush": "Fondos suaves: cards, halos, badges",
+      "rose": "Bordes finos y divisores",
+      "sage": "Eyebrows y acentos secundarios",
+      "ink": "Color de títulos y textos",
+      "accent": "Botones CTA y acentos fuertes"
     }
   }
 }

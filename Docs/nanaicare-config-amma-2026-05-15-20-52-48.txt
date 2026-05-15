@@ -1,0 +1,48 @@
+NanaiCare — Configuracion guardada
+Fecha: 2026-05-15 20:52:48
+
+Tema: AMMA editorial (amma)
+Intensidad (saturate): 132%
+Contraste (contrast): 98%
+
+Orden de colores (slot CSS = color asignado):
+  --nanai-canvas: #F5F0E8  (origen: canvas)
+  --nanai-blush: #E8D5C8  (origen: blush)
+  --nanai-rose: #3D2E32  (origen: ink)
+  --nanai-sage: #9E6B5C  (origen: sage)
+  --nanai-ink: #C9A99A  (origen: rose)
+  --nanai-accent: #6B4A5A  (origen: accent)
+
+Paleta original del tema:
+  canvas: #F5F0E8
+  blush: #E8D5C8
+  rose: #C9A99A
+  sage: #9E6B5C
+  ink: #3D2E32
+  accent: #6B4A5A
+
+Filtro CSS aplicado al <html>:
+  filter: saturate(132%) contrast(98%);
+
+JSON:
+{
+  "theme": "amma",
+  "intensity": 132,
+  "contrast": 98,
+  "colorOrder": [
+    "canvas",
+    "blush",
+    "ink",
+    "sage",
+    "rose",
+    "accent"
+  ],
+  "appliedColors": {
+    "canvas": "#F5F0E8",
+    "blush": "#E8D5C8",
+    "rose": "#3D2E32",
+    "sage": "#9E6B5C",
+    "ink": "#C9A99A",
+    "accent": "#6B4A5A"
+  }
+}
