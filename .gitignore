@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local user artifacts
+Docs/nanaicare-config-*.txt
+Docs/*.xlsx
