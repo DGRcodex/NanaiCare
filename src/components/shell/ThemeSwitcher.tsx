@@ -158,43 +158,43 @@ export function ThemeSwitcher() {
     URL.revokeObjectURL(url);
   };
 
-  // HTML5 drag handlers (desktop)
-  const onDragStart = (i: number) => setDraggedIndex(i);
-  const onDragOverSwatch = (e: React.DragEvent, i: number) => {
-    e.preventDefault();
-    setOverIndex(i);
-  };
-  const onDropSwatch = (e: React.DragEvent, i: number) => {
-    e.preventDefault();
-    if (draggedIndex !== null) swapAt(draggedIndex, i);
-    setDraggedIndex(null);
-    setOverIndex(null);
-  };
-  const onDragEnd = () => {
-    setDraggedIndex(null);
-    setOverIndex(null);
+  // Unified Pointer Events handlers (mouse + touch + pen)
+  const findIndexAtPoint = (x: number, y: number): number | null => {
+    const el = document.elementFromPoint(x, y) as HTMLElement | null;
+    const idxAttr = el?.closest<HTMLElement>("[data-swatch-index]")?.dataset.swatchIndex;
+    return idxAttr !== undefined ? parseInt(idxAttr, 10) : null;
   };
 
-  // Touch handlers (mobile)
-  const onTouchStart = (i: number) => {
+  const onPointerDown = (e: React.PointerEvent<HTMLDivElement>, i: number) => {
+    e.preventDefault();
+    (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
     touchRef.current = { index: i };
     setDraggedIndex(i);
   };
-  const onTouchMove = (e: React.TouchEvent) => {
-    if (!touchRef.current) return;
-    const tp = e.touches[0];
-    const el = document.elementFromPoint(tp.clientX, tp.clientY) as HTMLElement | null;
-    const idxAttr = el?.closest<HTMLElement>("[data-swatch-index]")?.dataset.swatchIndex;
-    if (idxAttr !== undefined) setOverIndex(parseInt(idxAttr, 10));
+  const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (touchRef.current === null) return;
+    e.preventDefault();
+    // Hide dragged element from elementFromPoint hit-testing.
+    const target = e.target as HTMLElement;
+    const prevPE = target.style.pointerEvents;
+    target.style.pointerEvents = "none";
+    const idx = findIndexAtPoint(e.clientX, e.clientY);
+    target.style.pointerEvents = prevPE;
+    if (idx !== null) setOverIndex(idx);
   };
-  const onTouchEnd = (e: React.TouchEvent) => {
-    if (!touchRef.current) return;
-    const tp = e.changedTouches[0];
-    const el = document.elementFromPoint(tp.clientX, tp.clientY) as HTMLElement | null;
-    const idxAttr = el?.closest<HTMLElement>("[data-swatch-index]")?.dataset.swatchIndex;
-    if (idxAttr !== undefined) {
-      swapAt(touchRef.current.index, parseInt(idxAttr, 10));
-    }
+  const onPointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (touchRef.current === null) return;
+    const target = e.target as HTMLElement;
+    const prevPE = target.style.pointerEvents;
+    target.style.pointerEvents = "none";
+    const idx = findIndexAtPoint(e.clientX, e.clientY);
+    target.style.pointerEvents = prevPE;
+    if (idx !== null) swapAt(touchRef.current.index, idx);
+    touchRef.current = null;
+    setDraggedIndex(null);
+    setOverIndex(null);
+  };
+  const onPointerCancel = () => {
     touchRef.current = null;
     setDraggedIndex(null);
     setOverIndex(null);
@@ -290,16 +290,12 @@ export function ThemeSwitcher() {
                 <div
                   key={i}
                   data-swatch-index={i}
-                  draggable
-                  onDragStart={() => onDragStart(i)}
-                  onDragOver={(e) => onDragOverSwatch(e, i)}
-                  onDrop={(e) => onDropSwatch(e, i)}
-                  onDragEnd={onDragEnd}
-                  onTouchStart={() => onTouchStart(i)}
-                  onTouchMove={onTouchMove}
-                  onTouchEnd={onTouchEnd}
+                  onPointerDown={(e) => onPointerDown(e, i)}
+                  onPointerMove={onPointerMove}
+                  onPointerUp={onPointerUp}
+                  onPointerCancel={onPointerCancel}
                   className={[
-                    "h-8 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-transform",
+                    "h-8 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-transform touch-none select-none",
                     draggedIndex === i ? "opacity-40 scale-95" : "",
                     overIndex === i && draggedIndex !== i ? "ring-2 ring-nanai-sage scale-110" : "",
                   ].join(" ")}
