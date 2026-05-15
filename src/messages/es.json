@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "NanaiCare - Belleza y cuidado facial en Ámsterdam",
-    "description": "Un estudio tranquilo y profesional en Ámsterdam para faciales, guía de salud de la piel y skincare curada, con raíz en el cuidado."
+    "title": "NanaiCare — Belleza y cuidado facial en Ámsterdam",
+    "description": "Un estudio tranquilo y profesional en Ámsterdam para faciales, guía de salud de la piel y skincare curada—con raíz en el cuidado."
   },
   "Nav": {
     "services": "Servicios",
@@ -15,8 +15,8 @@
   },
   "Hero": {
     "eyebrow": "Ámsterdam · cuerpo y rostro · www.nanaicare.com",
-    "title": "Nanai - caricia que calma el dolor y la pena.",
-    "lead": "Nanai (quechua): caricia muy tierna con la que se trata de calmar un dolor o una pena. NanaiCare es un estudio cálido e intuitivo en Ámsterdam, coherente, cercano y lejos de lo básico.",
+    "title": "Nanai — caricia que calma el dolor y la pena.",
+    "lead": "Nanai (quechua): caricia muy tierna con la que se trata de calmar un dolor o una pena. NanaiCare es un estudio cálido e intuitivo en Ámsterdam—coherente, cercano y lejos de lo básico.",
     "primaryCta": "Todos los tratamientos",
     "secondaryCta": "Leer experiencias",
     "badge": "Nuevo · citas en la tarde",
@@ -36,7 +36,7 @@
     ],
     "panel": {
       "title": "Ritmo del estudio",
-      "body": "Música suave, toallas tibias y un lenguaje claro, sin snobismo, solo cuidado.",
+      "body": "Música suave, toallas tibias y un lenguaje claro—sin snobismo, solo cuidado.",
       "where": "Ámsterdam",
       "when": "Con cita"
     },
@@ -59,7 +59,7 @@
       {
         "tag": "Educación",
         "title": "Consulta de piel",
-        "description": "Una conversación guiada con rutina en casa práctica, menos productos, mejores decisiones."
+        "description": "Una conversación guiada con rutina en casa práctica—menos productos, mejores decisiones."
       }
     ]
   },
@@ -87,11 +87,11 @@
   "Wellness": {
     "label": "Notas de cuidado",
     "title": "Pequeñas recomendaciones con gran cariño.",
-    "subtitle": "Tips breves y sensatos que sí puedes sostener, hidratación, sueño, sol y cambios de estación.",
+    "subtitle": "Tips breves y sensatos que sí puedes sostener—hidratación, sueño, sol y cambios de estación.",
     "cards": [
       {
         "title": "Luz matutina, piel más serena",
-        "body": "Diez minutos de luz natural temprana apoya el ritmo, y a menudo ayuda a pieles reactivas a mantenerse más calmadas."
+        "body": "Diez minutos de luz natural temprana apoya el ritmo—y a menudo ayuda a pieles reactivas a mantenerse más calmadas."
       },
       {
         "title": "Menos fricción, más reparación",
@@ -99,7 +99,7 @@
       },
       {
         "title": "Chequeo de barrera por estación",
-        "body": "Cuando el frío aprieta, cambia limpiadores agresivos por texturas en crema, barrera primero, activos después."
+        "body": "Cuando el frío aprieta, cambia limpiadores agresivos por texturas en crema—barrera primero, activos después."
       }
     ],
     "cta": "Explorar diario wellness"
@@ -199,8 +199,8 @@
   "About": {
     "label": "El nombre",
     "title": "Nanai Care",
-    "meaning": "Nanai viene del quechua: caricia muy tierna para calmar dolor o pena. Ese es el corazón del estudio, contacto con intención, sin prisa.",
-    "vision": "Un espacio cálido e intuitivo en Ámsterdam, coherente, cercano y lejos de lo básico. Paleta Sacred Sound, presencia profesional y atención personalizada.",
+    "meaning": "Nanai viene del quechua: caricia muy tierna para calmar dolor o pena. Ese es el corazón del estudio—contacto con intención, sin prisa.",
+    "vision": "Pediste una web amigable, intuitiva y cálida—coherente y no básica. Paleta Sacred Sound, presencia en Ámsterdam y espacio para agenda, gráficos y ficha de salud online.",
     "logoTitle": "Dirección del logo (opciones)",
     "logoBrief": "Rostro de mujer con mano en la cabeza, dentro de un círculo. El nombre puede ir dentro o debajo.",
     "logoOptions": [
@@ -234,12 +234,12 @@
   },
   "Treatments": {
     "meta": {
-      "title": "Tratamientos - NanaiCare",
+      "title": "Tratamientos — NanaiCare",
       "description": "Corporales, faciales, paquetes y suscripciones en Ámsterdam."
     },
     "label": "Tratamientos",
     "title": "Cuerpo, rostro, paquetes y suscripciones",
-    "lead": "Corporales, faciales, paquetes estacionales y suscripciones, listados con claridad para tu cuidado integral.",
+    "lead": "Todos los servicios de tu brief—corporales, faciales, estaciones y membresías—listados con claridad.",
     "navLabel": "Categorías",
     "backHome": "Volver al inicio",
     "categories": {
@@ -253,11 +253,11 @@
   "Policies": {
     "label": "Reservas y pagos",
     "title": "Políticas que cuidan tu tiempo y el nuestro",
-    "subtitle": "Depósito, cancelación, reprogramación y políticas del estudio.",
+    "subtitle": "Según acordaste: depósito, cancelación, reprogramación y cambios del estudio.",
     "items": [
       {
         "title": "Depósito y pago anticipado",
-        "body": "50% del tratamiento se paga por adelantado como depósito. Consulta métodos de pago disponibles al reservar."
+        "body": "50% del tratamiento se paga por adelantado como depósito. Métodos de pago integrados en fase 2."
       },
       {
         "title": "Cancelación por la clienta",
@@ -270,25 +270,25 @@
     ]
   },
   "Roadmap": {
-    "label": "Próximamente",
-    "title": "Nuevas funcionalidades en desarrollo",
-    "subtitle": "Mejoras continuas para tu experiencia: agenda digital, seguimiento de tratamientos y más",
+    "label": "Fase 2 · herramientas",
+    "title": "Próximo: agenda, gráficos y ficha",
+    "subtitle": "Tu brief incluye agenda fácil de editar, gráficos mensuales/anuales, pagos y ficha de salud online—fase 2.",
     "items": [
       {
         "title": "Agenda de reservas",
-        "body": "Sistema de citas fácil de usar, con recordatorios automáticos."
+        "body": "Calendario fácil de rellenar y corregir, enlazado al catálogo."
       },
       {
-        "title": "Seguimiento de tratamientos",
-        "body": "Historial visual de tus sesiones y progreso."
+        "title": "Gráficos mensuales y anuales",
+        "body": "Tratamientos por mes/año y recaudación."
       },
       {
         "title": "Métodos de pago",
-        "body": "Más opciones de pago seguras y convenientes."
+        "body": "Integración alineada con el depósito del 50%."
       },
       {
-        "title": "Ficha de salud online",
-        "body": "Formulario digital simplificado antes de tu visita."
+        "title": "Ficha de salud y estética",
+        "body": "Formulario online antes de la visita."
       }
     ]
   },

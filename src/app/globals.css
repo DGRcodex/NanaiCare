@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  --color-intensity: 100%;
   --nanai-canvas: #ffffff;
   --nanai-blush: #f1d8d8;
   --nanai-rose: #cbaeae;
@@ -34,7 +33,6 @@
     background-color: var(--nanai-canvas);
     color: var(--nanai-ink);
     font-family: var(--font-theme-body);
-    filter: saturate(var(--color-intensity));
   }
 
   ::selection {
