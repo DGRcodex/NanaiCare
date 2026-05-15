@@ -1,5 +1,8 @@
 import { setRequestLocale } from "next-intl/server";
+import { AboutNanai } from "@/components/home/AboutNanai";
 import { Hero } from "@/components/home/Hero";
+import { Policies } from "@/components/home/Policies";
+import { RoadmapPhase2 } from "@/components/home/RoadmapPhase2";
 import { ServicesBento } from "@/components/home/ServicesBento";
 import { ShopTeaser } from "@/components/home/ShopTeaser";
 import { Testimonials } from "@/components/home/Testimonials";
@@ -16,10 +19,13 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <Hero />
+      <AboutNanai />
       <ServicesBento />
+      <Policies />
       <Testimonials />
       <WellnessStrip />
       <ShopTeaser />
+      <RoadmapPhase2 />
     </>
   );
 }

@@ -26,7 +26,7 @@ export async function Hero() {
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
-              href="/#services"
+              href="/treatments"
               className="inline-flex items-center justify-center rounded-full bg-nanai-ink px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-nanai-soft transition hover:bg-nanai-ink/90"
             >
               {t("primaryCta")}

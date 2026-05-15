@@ -8,13 +8,16 @@
     "stories": "Historias",
     "wellness": "Bienestar",
     "shop": "Tienda skincare",
-    "book": "Reserva tu visita"
+    "book": "Reserva tu visita",
+    "treatments": "Tratamientos",
+    "about": "Nanai",
+    "policies": "Políticas"
   },
   "Hero": {
-    "eyebrow": "Ámsterdam · facial wellness",
-    "title": "Un cuidado que encuentra tu piel donde está.",
-    "lead": "NanaiCare es un estudio boutique de belleza para faciales, tacto reparador y guía honesta—pensado para sentirse calmado, claro y cercano.",
-    "primaryCta": "Ver servicios",
+    "eyebrow": "Ámsterdam · cuerpo y rostro · www.nanaicare.com",
+    "title": "Nanai — caricia que calma el dolor y la pena.",
+    "lead": "Nanai (quechua): caricia muy tierna con la que se trata de calmar un dolor o una pena. NanaiCare es un estudio cálido e intuitivo en Ámsterdam—coherente, cercano y lejos de lo básico.",
+    "primaryCta": "Todos los tratamientos",
     "secondaryCta": "Leer experiencias",
     "badge": "Nuevo · citas en la tarde",
     "cardEyebrow": "Tarjeta ritual",
@@ -26,7 +29,11 @@
     "label": "Lo que ofrecemos",
     "title": "Tratamientos con ritmo, sin prisa.",
     "subtitle": "Cada sesión tiene tiempo para escuchar: tu vida, tu barrera, tus objetivos.",
-    "signatureChips": ["ritmo lento", "mascarillas a medida", "masaje facial"],
+    "signatureChips": [
+      "ritmo lento",
+      "mascarillas a medida",
+      "masaje facial"
+    ],
     "panel": {
       "title": "Ritmo del estudio",
       "body": "Música suave, toallas tibias y un lenguaje claro—sin snobismo, solo cuidado.",
@@ -148,27 +155,27 @@
     "partyDevName": "DGRcodex — Daniel García Rojas",
     "partyDevBody": "Arquitectura Next.js, i18n, UI alineada al sistema de marca, despliegue y entrega técnica concisa.",
     "briefTitle": "Brief de la clienta (NanaiCare)",
-    "briefIntro": "Cuando tengas el documento literal, pégalo o enlázalo aquí. Mientras tanto, este resumen refleja lo que estamos construyendo juntas.",
+    "briefIntro": "Brief de la clienta (Nanai Care) — integrado mayo 2026.",
     "briefBullets": [
-      "Estudio de belleza y facial wellness en Ámsterdam, Países Bajos.",
-      "Sitio público en inglés, español y neerlandés.",
-      "Experiencia mobile-first: servicios, testimonios, bienestar y teaser de tienda skincare.",
-      "Base escalable para reservas y e-commerce en fases posteriores."
+      "Marca Nanai Care · Nanai (quechua) = caricia tierna que calma dolor o pena.",
+      "Logo: rostro, mano en la cabeza, círculo; nombre dentro o debajo.",
+      "Paleta Sacred Sound · www.nanaicare.com · web cálida, no básica.",
+      "Tratamientos: corporales, faciales, paquetes estación, suscripciones 1 y 6 meses.",
+      "Políticas: 50% depósito; 24 h cancelación; reprogramar ×2 o transferir; cancelación Nanai = reagendar o devolver.",
+      "Fase 2: agenda, gráficos, pagos, ficha salud/estética online."
     ],
-    "briefPlaceholder": "Al recibir el PDF o texto completo de la clienta, sustituye este bloque o añádelo en docs/.",
+    "briefPlaceholder": "Listado completo en /treatments y en Docs/NanaiCare-Project-Charter.md.",
     "scopeTitle": "Límites de alcance",
     "scopeInTitle": "Dentro del alcance (fase 1)",
     "scopeIn": [
-      "Sitio Next.js con rutas por idioma y UI de marca compartida.",
-      "Home: hero, servicios, testimonios, franja de bienestar, teaser de tienda.",
-      "Guía de despliegue (p. ej. Vercel) y entrega del repositorio."
+      "Fase 1: historia Nanai, UI Sacred Sound, EN/ES/NL.",
+      "Catálogo completo de tratamientos y políticas en la web.",
+      "Charter con presupuesto; Vercel; GitHub."
     ],
-    "scopeOutTitle": "Fuera de alcance salvo acuerdo aparte",
+    "scopeOutTitle": "Fase 2 (brief — presupuesto aparte)",
     "scopeOut": [
-      "Pasarela de pago completa, logística y e-commerce operativo.",
-      "Apps nativas, CRM complejo o SLA de mantenimiento 24/7.",
-      "Revisión legal especializada más allá de plantillas base de privacidad.",
-      "Fotografía de estudio a medida salvo que se aporte o acuerde stock."
+      "Agenda editable, pagos, gráficos mensuales/anuales, ficha online.",
+      "E-commerce y apps nativas salvo nuevo acuerdo."
     ],
     "changeTitle": "Control de cambios",
     "changeBody": "Funciones no listadas aquí, o integraciones con nuevos proveedores, se cotizan como fase 2 o cambio por escrito. Trabajo que invalide entregables ya aprobados puede afectar plazo y coste.",
@@ -188,5 +195,100 @@
     "weekGoal": "Objetivo: saldar el pendiente de la primera mitad esta misma semana, según lo acordado verbalmente entre las partes.",
     "diagramCaption": "Vista de alcance: fase 1 frente a trabajo opcional posterior.",
     "diagramAlt": "Flujo: la fase 1 entrega sitio Next, UI de marca y deploy; la fase 2 puede incluir e-commerce, reservas y legal adicional."
+  },
+  "About": {
+    "label": "El nombre",
+    "title": "Nanai Care",
+    "meaning": "Nanai viene del quechua: caricia muy tierna para calmar dolor o pena. Ese es el corazón del estudio—contacto con intención, sin prisa.",
+    "vision": "Pediste una web amigable, intuitiva y cálida—coherente y no básica. Paleta Sacred Sound, presencia en Ámsterdam y espacio para agenda, gráficos y ficha de salud online.",
+    "logoTitle": "Dirección del logo (opciones)",
+    "logoBrief": "Rostro de mujer con mano en la cabeza, dentro de un círculo. El nombre puede ir dentro o debajo.",
+    "logoOptions": [
+      "Solo isotipo: rostro + mano en el círculo.",
+      "Horizontal: símbolo a la izquierda, «Nanai Care» a la derecha.",
+      "Apilado: símbolo arriba, nombre debajo (ideal en móvil)."
+    ],
+    "paletteTitle": "Paleta Sacred Sound",
+    "paletteSwatches": [
+      {
+        "label": "Lienzo",
+        "hex": "#FFFFFF"
+      },
+      {
+        "label": "Blush",
+        "hex": "#F1D8D8"
+      },
+      {
+        "label": "Rosa",
+        "hex": "#CBAEAE"
+      },
+      {
+        "label": "Sage",
+        "hex": "#B4AA86"
+      },
+      {
+        "label": "Tinta",
+        "hex": "#464C50"
+      }
+    ]
+  },
+  "Treatments": {
+    "meta": {
+      "title": "Tratamientos — NanaiCare",
+      "description": "Corporales, faciales, paquetes y suscripciones en Ámsterdam."
+    },
+    "label": "Tratamientos",
+    "title": "Cuerpo, rostro, paquetes y suscripciones",
+    "lead": "Todos los servicios de tu brief—corporales, faciales, estaciones y membresías—listados con claridad.",
+    "navLabel": "Categorías",
+    "backHome": "Volver al inicio",
+    "categories": {
+      "body": "Tratamientos corporales",
+      "facial": "Tratamientos faciales",
+      "packages": "Paquetes",
+      "subscriptions": "Suscripciones"
+    }
+  },
+  "Policies": {
+    "label": "Reservas y pagos",
+    "title": "Políticas que cuidan tu tiempo y el nuestro",
+    "subtitle": "Según acordaste: depósito, cancelación, reprogramación y cambios del estudio.",
+    "items": [
+      {
+        "title": "Depósito y pago anticipado",
+        "body": "50% del tratamiento se paga por adelantado como depósito. Métodos de pago integrados en fase 2."
+      },
+      {
+        "title": "Cancelación por la clienta",
+        "body": "Sin aviso con 24 h de antelación, no hay devolución del 50% del depósito. Con aviso: reprogramar hasta 2 veces o transferir la cita."
+      },
+      {
+        "title": "Cancelación por NanaiCare",
+        "body": "Si cancelamos nosotras, puedes reprogramar o recibir devolución del dinero pagado."
+      }
+    ]
+  },
+  "Roadmap": {
+    "label": "Fase 2 · herramientas",
+    "title": "Próximo: agenda, gráficos y ficha",
+    "subtitle": "Tu brief incluye agenda fácil de editar, gráficos mensuales/anuales, pagos y ficha de salud online—fase 2.",
+    "items": [
+      {
+        "title": "Agenda de reservas",
+        "body": "Calendario fácil de rellenar y corregir, enlazado al catálogo."
+      },
+      {
+        "title": "Gráficos mensuales y anuales",
+        "body": "Tratamientos por mes/año y recaudación."
+      },
+      {
+        "title": "Métodos de pago",
+        "body": "Integración alineada con el depósito del 50%."
+      },
+      {
+        "title": "Ficha de salud y estética",
+        "body": "Formulario online antes de la visita."
+      }
+    ]
   }
 }

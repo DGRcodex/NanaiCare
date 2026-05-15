@@ -20,31 +20,32 @@ Definir **alcance, límites, responsables y condiciones económicas** del proyec
 
 ## 2. Partes y roles
 
-| Rol | Quién | Responsabilidad |
-|-----|--------|-----------------|
-| Clienta / decisión de negocio | NanaiCare | Contenidos finales, tono, legal, precios, políticas, agenda, dominio y pagos acordados. |
-| Coordinación | Sambalab | Interlocución, priorización con la clienta, entregables de comunicación. |
-| Implementación técnica | DGRcodex (Daniel García Rojas) | Arquitectura Next.js, i18n, diseño UI acorde a marca, despliegue y documentación técnica básica. |
+
+| Rol                           | Quién                          | Responsabilidad                                                                                  |
+| ----------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------ |
+| Clienta / decisión de negocio | NanaiCare                      | Contenidos finales, tono, legal, precios, políticas, agenda, dominio y pagos acordados.          |
+| Coordinación                  | Sambalab                       | Interlocución, priorización con la clienta, entregables de comunicación.                         |
+| Implementación técnica        | DGRcodex (Daniel García Rojas) | Arquitectura Next.js, i18n, diseño UI acorde a marca, despliegue y documentación técnica básica. |
+
 
 ---
 
-## 3. Alcance incluido (resumen)
+## 3. Alcance incluido — Fase 1 (resumen)
 
-- Sitio **Next.js** desplegable (p. ej. **Vercel**), estructura **escalable**.
-- **Internacionalización** (EN / ES / NL) con rutas por idioma.
-- **Identidad visual** acorde a la paleta y tipografías acordadas (Oswald / Quicksand).
-- Secciones de **inicio**: hero, servicios (layout tipo bento), testimonios, bienestar, avance de **tienda** (teaser / waitlist sin pasarela de pago hasta fase posterior).
-- **Charter / presupuesto** en documentación y página interna de transparencia para el equipo (opcional en producción según decisión de la clienta).
+- Sitio **Next.js** en **Vercel**, **EN / ES / NL**, paleta **Sacred Sound**, tipografías Oswald / Quicksand.
+- Significado **Nanai**, dirección de **logo**, secciones cálidas (no plantilla básica).
+- Página **/treatments** con catálogo completo (corporales, faciales, paquetes, suscripciones).
+- **Políticas** (50 % depósito, 24 h, reagendar ×2, transferible, cancelación Nanai).
+- Inicio: testimonios, bienestar, teaser tienda; **roadmap fase 2** visible.
+- **Charter** (MD + `/charter`) con presupuesto y hitos de pago.
 
 ---
 
-## 4. Fuera de alcance (por esta fase, salvo acuerdo escrito aparte)
+## 4. Fase 2 y fuera de alcance (salvo acuerdo escrito)
 
-- Integración completa de **pasarela de pago** y **logística** de e‑commerce.
-- **CRM**, reservas en tiempo real conectadas a un calendario externo, o app nativa iOS/Android.
-- **Redacción legal** (AVG/GDPR, cookies, términos): plantillas base sí; revisión jurídica especializada no.
-- **Producción fotográfica** en estudio (se asumen imágenes provistas o stock acordado).
-- Mantenimiento **24/7** o SLA enterprise no contratado explícitamente.
+**Fase 2 (del brief de la clienta):** agenda editable, gráficos mensuales/anuales (tratamientos y recaudación), métodos de pago, ficha de salud y estética online.
+
+**No incluido salvo nuevo presupuesto:** e‑commerce operativo, apps nativas, CRM complejo, SLA 24/7, revisión legal especializada, fotografía de estudio a medida.
 
 ---
 
@@ -58,12 +59,14 @@ Definir **alcance, límites, responsables y condiciones económicas** del proyec
 
 ## 6. Presupuesto y supuestos (EUR)
 
-| Concepto | Importe |
-|----------|--------:|
-| Honorarios / desarrollo (base) | **500,00 €** |
+
+| Concepto                                                                         | Importe      |
+| -------------------------------------------------------------------------------- | ------------ |
+| Honorarios / desarrollo (base)                                                   | **500,00 €** |
 | IVA (referencia **21 %** sobre la base de 500 € en NL; **confirmar en factura**) | **105,00 €** |
-| Dominio (estimación **30 €** / **3 años**, según proveedor) | **30,00 €** |
-| **Total orientativo** | **635,00 €** |
+| Dominio (estimación **30 €** / **3 años**, según proveedor)                      | **30,00 €**  |
+| **Total orientativo**                                                            | **635,00 €** |
+
 
 **Nota:** el IVA exacto y el coste final del dominio dependen del proveedor de dominio y del tratamiento fiscal aplicable; esta tabla es la **referencia acordada** para planificación.
 
@@ -71,10 +74,12 @@ Definir **alcance, límites, responsables y condiciones económicas** del proyec
 
 ## 7. Hitos de pago (50 % + 50 %)
 
-| Hito | % del total | Importe (sobre 635 €) | Estado |
-|------|------------:|----------------------:|--------|
-| **Primera mitad** | 50 % | **317,50 €** | Parcialmente pagada |
-| **Segunda mitad** | 50 % | **317,50 €** | Pendiente al cierre de entrega acordada |
+
+| Hito              | % del total | Importe (sobre 635 €) | Estado                                  |
+| ----------------- | ----------- | --------------------- | --------------------------------------- |
+| **Primera mitad** | 50 %        | **317,50 €**          | Parcialmente pagada                     |
+| **Segunda mitad** | 50 %        | **317,50 €**          | Pendiente al cierre de entrega acordada |
+
 
 **Pagos recibidos (referencia):**
 
@@ -105,12 +110,54 @@ flowchart LR
   C -.-> F
 ```
 
+
+
 ---
 
-## 9. Brief de clienta (contenido del documento enviado)
+## 9. Brief de clienta (Nanai Care — documento integrado)
 
-> **Instrucción:** aquí debe pegarse **literal o resumido** el documento que envió la clienta (texto, bullets, tono, público, servicios concretos, restricciones).  
-> Hasta incorporar ese archivo, el sitio muestra un **resumen operativo** alineado con lo ya construido (Amsterdam, trilingüe, facial wellness, testimonios, bienestar, teaser de tienda).
+**Nombre:** Nanai Care  
+
+**Significado:** *Nanai* (quechua) — caricia muy tierna con la que se trata de calmar un dolor o una pena.
+
+**Logo:** rostro de mujer con una mano en la cabeza, encerrado en una circunferencia; el nombre puede ir dentro o debajo (tres opciones en la web: isotipo, horizontal, apilado).
+
+**Paleta:** Sacred Sound (`#FFFFFF`, `#F1D8D8`, `#CBAEAE`, `#B4AA86`, `#464C50`).
+
+**Web:** [www.nanaicare.com](http://www.nanaicare.com) — página **amigable, intuitiva, cálida, coherente; no básica**.
+
+### Fase 1 (esta entrega — sitio público)
+
+- Historia de Nanai, identidad, EN / ES / NL.
+- Pestaña / página de **tratamientos** (corporales, faciales, paquetes, suscripciones).
+- **Políticas** de reserva y pago (texto acordado).
+- Testimonios, bienestar, teaser tienda; charter y presupuesto.
+
+### Fase 2 (brief — presupuesto aparte)
+
+- Agenda fácil de rellenar y corregir.
+- Gráficos de tratamientos por **mes** y **año**, y de **recaudación**.
+- **Metodologías de pago** integradas.
+- **Ficha de salud y estética** online.
+
+### Políticas de cancelación y pago
+
+- Pago por adelantado: **50 %** del tratamiento (depósito).
+- Si no avisa con **24 h** de antelación: **no hay devolución** del 50 % del depósito.
+- Si no puede asistir: puede **reagendar hasta 2 veces** o la cita es **transferible**.
+- Cancelación por **NanaiCare:** reagendar o **devolución** del dinero.
+
+### Catálogo de tratamientos (lista de la clienta)
+
+**Corporales:** Stress Release (60/90 min), Deep Tissue (60/90), Hot Stones (60), Indian Head (50), Pregnancy (60), Lymphatic (60), Energizing Leg Ritual (45).
+
+**Faciales:** Deep Cleansing (120), Sensitive Nanai Care (60), Lymphatic Nanai Detox, Post Acne (90), Microneedling with peptides, Men's Facial, Clear Skin, Summer Glow, Nanai Signature Care, Energizing Facial.
+
+**Paquetes:** Primavera/Verano, Otoño/Invierno, Legs & Head, Legs & Face.
+
+**Suscripciones:** 1 mes, 6 meses.
+
+*(Listado completo en la ruta `/treatments` del sitio.)*
 
 ---
 
@@ -120,6 +167,9 @@ Este charter resume **límites, coste orientativo y reparto de roles**. Cualquie
 
 **Firmas (opcional en PDF impreso)**
 
-| NanaiCare (cliente) | Sambalab | DGRcodex |
-|---------------------|----------|----------|
-| __________________ | ________________ | ________________ |
+
+| NanaiCare (cliente) | Sambalab         | DGRcodex         |
+| ------------------- | ---------------- | ---------------- |
+| __________________  | ________________ | ________________ |
+
+

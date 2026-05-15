@@ -4,6 +4,9 @@
     "description": "A calm, professional studio in Amsterdam for facials, skin health guidance, and curated skincare—rooted in care."
   },
   "Nav": {
+    "treatments": "Treatments",
+    "about": "About",
+    "policies": "Policies",
     "services": "Services",
     "stories": "Stories",
     "wellness": "Wellness",
@@ -11,10 +14,10 @@
     "book": "Book a visit"
   },
   "Hero": {
-    "eyebrow": "Amsterdam · facial wellness",
-    "title": "Care that meets your skin where it is.",
-    "lead": "NanaiCare is a boutique beauty studio for facials, restorative touch, and honest guidance—designed to feel calm, clear, and close.",
-    "primaryCta": "View services",
+    "eyebrow": "Amsterdam · body & facial care · www.nanaicare.com",
+    "title": "Nanai — care that softens pain and sorrow.",
+    "lead": "Nanai (Quechua): a very tender caress used to calm pain or sorrow. NanaiCare is a warm, intuitive studio in Amsterdam for body and facial rituals—not a basic template, but a space that feels coherent, human, and close.",
+    "primaryCta": "All treatments",
     "secondaryCta": "Read client stories",
     "badge": "New · evening appointments",
     "cardEyebrow": "Ritual card",
@@ -118,6 +121,86 @@
       }
     ]
   },
+  "About": {
+    "label": "The name",
+    "title": "Nanai Care",
+    "meaning": "Nanai comes from Quechua: a very tender caress with which we try to calm pain or sorrow. That is the heart of this studio—touch with intention, never rush.",
+    "vision": "You asked for a friendly, intuitive, warm website—coherent and far from basic. Sacred Sound palette, Amsterdam presence, and room to grow into booking, charts, and online health forms.",
+    "logoTitle": "Logo direction (options)",
+    "logoBrief": "A woman’s face with a hand on her head, enclosed in a circle. The name can sit inside the mark or below it.",
+    "logoOptions": [
+      "Mark only: face + hand inside the circle (icon for app and favicon).",
+      "Horizontal: symbol left, “Nanai Care” to the right.",
+      "Stacked: symbol on top, name underneath (best for mobile header)."
+    ],
+    "paletteTitle": "Sacred Sound palette",
+    "paletteSwatches": [
+      { "label": "Canvas", "hex": "#FFFFFF" },
+      { "label": "Blush", "hex": "#F1D8D8" },
+      { "label": "Rose", "hex": "#CBAEAE" },
+      { "label": "Sage", "hex": "#B4AA86" },
+      { "label": "Ink", "hex": "#464C50" }
+    ]
+  },
+  "Treatments": {
+    "meta": {
+      "title": "Treatments — NanaiCare",
+      "description": "Body, facial, seasonal packages and subscriptions at NanaiCare Amsterdam."
+    },
+    "label": "Treatments",
+    "title": "Body, face, packages & subscriptions",
+    "lead": "Every service from your brief—corporate, facial, seasonal pairs, and memberships—listed clearly so clients can choose with calm.",
+    "navLabel": "Treatment categories",
+    "backHome": "Back to home",
+    "categories": {
+      "body": "Body treatments",
+      "facial": "Facial treatments",
+      "packages": "Packages",
+      "subscriptions": "Subscriptions"
+    }
+  },
+  "Policies": {
+    "label": "Booking & payments",
+    "title": "Policies that protect your time and ours",
+    "subtitle": "As agreed with NanaiCare: deposits, rescheduling, cancellations, and studio-led changes.",
+    "items": [
+      {
+        "title": "Deposit & advance payment",
+        "body": "50% of the treatment is paid in advance as a deposit. Payment methods will be integrated in phase 2 (online booking & checkout)."
+      },
+      {
+        "title": "Cancellation by the client",
+        "body": "If you do not notify at least 24 hours in advance, the 50% deposit is non-refundable. With notice, you may reschedule up to two times or transfer the appointment to another person."
+      },
+      {
+        "title": "Cancellation by NanaiCare",
+        "body": "If we must cancel, you may reschedule or receive a full refund of monies paid."
+      }
+    ]
+  },
+  "Roadmap": {
+    "label": "Phase 2 · studio tools",
+    "title": "Next: agenda, charts & health form",
+    "subtitle": "Your brief also includes operational features—we scope them as phase 2 so the public site can launch first, beautifully.",
+    "items": [
+      {
+        "title": "Easy booking agenda",
+        "body": "Calendar that is simple to fill in and correct, with your treatment catalogue linked."
+      },
+      {
+        "title": "Monthly & annual charts",
+        "body": "Graphs of treatments performed per month and year, plus revenue tracking."
+      },
+      {
+        "title": "Payment methods",
+        "body": "Integrated payment options aligned with the 50% deposit workflow."
+      },
+      {
+        "title": "Online health & aesthetics form",
+        "body": "Client intake (ficha de salud y estética) available before the visit."
+      }
+    ]
+  },
   "Footer": {
     "tagline": "NanaiCare — facial wellness & boutique beauty in Amsterdam.",
     "address": "Amsterdam, Netherlands",
@@ -148,27 +231,29 @@
     "partyDevName": "DGRcodex — Daniel García Rojas",
     "partyDevBody": "Next.js architecture, i18n, UI aligned with the brand system, deployment, and concise technical handover.",
     "briefTitle": "Client brief (from NanaiCare)",
-    "briefIntro": "The literal brief document should be pasted below when you have it. Until then, this summary reflects what we are building together.",
+    "briefIntro": "Client brief (Nanai Care) — integrated May 2026.",
     "briefBullets": [
-      "Beauty and facial wellness studio in Amsterdam, Netherlands.",
-      "Public site in English, Spanish, and Dutch.",
-      "Mobile-first experience: services, testimonials, wellness recommendations, and a skincare shop teaser.",
-      "Scalable foundation for later booking and e-commerce phases."
+      "Brand: Nanai Care · Quechua Nanai = tender caress to calm pain or sorrow.",
+      "Logo: woman’s face, hand on head, inside a circle; name inside or below (three layout options on site).",
+      "Palette: Sacred Sound · domain www.nanaicare.com · warm, intuitive, non-basic site.",
+      "Treatments tabs: body, facial, packages (Spring/Summer, Autumn/Winter, Legs & Head, Legs & Face), subscriptions (1 & 6 months).",
+      "Policies: 50% deposit upfront; 24h cancellation rule; reschedule ×2 or transfer; Nanai cancellation = reschedule or refund.",
+      "Phase 2: booking agenda, monthly/annual treatment & revenue charts, payment methods, online health/aesthetics form."
     ],
-    "briefPlaceholder": "When you receive the full text or PDF from the client, replace this block with the exact wording or attach it in docs/.",
+    "briefPlaceholder": "Full treatment names and durations are listed on the Treatments page and in docs/NanaiCare-Project-Charter.md.",
     "scopeTitle": "Scope boundaries",
     "scopeInTitle": "In scope (phase 1)",
     "scopeIn": [
-      "Next.js site with locale routing and shared brand UI.",
-      "Home narrative: hero, services, testimonials, wellness strip, shop teaser.",
-      "Deployment guidance (e.g. Vercel) and repository handover."
+      "Phase 1 live site: brand story (Nanai meaning), Sacred Sound UI, EN/ES/NL.",
+      "Full treatment catalogue page (body, facial, packages, subscriptions) from client list.",
+      "Policies section (deposit, 24h cancellation, reschedule/transfer, studio cancellation).",
+      "Charter with budget; deploy on Vercel; GitHub handover."
     ],
-    "scopeOutTitle": "Out of scope unless separately agreed",
+    "scopeOutTitle": "Phase 2 (client brief — separate quote)",
     "scopeOut": [
-      "Full payment gateway, shipping, and operational e-commerce.",
-      "Native mobile apps, complex CRM, or 24/7 maintenance SLA.",
-      "Specialist legal review beyond baseline privacy copy placeholders.",
-      "Custom studio photography unless provided or sourced as agreed."
+      "Booking agenda with easy edit, payment integrations, monthly/annual charts (treatments & revenue).",
+      "Online health & aesthetics intake form.",
+      "Full e-commerce shop and native apps unless newly scoped."
     ],
     "changeTitle": "Change control",
     "changeBody": "Features not listed here, or integrations that require new vendors, are quoted as phase 2 or a written change request. Work that invalidates already approved deliverables may affect timeline and cost.",
