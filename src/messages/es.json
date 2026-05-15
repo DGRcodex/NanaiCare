@@ -208,7 +208,7 @@
       "Horizontal: símbolo a la izquierda, «Nanai Care» a la derecha.",
       "Apilado: símbolo arriba, nombre debajo (ideal en móvil)."
     ],
-    "paletteTitle": "Paleta Sacred Sound",
+    "paletteTitle": "Seis colores por tema (cambia con el botón inferior)",
     "paletteSwatches": [
       {
         "label": "Lienzo",
@@ -247,7 +247,8 @@
       "facial": "Tratamientos faciales",
       "packages": "Paquetes",
       "subscriptions": "Suscripciones"
-    }
+    },
+    "viewAll": "Ver menú completo"
   },
   "Policies": {
     "label": "Reservas y pagos",
@@ -290,5 +291,32 @@
         "body": "Formulario online antes de la visita."
       }
     ]
+  },
+  "Themes": {
+    "toggleLabel": "Estilo visual",
+    "panelLabel": "Elige paleta y tipografía",
+    "panelIntro": "Seis direcciones para NanaiCare — compara calidez, contraste y fuentes. Nada es definitivo hasta que elijan.",
+    "sixColorsTitle": "Seis colores",
+    "sixColorsHint": "Usa el botón inferior para cambiar de tema; las muestras se actualizan al instante.",
+    "sacredSound": "Sacred Sound",
+    "sacredSoundHint": "Base acordada · blush, sage, tinta serena",
+    "sunset": "Atardecer",
+    "sunsetHint": "Inspiración Pinterest · rosa, malva, navy",
+    "twilight": "Crepúsculo",
+    "twilightHint": "Luces al atardecer · dorado, seafoam",
+    "amma": "AMMA editorial",
+    "ammaHint": "Moodboard terracota · serif elegante",
+    "nanaiRitual": "Ritual Nanai",
+    "nanaiRitualHint": "Ternura quechua · acento dorado",
+    "canalCalm": "Calma del canal",
+    "canalCalmHint": "Bruma de Ámsterdam · verdes apagados",
+    "roles": {
+      "canvas": "Lienzo",
+      "blush": "Blush",
+      "rose": "Rosa",
+      "sage": "Sage",
+      "ink": "Tinta",
+      "accent": "Acento"
+    }
   }
 }

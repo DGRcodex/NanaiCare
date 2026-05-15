@@ -6,9 +6,12 @@
   --nanai-rose: #cbaeae;
   --nanai-sage: #b4aa86;
   --nanai-ink: #464c50;
+  --nanai-accent: #8f8468;
   --nanai-ink-soft: color-mix(in oklab, var(--nanai-ink) 72%, white);
   --nanai-frost: color-mix(in oklab, white 78%, var(--nanai-blush));
   --nanai-shadow: 0 24px 80px color-mix(in oklab, var(--nanai-ink) 12%, transparent);
+  --font-theme-heading: var(--font-oswald), system-ui, sans-serif;
+  --font-theme-body: var(--font-quicksand), system-ui, sans-serif;
 }
 
 @theme inline {
@@ -17,10 +20,11 @@
   --color-nanai-rose: var(--nanai-rose);
   --color-nanai-sage: var(--nanai-sage);
   --color-nanai-ink: var(--nanai-ink);
+  --color-nanai-accent: var(--nanai-accent);
   --color-nanai-ink-soft: var(--nanai-ink-soft);
   --color-nanai-frost: var(--nanai-frost);
-  --font-heading: var(--font-oswald), system-ui, sans-serif;
-  --font-body: var(--font-quicksand), system-ui, sans-serif;
+  --font-heading: var(--font-theme-heading);
+  --font-body: var(--font-theme-body);
   --shadow-nanai-soft: var(--nanai-shadow);
 }
 
@@ -28,7 +32,7 @@
   body {
     background-color: var(--nanai-canvas);
     color: var(--nanai-ink);
-    font-family: var(--font-body), system-ui, sans-serif;
+    font-family: var(--font-theme-body);
   }
 
   ::selection {
@@ -38,18 +42,18 @@
 }
 
 @utility font-heading {
-  font-family: var(--font-heading);
+  font-family: var(--font-theme-heading);
 }
 
 @utility font-body {
-  font-family: var(--font-body);
+  font-family: var(--font-theme-body);
 }
 
 @utility mesh-bg {
   background:
     radial-gradient(120% 90% at 100% -10%, color-mix(in oklab, var(--nanai-blush) 88%, white), transparent 52%),
     radial-gradient(70% 55% at 0% 105%, color-mix(in oklab, var(--nanai-sage) 35%, transparent), transparent 58%),
-    radial-gradient(50% 40% at 85% 75%, color-mix(in oklab, var(--nanai-rose) 22%, transparent), transparent 60%),
+    radial-gradient(50% 40% at 85% 75%, color-mix(in oklab, var(--nanai-accent) 28%, transparent), transparent 60%),
     var(--nanai-canvas);
 }
 

@@ -208,7 +208,7 @@
       "Horizontaal: symbool links, naam rechts.",
       "Gestapeld: symbool boven, naam onder."
     ],
-    "paletteTitle": "Sacred Sound-palet",
+    "paletteTitle": "Zes kleuren per thema (wissel via de knop onderaan)",
     "paletteSwatches": [
       {
         "label": "Canvas",
@@ -247,7 +247,8 @@
       "facial": "Gezichtsbehandelingen",
       "packages": "Pakketten",
       "subscriptions": "Abonnementen"
-    }
+    },
+    "viewAll": "Volledig menu"
   },
   "Policies": {
     "label": "Boeken & betaling",
@@ -290,5 +291,32 @@
         "body": "Online intake vóór het bezoek."
       }
     ]
+  },
+  "Themes": {
+    "toggleLabel": "Visuele stijl",
+    "panelLabel": "Kies palet en typografie",
+    "panelIntro": "Zes richtingen voor NanaiCare — vergelijk warmte, contrast en lettertypen.",
+    "sixColorsTitle": "Zes kleuren",
+    "sixColorsHint": "Gebruik de knop onderaan om van thema te wisselen.",
+    "sacredSound": "Sacred Sound",
+    "sacredSoundHint": "Afgesproken basis · blush, sage, rustige inkt",
+    "sunset": "Zonsondergang",
+    "sunsetHint": "Pinterest · roos, mauve, diep navy",
+    "twilight": "Schemering",
+    "twilightHint": "Lichtsnoer · goud, seafoam",
+    "amma": "AMMA editorial",
+    "ammaHint": "Terracotta moodboard · serif luxe",
+    "nanaiRitual": "Nanai ritueel",
+    "nanaiRitualHint": "Quechua tederheid · gouden accent",
+    "canalCalm": "Grachtenrust",
+    "canalCalmHint": "Amsterdam mist · gedempt groen",
+    "roles": {
+      "canvas": "Canvas",
+      "blush": "Blush",
+      "rose": "Roos",
+      "sage": "Sage",
+      "ink": "Inkt",
+      "accent": "Accent"
+    }
   }
 }

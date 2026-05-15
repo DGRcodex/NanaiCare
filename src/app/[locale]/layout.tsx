@@ -4,6 +4,8 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { SiteFooter } from "@/components/shell/SiteFooter";
 import { SiteHeader } from "@/components/shell/SiteHeader";
 import { HtmlLang } from "@/components/shell/HtmlLang";
+import { ThemeProvider } from "@/components/shell/ThemeProvider";
+import { ThemeSwitcher } from "@/components/shell/ThemeSwitcher";
 import { routing } from "@/i18n/routing";
 
 type Props = {
@@ -40,11 +42,14 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <NextIntlClientProvider messages={messages}>
       <HtmlLang locale={locale} />
-      <div className="mesh-bg nc-grain relative flex min-h-dvh flex-col">
-        <SiteHeader locale={locale} />
-        <main className="relative flex-1">{children}</main>
-        <SiteFooter />
-      </div>
+      <ThemeProvider>
+        <div className="mesh-bg nc-grain relative flex min-h-dvh flex-col">
+          <SiteHeader locale={locale} />
+          <main className="relative flex-1 pb-32">{children}</main>
+          <SiteFooter />
+          <ThemeSwitcher />
+        </div>
+      </ThemeProvider>
     </NextIntlClientProvider>
   );
 }

@@ -3,7 +3,7 @@ import { AboutNanai } from "@/components/home/AboutNanai";
 import { Hero } from "@/components/home/Hero";
 import { Policies } from "@/components/home/Policies";
 import { RoadmapPhase2 } from "@/components/home/RoadmapPhase2";
-import { ServicesBento } from "@/components/home/ServicesBento";
+import { TreatmentsPreview } from "@/components/home/TreatmentsPreview";
 import { ShopTeaser } from "@/components/home/ShopTeaser";
 import { Testimonials } from "@/components/home/Testimonials";
 import { WellnessStrip } from "@/components/home/WellnessStrip";
@@ -20,7 +20,7 @@ export default async function HomePage({ params }: Props) {
     <>
       <Hero />
       <AboutNanai />
-      <ServicesBento />
+      <TreatmentsPreview />
       <Policies />
       <Testimonials />
       <WellnessStrip />

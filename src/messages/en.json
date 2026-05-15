@@ -133,7 +133,7 @@
       "Horizontal: symbol left, “Nanai Care” to the right.",
       "Stacked: symbol on top, name underneath (best for mobile header)."
     ],
-    "paletteTitle": "Sacred Sound palette",
+    "paletteTitle": "Six colors per theme — switch with the button below",
     "paletteSwatches": [
       { "label": "Canvas", "hex": "#FFFFFF" },
       { "label": "Blush", "hex": "#F1D8D8" },
@@ -151,6 +151,7 @@
     "title": "Body, face, packages & subscriptions",
     "lead": "Every service from your brief—corporate, facial, seasonal pairs, and memberships—listed clearly so clients can choose with calm.",
     "navLabel": "Treatment categories",
+    "viewAll": "Open full menu",
     "backHome": "Back to home",
     "categories": {
       "body": "Body treatments",
@@ -200,6 +201,33 @@
         "body": "Client intake (ficha de salud y estética) available before the visit."
       }
     ]
+  },
+  "Themes": {
+    "toggleLabel": "Visual style",
+    "panelLabel": "Choose a palette & typography",
+    "panelIntro": "Six directions for NanaiCare — compare warmth, contrast, and fonts. Nothing is final until you choose.",
+    "sixColorsTitle": "Six colors",
+    "sixColorsHint": "Use the button below to switch themes; swatches update live.",
+    "sacredSound": "Sacred Sound",
+    "sacredSoundHint": "Agreed base · soft blush, sage, calm ink",
+    "sunset": "Sunset",
+    "sunsetHint": "Pinterest dusk · rose, mauve, deep navy",
+    "twilight": "Twilight",
+    "twilightHint": "String lights · gold, seafoam, mauve",
+    "amma": "AMMA editorial",
+    "ammaHint": "Terracotta moodboard · serif luxury",
+    "nanaiRitual": "Nanai ritual",
+    "nanaiRitualHint": "Quechua tenderness + golden accent",
+    "canalCalm": "Canal calm",
+    "canalCalmHint": "Amsterdam mist · muted greens & slate",
+    "roles": {
+      "canvas": "Canvas",
+      "blush": "Blush",
+      "rose": "Rose",
+      "sage": "Sage",
+      "ink": "Ink",
+      "accent": "Accent"
+    }
   },
   "Footer": {
     "tagline": "NanaiCare — facial wellness & boutique beauty in Amsterdam.",
