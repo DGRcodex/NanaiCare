@@ -2,20 +2,26 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
-const BASE_EUR = 500;
-const VAT_EUR = 105;
-const DOMAIN_EUR = 30;
-const TOTAL_EUR = BASE_EUR + VAT_EUR + DOMAIN_EUR;
-const HALF_EUR = TOTAL_EUR / 2;
-const PAID_EUR = 130;
-const DUE_FIRST_HALF_EUR = HALF_EUR - PAID_EUR;
+const BASE_CLP = 500;
+const VAT_RATE = 0.19;
+const VAT_CLP = Math.round(BASE_CLP * VAT_RATE);
+const DOMAIN_CLP = 30;
+const TOTAL_CLP = BASE_CLP + VAT_CLP + DOMAIN_CLP;
+const HALF_CLP = TOTAL_CLP / 2;
+const PAID_CLP = 130;
+const DUE_FIRST_HALF_CLP = HALF_CLP - PAID_CLP;
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
 function money(locale: string, value: number) {
-  return new Intl.NumberFormat(locale, { style: "currency", currency: "EUR" }).format(value);
+  const formatLocale = locale === "es" ? "es-CL" : locale === "nl" ? "nl-NL" : "en-CL";
+  return new Intl.NumberFormat(formatLocale, {
+    style: "currency",
+    currency: "CLP",
+    maximumFractionDigits: value % 1 === 0 ? 0 : 2,
+  }).format(value);
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -141,19 +147,19 @@ export default async function CharterPage({ params }: Props) {
           <tbody className="divide-y divide-nanai-rose/20">
             <tr>
               <th className="px-6 py-3 font-medium text-nanai-ink">{t("rowBase")}</th>
-              <td className="px-6 py-3 text-right font-semibold text-nanai-ink">{money(locale, BASE_EUR)}</td>
+              <td className="px-6 py-3 text-right font-semibold text-nanai-ink">{money(locale, BASE_CLP)}</td>
             </tr>
             <tr>
               <th className="px-6 py-3 font-medium text-nanai-ink">{t("rowVat")}</th>
-              <td className="px-6 py-3 text-right font-semibold text-nanai-ink">{money(locale, VAT_EUR)}</td>
+              <td className="px-6 py-3 text-right font-semibold text-nanai-ink">{money(locale, VAT_CLP)}</td>
             </tr>
             <tr>
               <th className="px-6 py-3 font-medium text-nanai-ink">{t("rowDomain")}</th>
-              <td className="px-6 py-3 text-right font-semibold text-nanai-ink">{money(locale, DOMAIN_EUR)}</td>
+              <td className="px-6 py-3 text-right font-semibold text-nanai-ink">{money(locale, DOMAIN_CLP)}</td>
             </tr>
             <tr className="bg-nanai-ink text-white">
               <th className="px-6 py-4 font-heading text-sm tracking-wide">{t("rowTotal")}</th>
-              <td className="px-6 py-4 text-right font-heading text-base">{money(locale, TOTAL_EUR)}</td>
+              <td className="px-6 py-4 text-right font-heading text-base">{money(locale, TOTAL_CLP)}</td>
             </tr>
           </tbody>
         </table>
@@ -165,19 +171,19 @@ export default async function CharterPage({ params }: Props) {
         <dl className="grid gap-3 text-sm sm:grid-cols-2">
           <div className="rounded-xl bg-white/10 px-4 py-3 ring-1 ring-white/15">
             <dt className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/55">{t("milestoneFirst")}</dt>
-            <dd className="mt-1 font-heading text-lg">{money(locale, HALF_EUR)}</dd>
+            <dd className="mt-1 font-heading text-lg">{money(locale, HALF_CLP)}</dd>
           </div>
           <div className="rounded-xl bg-white/10 px-4 py-3 ring-1 ring-white/15">
             <dt className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/55">{t("milestoneSecond")}</dt>
-            <dd className="mt-1 font-heading text-lg">{money(locale, HALF_EUR)}</dd>
+            <dd className="mt-1 font-heading text-lg">{money(locale, HALF_CLP)}</dd>
           </div>
           <div className="rounded-xl bg-nanai-blush/90 px-4 py-3 text-nanai-ink ring-1 ring-white/20">
             <dt className="text-[10px] font-semibold uppercase tracking-[0.2em] text-nanai-ink/60">{t("paidToDate")}</dt>
-            <dd className="mt-1 font-heading text-lg">{money(locale, PAID_EUR)}</dd>
+            <dd className="mt-1 font-heading text-lg">{money(locale, PAID_CLP)}</dd>
           </div>
           <div className="rounded-xl bg-white px-4 py-3 text-nanai-ink ring-1 ring-white/30">
             <dt className="text-[10px] font-semibold uppercase tracking-[0.2em] text-nanai-ink/60">{t("dueFirstHalf")}</dt>
-            <dd className="mt-1 font-heading text-lg">{money(locale, DUE_FIRST_HALF_EUR)}</dd>
+            <dd className="mt-1 font-heading text-lg">{money(locale, DUE_FIRST_HALF_CLP)}</dd>
           </div>
         </dl>
         <p className="text-xs leading-relaxed text-white/65">{t("dueSecondHalf")}</p>

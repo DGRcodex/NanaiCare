@@ -57,34 +57,34 @@ Definir **alcance, límites, responsables y condiciones económicas** del proyec
 
 ---
 
-## 6. Presupuesto y supuestos (EUR)
+## 6. Presupuesto y supuestos (CLP — pesos chilenos)
 
 
-| Concepto                                                                         | Importe      |
-| -------------------------------------------------------------------------------- | ------------ |
-| Honorarios / desarrollo (base)                                                   | **500,00 €** |
-| IVA (referencia **21 %** sobre la base de 500 € en NL; **confirmar en factura**) | **105,00 €** |
-| Dominio (estimación **30 €** / **3 años**, según proveedor)                      | **30,00 €**  |
-| **Total orientativo**                                                            | **635,00 €** |
+| Concepto                                                                         | Importe        |
+| -------------------------------------------------------------------------------- | -------------- |
+| Honorarios / desarrollo (base)                                                   | **$500**       |
+| IVA (**19 %** sobre la base de $500; **confirmar en factura**)                   | **$95**        |
+| Dominio (estimación **$30** / **3 años**, según proveedor)                       | **$30**        |
+| **Total orientativo**                                                            | **$625**       |
 
 
-**Nota:** el IVA exacto y el coste final del dominio dependen del proveedor de dominio y del tratamiento fiscal aplicable; esta tabla es la **referencia acordada** para planificación.
+**Nota:** montos en **pesos chilenos (CLP)**. El IVA (19 %) y el coste final del dominio dependen del proveedor y del tratamiento fiscal aplicable; esta tabla es la **referencia acordada** para planificación.
 
 ---
 
 ## 7. Hitos de pago (50 % + 50 %)
 
 
-| Hito              | % del total | Importe (sobre 635 €) | Estado                                  |
-| ----------------- | ----------- | --------------------- | --------------------------------------- |
-| **Primera mitad** | 50 %        | **317,50 €**          | Parcialmente pagada                     |
-| **Segunda mitad** | 50 %        | **317,50 €**          | Pendiente al cierre de entrega acordada |
+| Hito              | % del total | Importe (sobre $625) | Estado                                  |
+| ----------------- | ----------- | -------------------- | --------------------------------------- |
+| **Primera mitad** | 50 %        | **$312,50**          | Parcialmente pagada                     |
+| **Segunda mitad** | 50 %        | **$312,50**          | Pendiente al cierre de entrega acordada |
 
 
 **Pagos recibidos (referencia):**
 
-- A la fecha de redacción: **130,00 €** abonados.
-- **Pendiente para completar la primera mitad (317,50 €):** **187,50 €** — objetivo: **abono en la misma semana** según acuerdo verbal entre las partes.
+- A la fecha de redacción: **$130** abonados.
+- **Pendiente para completar la primera mitad ($312,50):** **$182,50** — objetivo: **abono en la misma semana** según acuerdo verbal entre las partes.
 
 **Segunda mitad:** quedará **pendiente de facturación / pago** según el calendario acordado al validar el entregable de primera fase.
 
