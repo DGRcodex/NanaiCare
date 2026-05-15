@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import { Mark } from "@/components/brand/Mark";
-import { ThemeColorLegend } from "@/components/shell/ThemeColorLegend";
 
 export async function AboutNanai() {
   const t = await getTranslations("About");
@@ -33,18 +32,9 @@ export async function AboutNanai() {
             <p className="mt-2 text-sm text-nanai-ink-soft">{t("logoBrief")}</p>
             <ul className="mt-3 space-y-2 text-sm text-nanai-ink">
               {logoOptions.map((opt) => (
-                <li key={opt} className="flex gap-2">
-                  <span className="text-nanai-sage" aria-hidden>
-                    ◦
-                  </span>
-                  {opt}
-                </li>
+                <li key={opt}>{opt}</li>
               ))}
             </ul>
-          </div>
-          <div className="rounded-[1.25rem] border border-nanai-rose/30 bg-white/80 p-5 shadow-sm backdrop-blur">
-            <p className="mb-3 text-sm text-nanai-ink-soft">{t("paletteTitle")}</p>
-            <ThemeColorLegend />
           </div>
         </div>
       </div>

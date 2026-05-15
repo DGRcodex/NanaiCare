@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "NanaiCare — Belleza y cuidado facial en Ámsterdam",
-    "description": "Un estudio tranquilo y profesional en Ámsterdam para faciales, guía de salud de la piel y skincare curada—con raíz en el cuidado."
+    "title": "NanaiCare, Belleza y cuidado facial en Ámsterdam",
+    "description": "Un estudio tranquilo y profesional en Ámsterdam para faciales, guía de salud de la piel y skincare curada, con raíz en el cuidado."
   },
   "Nav": {
     "services": "Servicios",
@@ -15,8 +15,8 @@
   },
   "Hero": {
     "eyebrow": "Ámsterdam · cuerpo y rostro · www.nanaicare.com",
-    "title": "Nanai — caricia que calma el dolor y la pena.",
-    "lead": "Nanai (quechua): caricia muy tierna con la que se trata de calmar un dolor o una pena. NanaiCare es un estudio cálido e intuitivo en Ámsterdam—coherente, cercano y lejos de lo básico.",
+    "title": "Nanai, caricia que calma el dolor y la pena.",
+    "lead": "Nanai (quechua): caricia muy tierna con la que se trata de calmar un dolor o una pena. NanaiCare es un estudio cálido e intuitivo en Ámsterdam, coherente, cercano y lejos de lo básico.",
     "primaryCta": "Todos los tratamientos",
     "secondaryCta": "Leer experiencias",
     "badge": "Nuevo · citas en la tarde",
@@ -36,7 +36,7 @@
     ],
     "panel": {
       "title": "Ritmo del estudio",
-      "body": "Música suave, toallas tibias y un lenguaje claro—sin snobismo, solo cuidado.",
+      "body": "Música suave, toallas tibias y un lenguaje claro, sin snobismo, solo cuidado.",
       "where": "Ámsterdam",
       "when": "Con cita"
     },
@@ -59,7 +59,7 @@
       {
         "tag": "Educación",
         "title": "Consulta de piel",
-        "description": "Una conversación guiada con rutina en casa práctica—menos productos, mejores decisiones."
+        "description": "Una conversación guiada con rutina en casa práctica, menos productos, mejores decisiones."
       }
     ]
   },
@@ -87,11 +87,11 @@
   "Wellness": {
     "label": "Notas de cuidado",
     "title": "Pequeñas recomendaciones con gran cariño.",
-    "subtitle": "Tips breves y sensatos que sí puedes sostener—hidratación, sueño, sol y cambios de estación.",
+    "subtitle": "Tips breves y sensatos que sí puedes sostener, hidratación, sueño, sol y cambios de estación.",
     "cards": [
       {
         "title": "Luz matutina, piel más serena",
-        "body": "Diez minutos de luz natural temprana apoya el ritmo—y a menudo ayuda a pieles reactivas a mantenerse más calmadas."
+        "body": "Diez minutos de luz natural temprana apoya el ritmo, y a menudo ayuda a pieles reactivas a mantenerse más calmadas."
       },
       {
         "title": "Menos fricción, más reparación",
@@ -99,7 +99,7 @@
       },
       {
         "title": "Chequeo de barrera por estación",
-        "body": "Cuando el frío aprieta, cambia limpiadores agresivos por texturas en crema—barrera primero, activos después."
+        "body": "Cuando el frío aprieta, cambia limpiadores agresivos por texturas en crema, barrera primero, activos después."
       }
     ],
     "cta": "Explorar diario wellness"
@@ -107,7 +107,7 @@
   "Shop": {
     "label": "Skincare",
     "title": "Productos curados para el cuidado en casa.",
-    "subtitle": "Una edición reducida de limpiadores, séruns y cremas de barrera que confiamos—para el clima real de Ámsterdam y vidas reales.",
+    "subtitle": "Una edición reducida de limpiadores, séruns y cremas de barrera que confiamos, para el clima real de Ámsterdam y vidas reales.",
     "coming": "Boutique online muy pronto",
     "cta": "Lista de espera",
     "products": [
@@ -126,7 +126,7 @@
     ]
   },
   "Footer": {
-    "tagline": "NanaiCare — facial wellness y belleza boutique en Ámsterdam.",
+    "tagline": "NanaiCare, facial wellness y belleza boutique en Ámsterdam.",
     "address": "Ámsterdam, Países Bajos",
     "rights": "Todos los derechos reservados.",
     "contact": "hello@nanaicare.example",
@@ -135,7 +135,7 @@
   },
   "Charter": {
     "meta": {
-      "title": "Carta del proyecto — NanaiCare",
+      "title": "Carta del proyecto, NanaiCare",
       "description": "Alcance, roles y referencia de presupuesto acordada para el proyecto digital NanaiCare (Sambalab · DGRcodex)."
     },
     "eyebrow": "Referencia interna · Sambalab × DGRcodex",
@@ -152,10 +152,10 @@
     "partyAgencyName": "Sambalab",
     "partyAgencyBody": "Interlocución con la clienta, priorización y comunicación de entregables.",
     "partyDevLabel": "Desarrollo",
-    "partyDevName": "DGRcodex — Daniel García Rojas",
+    "partyDevName": "DGRcodex, Daniel García Rojas",
     "partyDevBody": "Arquitectura Next.js, i18n, UI alineada al sistema de marca, despliegue y entrega técnica concisa.",
     "briefTitle": "Brief de la clienta (NanaiCare)",
-    "briefIntro": "Brief de la clienta (Nanai Care) — integrado mayo 2026.",
+    "briefIntro": "Brief de la clienta (Nanai Care), integrado mayo 2026.",
     "briefBullets": [
       "Marca Nanai Care · Nanai (quechua) = caricia tierna que calma dolor o pena.",
       "Logo: rostro, mano en la cabeza, círculo; nombre dentro o debajo.",
@@ -172,16 +172,16 @@
       "Catálogo completo de tratamientos y políticas en la web.",
       "Charter con presupuesto; Vercel; GitHub."
     ],
-    "scopeOutTitle": "Fase 2 (brief — presupuesto aparte)",
+    "scopeOutTitle": "Fase 2 (brief, presupuesto aparte)",
     "scopeOut": [
       "Agenda editable, pagos, gráficos mensuales/anuales, ficha online.",
       "E-commerce y apps nativas salvo nuevo acuerdo."
     ],
     "changeTitle": "Control de cambios",
     "changeBody": "Funciones no listadas aquí, o integraciones con nuevos proveedores, se cotizan como fase 2 o cambio por escrito. Trabajo que invalide entregables ya aprobados puede afectar plazo y coste.",
-    "budgetTitle": "Referencia de presupuesto (CLP — pesos chilenos)",
+    "budgetTitle": "Referencia de presupuesto (CLP, pesos chilenos)",
     "rowBase": "Base de desarrollo",
-    "rowVat": "IVA (19% sobre la base — confirmar en factura)",
+    "rowVat": "IVA (19% sobre la base, confirmar en factura)",
     "rowDomain": "Dominio (estimación · 3 años)",
     "rowTotal": "Total orientativo",
     "budgetNote": "Montos en pesos chilenos (CLP). IVA 19% y dominio según proveedor; la factura emitida es la referencia vinculante.",
@@ -199,8 +199,8 @@
   "About": {
     "label": "El nombre",
     "title": "Nanai Care",
-    "meaning": "Nanai viene del quechua: caricia muy tierna para calmar dolor o pena. Ese es el corazón del estudio—contacto con intención, sin prisa.",
-    "vision": "Pediste una web amigable, intuitiva y cálida—coherente y no básica. Paleta Sacred Sound, presencia en Ámsterdam y espacio para agenda, gráficos y ficha de salud online.",
+    "meaning": "Nanai viene del quechua: caricia muy tierna para calmar dolor o pena. Ese es el corazón del estudio, contacto con intención, sin prisa.",
+    "vision": "Pediste una web amigable, intuitiva y cálida, coherente y no básica. Paleta Sacred Sound, presencia en Ámsterdam y espacio para agenda, gráficos y ficha de salud online.",
     "logoTitle": "Dirección del logo (opciones)",
     "logoBrief": "Rostro de mujer con mano en la cabeza, dentro de un círculo. El nombre puede ir dentro o debajo.",
     "logoOptions": [
@@ -234,12 +234,12 @@
   },
   "Treatments": {
     "meta": {
-      "title": "Tratamientos — NanaiCare",
+      "title": "Tratamientos, NanaiCare",
       "description": "Corporales, faciales, paquetes y suscripciones en Ámsterdam."
     },
     "label": "Tratamientos",
     "title": "Cuerpo, rostro, paquetes y suscripciones",
-    "lead": "Todos los servicios de tu brief—corporales, faciales, estaciones y membresías—listados con claridad.",
+    "lead": "Todos los servicios de tu brief, corporales, faciales, estaciones y membresías, listados con claridad.",
     "navLabel": "Categorías",
     "backHome": "Volver al inicio",
     "categories": {
@@ -272,7 +272,7 @@
   "Roadmap": {
     "label": "Fase 2 · herramientas",
     "title": "Próximo: agenda, gráficos y ficha",
-    "subtitle": "Tu brief incluye agenda fácil de editar, gráficos mensuales/anuales, pagos y ficha de salud online—fase 2.",
+    "subtitle": "Tu brief incluye agenda fácil de editar, gráficos mensuales/anuales, pagos y ficha de salud online, fase 2.",
     "items": [
       {
         "title": "Agenda de reservas",
@@ -295,7 +295,13 @@
   "Themes": {
     "toggleLabel": "Estilo visual",
     "panelLabel": "Elige paleta y tipografía",
-    "panelIntro": "Seis direcciones para NanaiCare — compara calidez, contraste y fuentes. Nada es definitivo hasta que elijan.",
+    "panelIntro": "Seis direcciones para NanaiCare. Compara calidez, contraste y fuentes. Nada es definitivo hasta que elijan.",
+    "intensityLabel": "Intensidad",
+    "contrastLabel": "Contraste",
+    "orderLabel": "Orden de colores",
+    "orderReset": "Reset",
+    "orderHint": "Arrastra para reordenar (mouse o dedo).",
+    "saveLabel": "Guardar configuración (descargar .txt)",
     "sixColorsTitle": "Seis colores",
     "sixColorsHint": "Usa el botón inferior para cambiar de tema; las muestras se actualizan al instante.",
     "sacredSound": "Sacred Sound",
