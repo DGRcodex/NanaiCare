@@ -60,12 +60,12 @@ Definir **alcance, límites, responsables y condiciones económicas** del proyec
 ## 6. Presupuesto y supuestos (CLP — pesos chilenos)
 
 
-| Concepto                                                                         | Importe        |
-| -------------------------------------------------------------------------------- | -------------- |
-| Honorarios / desarrollo (base)                                                   | **$500**       |
-| IVA (**19 %** sobre la base de $500; **confirmar en factura**)                   | **$95**        |
-| Dominio (estimación **$30** / **3 años**, según proveedor)                       | **$30**        |
-| **Total orientativo**                                                            | **$625**       |
+| Concepto                                                       | Importe  |
+| -------------------------------------------------------------- | -------- |
+| Honorarios / desarrollo (base)                                 | **$500** |
+| IVA (**19 %** sobre la base de $500; **confirmar en factura**) | **$95**  |
+| Dominio (estimación **$30** / **3 años**, según proveedor)     | **$30**  |
+| **Total orientativo**                                          | **$625** |
 
 
 **Nota:** montos en **pesos chilenos (CLP)**. El IVA (19 %) y el coste final del dominio dependen del proveedor y del tratamiento fiscal aplicable; esta tabla es la **referencia acordada** para planificación.
