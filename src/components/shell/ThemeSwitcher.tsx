@@ -47,7 +47,6 @@ export function ThemeSwitcher() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [headingFont, setHeadingFont] = useState<string | null>(null);
   const [bodyFont, setBodyFont] = useState<string | null>(null);
-  const [dragPos, setDragPos] = useState<{ x: number; y: number } | null>(null);
   const [copyStatus, setCopyStatus] = useState<string | null>(null);
   const touchRef = useRef<{ index: number } | null>(null);
 
@@ -329,11 +328,9 @@ export function ThemeSwitcher() {
     const startIndex = i;
     touchRef.current = { index: startIndex };
     setDraggedIndex(startIndex);
-    setDragPos({ x: e.clientX, y: e.clientY });
 
     const handleMove = (ev: PointerEvent) => {
       ev.preventDefault();
-      setDragPos({ x: ev.clientX, y: ev.clientY });
       const idx = findIndexAtPoint(ev.clientX, ev.clientY);
       setOverIndex(idx);
     };
@@ -349,14 +346,12 @@ export function ThemeSwitcher() {
       touchRef.current = null;
       setDraggedIndex(null);
       setOverIndex(null);
-      setDragPos(null);
     };
     const handleCancel = () => {
       cleanup();
       touchRef.current = null;
       setDraggedIndex(null);
       setOverIndex(null);
-      setDragPos(null);
     };
 
     document.addEventListener("pointermove", handleMove, { passive: false });
@@ -451,15 +446,27 @@ export function ThemeSwitcher() {
             </div>
             <div className="relative">
               {(() => {
-                const focus = overIndex ?? hoveredIndex;
+                const focus = overIndex ?? hoveredIndex ?? draggedIndex;
                 if (focus === null) return null;
-                const role = colorOrder[focus];
+                const isDragging = draggedIndex !== null;
+                const role = isDragging ? colorOrder[draggedIndex] : colorOrder[focus];
+                const total = colorOrder.length;
+                const leftPercent = ((focus + 0.5) / total) * 100;
                 return (
                   <div
-                    className="pointer-events-none absolute -top-1 left-1/2 z-10 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-md bg-slate-900 px-2.5 py-1.5 text-center shadow-md"
+                    className="pointer-events-none absolute -top-1.5 z-10 flex -translate-x-1/2 -translate-y-full items-center gap-1.5 whitespace-nowrap rounded-md bg-slate-900 px-2.5 py-1.5 shadow-md transition-[left] duration-150"
+                    style={{ left: `${leftPercent}%` }}
                     role="tooltip"
                   >
-                    <div className="text-[11px] font-medium text-white">{t(`roleHints.${role}`)}</div>
+                    {isDragging ? (
+                      <span
+                        className="inline-block h-3 w-3 rounded-full ring-1 ring-white/30"
+                        style={{ backgroundColor: getThemeById(active).colors[role] }}
+                      />
+                    ) : null}
+                    <span className="text-[11px] font-medium text-white">
+                      {t(`roleHints.${role}`)}
+                    </span>
                   </div>
                 );
               })()}
@@ -632,23 +639,6 @@ export function ThemeSwitcher() {
         </div>
       ) : null}
 
-      {draggedIndex !== null && dragPos ? (
-        <div
-          className="pointer-events-none fixed z-[100] -translate-x-1/2 -translate-y-[140%]"
-          style={{ left: dragPos.x, top: dragPos.y }}
-          aria-hidden
-        >
-          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-2.5 py-1.5 shadow-xl">
-            <span
-              className="h-5 w-5 rounded-full ring-1 ring-black/10"
-              style={{ backgroundColor: getThemeById(active).colors[colorOrder[draggedIndex]] }}
-            />
-            <span className="pr-1 text-[11px] font-semibold text-slate-900">
-              {t(`roleHints.${colorOrder[draggedIndex]}`)}
-            </span>
-          </div>
-        </div>
-      ) : null}
     </div>
   );
 }
