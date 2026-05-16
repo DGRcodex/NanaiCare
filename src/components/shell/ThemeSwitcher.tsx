@@ -86,9 +86,14 @@ export function ThemeSwitcher() {
     return () => window.removeEventListener("nanaicare-theme-change", onChange);
   }, []);
 
-  // Apply intensity + contrast filter directly to documentElement so it actually affects the page.
+  // Apply intensity + contrast filter only to the landing content (not the panel itself).
   useEffect(() => {
-    document.documentElement.style.filter = `saturate(${intensity}%) contrast(${contrast}%)`;
+    const target = document.getElementById("nanai-content");
+    if (target) {
+      target.style.filter = `saturate(${intensity}%) contrast(${contrast}%)`;
+    }
+    // Clear any stale filter on the documentElement from earlier builds.
+    document.documentElement.style.filter = "";
   }, [intensity, contrast]);
 
   // Apply reordered colors to CSS variables whenever theme or order changes.

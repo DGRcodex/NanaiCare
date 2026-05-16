@@ -43,12 +43,12 @@ export default async function LocaleLayout({ children, params }: Props) {
     <NextIntlClientProvider messages={messages}>
       <HtmlLang locale={locale} />
       <ThemeProvider>
-        <div className="mesh-bg nc-grain relative flex min-h-dvh flex-col">
+        <div id="nanai-content" className="mesh-bg nc-grain relative flex min-h-dvh flex-col">
           <SiteHeader locale={locale} />
           <main className="relative flex-1 pb-32">{children}</main>
           <SiteFooter />
-          <ThemeSwitcher />
         </div>
+        <ThemeSwitcher />
       </ThemeProvider>
     </NextIntlClientProvider>
   );
