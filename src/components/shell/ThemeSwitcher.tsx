@@ -16,9 +16,24 @@ import { setTheme } from "@/components/shell/ThemeProvider";
 const INTENSITY_KEY = "nanaicare-intensity";
 const CONTRAST_KEY = "nanaicare-contrast";
 const ORDER_KEY = "nanaicare-color-order";
+const HEADING_FONT_KEY = "nanaicare-heading-font";
+const BODY_FONT_KEY = "nanaicare-body-font";
 
 type Role = keyof ThemeColors;
 const DEFAULT_ORDER: Role[] = [...COLOR_ROLE_KEYS];
+
+type FontOption = { var: string; label: string; sample: string };
+const FONT_OPTIONS: FontOption[] = [
+  { var: "--font-oswald", label: "Oswald", sample: "sans condensed" },
+  { var: "--font-quicksand", label: "Quicksand", sample: "sans rounded" },
+  { var: "--font-cormorant", label: "Cormorant", sample: "serif clásico" },
+  { var: "--font-josefin", label: "Josefin Sans", sample: "sans geométrico" },
+  { var: "--font-nunito", label: "Nunito", sample: "sans suave" },
+  { var: "--font-playfair", label: "Playfair", sample: "serif editorial" },
+  { var: "--font-lora", label: "Lora", sample: "serif legible" },
+  { var: "--font-dm-sans", label: "DM Sans", sample: "sans neutro" },
+  { var: "--font-instrument", label: "Instrument Serif", sample: "serif italic" },
+];
 
 export function ThemeSwitcher() {
   const t = useTranslations("Themes");
@@ -30,6 +45,8 @@ export function ThemeSwitcher() {
   const [draggedIndex, setDraggedIndex] = useState<number | null>(null);
   const [overIndex, setOverIndex] = useState<number | null>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [headingFont, setHeadingFont] = useState<string | null>(null);
+  const [bodyFont, setBodyFont] = useState<string | null>(null);
   const touchRef = useRef<{ index: number } | null>(null);
 
   useEffect(() => {
@@ -56,6 +73,11 @@ export function ThemeSwitcher() {
       }
     }
 
+    const storedHeadingFont = localStorage.getItem(HEADING_FONT_KEY);
+    if (storedHeadingFont) setHeadingFont(storedHeadingFont);
+    const storedBodyFont = localStorage.getItem(BODY_FONT_KEY);
+    if (storedBodyFont) setBodyFont(storedBodyFont);
+
     const onChange = (e: Event) => {
       const detail = (e as CustomEvent<NanaiThemeId>).detail;
       if (detail) setActive(detail);
@@ -78,6 +100,36 @@ export function ThemeSwitcher() {
       root.style.setProperty(`--nanai-${slot}`, theme.colors[sourceRole]);
     });
   }, [active, colorOrder]);
+
+  // Apply font overrides (or theme defaults) on theme/font change.
+  useEffect(() => {
+    const theme = getThemeById(active);
+    const root = document.documentElement;
+    const headVar = headingFont ?? theme.fonts.headingVar;
+    const bodyVarValue = bodyFont ?? theme.fonts.bodyVar;
+    root.style.setProperty("--font-theme-heading", `var(${headVar}), system-ui, sans-serif`);
+    root.style.setProperty("--font-theme-body", `var(${bodyVarValue}), system-ui, sans-serif`);
+  }, [active, headingFont, bodyFont]);
+
+  const handleHeadingFont = (v: string) => {
+    if (v === "") {
+      setHeadingFont(null);
+      localStorage.removeItem(HEADING_FONT_KEY);
+    } else {
+      setHeadingFont(v);
+      localStorage.setItem(HEADING_FONT_KEY, v);
+    }
+  };
+
+  const handleBodyFont = (v: string) => {
+    if (v === "") {
+      setBodyFont(null);
+      localStorage.removeItem(BODY_FONT_KEY);
+    } else {
+      setBodyFont(v);
+      localStorage.setItem(BODY_FONT_KEY, v);
+    }
+  };
 
   const handleIntensity = (v: number) => {
     setIntensity(v);
@@ -114,6 +166,12 @@ export function ThemeSwitcher() {
     lines.push(`Tema: ${themeName} (${theme.id})`);
     lines.push(`Intensidad (saturate): ${intensity}%`);
     lines.push(`Contraste (contrast): ${contrast}%`);
+    const headVar = headingFont ?? theme.fonts.headingVar;
+    const bodyVarValue = bodyFont ?? theme.fonts.bodyVar;
+    const headLabel = FONT_OPTIONS.find((f) => f.var === headVar)?.label ?? headVar;
+    const bodyLabel = FONT_OPTIONS.find((f) => f.var === bodyVarValue)?.label ?? bodyVarValue;
+    lines.push(`Tipografía títulos: ${headLabel} (${headVar})${headingFont ? " [override]" : ""}`);
+    lines.push(`Tipografía cuerpo: ${bodyLabel} (${bodyVarValue})${bodyFont ? " [override]" : ""}`);
     lines.push("");
     lines.push("Orden de colores (slot CSS = color asignado):");
     COLOR_ROLE_KEYS.forEach((slot, i) => {
@@ -141,6 +199,12 @@ export function ThemeSwitcher() {
           appliedColors: Object.fromEntries(
             COLOR_ROLE_KEYS.map((slot, i) => [slot, theme.colors[colorOrder[i]]])
           ),
+          fonts: {
+            heading: headVar,
+            body: bodyVarValue,
+            headingOverride: headingFont !== null,
+            bodyOverride: bodyFont !== null,
+          },
         },
         null,
         2
@@ -327,6 +391,60 @@ export function ThemeSwitcher() {
               </div>
             </div>
             <p className="mt-1.5 text-[10px] leading-snug text-nanai-ink-soft">{t("orderHint")}</p>
+          </div>
+
+          <div className="mb-3 space-y-3 rounded-xl border border-nanai-rose/25 bg-nanai-blush/25 p-3">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-nanai-ink">
+                {t("typographyLabel")}
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  handleHeadingFont("");
+                  handleBodyFont("");
+                }}
+                className="text-[10px] font-medium text-nanai-ink-soft underline hover:text-nanai-ink"
+              >
+                {t("orderReset")}
+              </button>
+            </div>
+            <label className="block">
+              <span className="mb-1 block text-[10px] font-medium text-nanai-ink-soft">
+                {t("headingFontLabel")}
+              </span>
+              <select
+                value={headingFont ?? ""}
+                onChange={(e) => handleHeadingFont(e.target.value)}
+                className="w-full rounded-md border border-nanai-rose/30 bg-white px-2 py-1.5 text-xs text-nanai-ink focus:outline-none focus:ring-2 focus:ring-nanai-sage/50"
+                style={{ fontFamily: headingFont ? `var(${headingFont})` : undefined }}
+              >
+                <option value="">{t("fontDefault")}</option>
+                {FONT_OPTIONS.map((f) => (
+                  <option key={f.var} value={f.var} style={{ fontFamily: `var(${f.var})` }}>
+                    {f.label} — {f.sample}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="block">
+              <span className="mb-1 block text-[10px] font-medium text-nanai-ink-soft">
+                {t("bodyFontLabel")}
+              </span>
+              <select
+                value={bodyFont ?? ""}
+                onChange={(e) => handleBodyFont(e.target.value)}
+                className="w-full rounded-md border border-nanai-rose/30 bg-white px-2 py-1.5 text-xs text-nanai-ink focus:outline-none focus:ring-2 focus:ring-nanai-sage/50"
+                style={{ fontFamily: bodyFont ? `var(${bodyFont})` : undefined }}
+              >
+                <option value="">{t("fontDefault")}</option>
+                {FONT_OPTIONS.map((f) => (
+                  <option key={f.var} value={f.var} style={{ fontFamily: `var(${f.var})` }}>
+                    {f.label} — {f.sample}
+                  </option>
+                ))}
+              </select>
+            </label>
           </div>
 
           <button
