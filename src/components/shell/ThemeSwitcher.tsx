@@ -47,6 +47,8 @@ export function ThemeSwitcher() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [headingFont, setHeadingFont] = useState<string | null>(null);
   const [bodyFont, setBodyFont] = useState<string | null>(null);
+  const [dragPos, setDragPos] = useState<{ x: number; y: number } | null>(null);
+  const [copyStatus, setCopyStatus] = useState<string | null>(null);
   const touchRef = useRef<{ index: number } | null>(null);
 
   useEffect(() => {
@@ -160,6 +162,93 @@ export function ThemeSwitcher() {
 
   const resetOrder = () => persistOrder([...DEFAULT_ORDER]);
 
+  const buildAppliedColors = () => {
+    const theme = getThemeById(active);
+    return Object.fromEntries(
+      COLOR_ROLE_KEYS.map((slot, i) => [slot, theme.colors[colorOrder[i]]])
+    ) as Record<(typeof COLOR_ROLE_KEYS)[number], string>;
+  };
+
+  const buildJSONConfig = () => {
+    const theme = getThemeById(active);
+    const headVar = headingFont ?? theme.fonts.headingVar;
+    const bodyVarValue = bodyFont ?? theme.fonts.bodyVar;
+    return {
+      brand: "NanaiCare",
+      version: 1,
+      theme: theme.id,
+      intensity,
+      contrast,
+      colorOrder,
+      appliedColors: buildAppliedColors(),
+      fonts: { heading: headVar, body: bodyVarValue },
+    };
+  };
+
+  const buildCSSSnippet = () => {
+    const applied = buildAppliedColors();
+    const theme = getThemeById(active);
+    const headVar = headingFont ?? theme.fonts.headingVar;
+    const bodyVarValue = bodyFont ?? theme.fonts.bodyVar;
+    const lines: string[] = [];
+    lines.push("/* NanaiCare — exported design tokens */");
+    lines.push(":root {");
+    Object.entries(applied).forEach(([slot, hex]) => {
+      lines.push(`  --nanai-${slot}: ${hex};`);
+    });
+    lines.push(`  --font-theme-heading: var(${headVar}), system-ui, sans-serif;`);
+    lines.push(`  --font-theme-body: var(${bodyVarValue}), system-ui, sans-serif;`);
+    lines.push("}");
+    lines.push("");
+    lines.push(`html { filter: saturate(${intensity}%) contrast(${contrast}%); }`);
+    return lines.join("\n");
+  };
+
+  const flashCopy = (label: string) => {
+    setCopyStatus(label);
+    window.setTimeout(() => setCopyStatus(null), 1500);
+  };
+
+  const handleCopyCSS = async () => {
+    try {
+      await navigator.clipboard.writeText(buildCSSSnippet());
+      flashCopy(t("copiedCSS"));
+    } catch {
+      flashCopy(t("copyFailed"));
+    }
+  };
+
+  const handleCopyJSON = async () => {
+    try {
+      await navigator.clipboard.writeText(JSON.stringify(buildJSONConfig(), null, 2));
+      flashCopy(t("copiedJSON"));
+    } catch {
+      flashCopy(t("copyFailed"));
+    }
+  };
+
+  const handleImport = () => {
+    const raw = window.prompt(t("importPrompt"));
+    if (!raw) return;
+    try {
+      const parsed = JSON.parse(raw);
+      if (parsed.theme && NANAI_THEMES.some((th) => th.id === parsed.theme)) {
+        setTheme(parsed.theme);
+        setActive(parsed.theme);
+      }
+      if (typeof parsed.intensity === "number") handleIntensity(parsed.intensity);
+      if (typeof parsed.contrast === "number") handleContrast(parsed.contrast);
+      if (Array.isArray(parsed.colorOrder) && parsed.colorOrder.length === DEFAULT_ORDER.length) {
+        persistOrder(parsed.colorOrder as Role[]);
+      }
+      if (parsed.fonts?.heading) handleHeadingFont(parsed.fonts.heading);
+      if (parsed.fonts?.body) handleBodyFont(parsed.fonts.body);
+      flashCopy(t("imported"));
+    } catch {
+      flashCopy(t("importFailed"));
+    }
+  };
+
   const handleDownload = () => {
     const theme = getThemeById(active);
     const themeName = t(theme.labelKey);
@@ -240,9 +329,11 @@ export function ThemeSwitcher() {
     const startIndex = i;
     touchRef.current = { index: startIndex };
     setDraggedIndex(startIndex);
+    setDragPos({ x: e.clientX, y: e.clientY });
 
     const handleMove = (ev: PointerEvent) => {
       ev.preventDefault();
+      setDragPos({ x: ev.clientX, y: ev.clientY });
       const idx = findIndexAtPoint(ev.clientX, ev.clientY);
       setOverIndex(idx);
     };
@@ -258,12 +349,14 @@ export function ThemeSwitcher() {
       touchRef.current = null;
       setDraggedIndex(null);
       setOverIndex(null);
+      setDragPos(null);
     };
     const handleCancel = () => {
       cleanup();
       touchRef.current = null;
       setDraggedIndex(null);
       setOverIndex(null);
+      setDragPos(null);
     };
 
     document.addEventListener("pointermove", handleMove, { passive: false });
@@ -379,9 +472,9 @@ export function ThemeSwitcher() {
                     onMouseEnter={() => setHoveredIndex(i)}
                     onMouseLeave={() => setHoveredIndex(null)}
                     className={[
-                      "h-10 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-transform touch-none select-none",
-                      draggedIndex === i ? "opacity-50 scale-95" : "",
-                      overIndex === i && draggedIndex !== i ? "ring-2 ring-slate-700 scale-110" : "",
+                      "h-10 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-all duration-150 touch-none select-none",
+                      draggedIndex === i ? "opacity-30 scale-90 ring-2 ring-slate-900/30" : "",
+                      overIndex === i && draggedIndex !== i ? "ring-2 ring-slate-900 scale-110 shadow-md" : "",
                       hoveredIndex === i && draggedIndex === null ? "ring-2 ring-slate-400" : "",
                     ].join(" ")}
                     style={{ backgroundColor: getThemeById(active).colors[role] }}
@@ -447,17 +540,46 @@ export function ThemeSwitcher() {
             </label>
           </div>
 
-          <button
-            type="button"
-            onClick={handleDownload}
-            className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-900 transition hover:bg-slate-100"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5" aria-hidden>
-              <path d="M10 3a.75.75 0 0 1 .75.75v7.69l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 1 1 1.06-1.06l2.22 2.22V3.75A.75.75 0 0 1 10 3Z" />
-              <path d="M3.75 14a.75.75 0 0 1 .75.75V16a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5v-1.25a.75.75 0 0 1 1.5 0V16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1.25A.75.75 0 0 1 3.75 14Z" />
-            </svg>
-            {t("saveLabel")}
-          </button>
+          <div className="mb-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
+            <div className="mb-2 flex items-center justify-between">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-900">
+                {t("exportLabel")}
+              </span>
+              {copyStatus ? (
+                <span className="text-[10px] font-medium text-emerald-700">{copyStatus}</span>
+              ) : null}
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                onClick={handleCopyCSS}
+                className="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-[11px] font-semibold text-slate-900 transition hover:bg-slate-100"
+              >
+                {t("copyCSS")}
+              </button>
+              <button
+                type="button"
+                onClick={handleCopyJSON}
+                className="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-[11px] font-semibold text-slate-900 transition hover:bg-slate-100"
+              >
+                {t("copyJSON")}
+              </button>
+              <button
+                type="button"
+                onClick={handleImport}
+                className="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-[11px] font-semibold text-slate-900 transition hover:bg-slate-100"
+              >
+                {t("importJSON")}
+              </button>
+              <button
+                type="button"
+                onClick={handleDownload}
+                className="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-[11px] font-semibold text-slate-900 transition hover:bg-slate-100"
+              >
+                {t("downloadTxt")}
+              </button>
+            </div>
+          </div>
 
           <ul className="space-y-2">
             {NANAI_THEMES.map((theme) => {
@@ -507,6 +629,24 @@ export function ThemeSwitcher() {
               );
             })}
           </ul>
+        </div>
+      ) : null}
+
+      {draggedIndex !== null && dragPos ? (
+        <div
+          className="pointer-events-none fixed z-[100] -translate-x-1/2 -translate-y-[140%]"
+          style={{ left: dragPos.x, top: dragPos.y }}
+          aria-hidden
+        >
+          <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-2.5 py-1.5 shadow-xl">
+            <span
+              className="h-5 w-5 rounded-full ring-1 ring-black/10"
+              style={{ backgroundColor: getThemeById(active).colors[colorOrder[draggedIndex]] }}
+            />
+            <span className="pr-1 text-[11px] font-semibold text-slate-900">
+              {t(`roleHints.${colorOrder[draggedIndex]}`)}
+            </span>
+          </div>
         </div>
       ) : null}
     </div>
