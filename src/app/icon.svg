@@ -1,34 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NanaiCare">
   <title>NanaiCare</title>
-  <defs>
-    <radialGradient id="bg" cx="50%" cy="55%" r="60%">
-      <stop offset="0%" stop-color="#F6E2E2"/>
-      <stop offset="100%" stop-color="#F1D8D8"/>
-    </radialGradient>
-    <radialGradient id="glow" cx="50%" cy="60%" r="55%">
-      <stop offset="0%" stop-color="#E8C5C5" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#E8C5C5" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
-  <ellipse cx="30" cy="40" rx="20" ry="22" fill="url(#glow)"/>
-
-  <path d="M21,30 Q17,40 21,49 Q27,55 34,53 Q43,49 43,39 Q43,29 36,25 Q28,23 21,30 Z" fill="#CBAEAE"/>
-
-  <ellipse cx="25" cy="42" rx="2.5" ry="1.5" fill="#E0B5B5" opacity="0.7"/>
-  <ellipse cx="38" cy="42" rx="2.5" ry="1.5" fill="#E0B5B5" opacity="0.7"/>
-
-  <path d="M24 36 Q28 33.5 32 36" stroke="#464C50" stroke-width="1.6" stroke-linecap="round" fill="none"/>
-  <path d="M35 36 Q38 33.5 41 36" stroke="#464C50" stroke-width="1.4" stroke-linecap="round" fill="none"/>
-
-  <path d="M27 46 Q32 49.5 37 46" stroke="#464C50" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-
-  <path d="M17,24 Q22,12 32,12 Q44,12 49,22 Q51,29 47,31 Q43,29 39,30 Q34,28 30,30 Q25,30 21,32 Q13,30 17,24 Z" fill="#B4AA86"/>
-
-  <path d="M24 20 Q24.5 16 27 16" stroke="#8F8468" stroke-width="1.4" stroke-linecap="round" fill="none"/>
-  <path d="M31 17 Q31.5 13.5 33.5 13.5" stroke="#8F8468" stroke-width="1.4" stroke-linecap="round" fill="none"/>
-  <path d="M38 18.5 Q38.5 14.5 41 15" stroke="#8F8468" stroke-width="1.4" stroke-linecap="round" fill="none"/>
-
-  <path d="M22,30 Q23,33 26,33" stroke="#8F8468" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <rect width="64" height="64" rx="10" fill="#1B1714"/>
+  <text
+    x="32"
+    y="44"
+    text-anchor="middle"
+    font-family="'Cormorant Garamond','Playfair Display','Bodoni 72',Didot,Georgia,'Times New Roman',serif"
+    font-size="42"
+    font-weight="500"
+    font-style="italic"
+    fill="#EDE4D3"
+    letter-spacing="-0.01em"
+  >N</text>
+  <rect x="22" y="50" width="20" height="1.2" fill="#C9A96E" opacity="0.85"/>
 </svg>
