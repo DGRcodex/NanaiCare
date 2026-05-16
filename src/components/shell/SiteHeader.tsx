@@ -15,9 +15,8 @@ export async function SiteHeader({ locale }: { locale: string }) {
           href="/"
           className="group flex items-center gap-3 rounded-full pr-3 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-nanai-sage"
         >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white shadow-nanai-soft ring-1 ring-nanai-rose/40 transition group-hover:-translate-y-0.5 group-hover:ring-nanai-sage/50">
-            <Mark className="h-7 w-7 text-nanai-ink" aria-hidden />
-          </span>
+          <Mark className="h-11 w-11 rounded-2xl shadow-nanai-soft ring-1 ring-nanai-rose/30 transition group-hover:-translate-y-0.5 group-hover:ring-nanai-sage/50" />
+
           <span className="flex flex-col leading-none">
             <span className="font-heading text-lg font-semibold tracking-[0.08em] text-nanai-ink sm:text-xl">
               NANAI

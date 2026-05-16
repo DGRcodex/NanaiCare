@@ -228,7 +228,7 @@ export function ThemeSwitcher() {
     URL.revokeObjectURL(url);
   };
 
-  // Unified Pointer Events handlers (mouse + touch + pen)
+  // Drag via document-level pointer listeners — robust for mouse, touch & pen.
   const findIndexAtPoint = (x: number, y: number): number | null => {
     const el = document.elementFromPoint(x, y) as HTMLElement | null;
     const idxAttr = el?.closest<HTMLElement>("[data-swatch-index]")?.dataset.swatchIndex;
@@ -237,37 +237,38 @@ export function ThemeSwitcher() {
 
   const onPointerDown = (e: React.PointerEvent<HTMLDivElement>, i: number) => {
     e.preventDefault();
-    (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
-    touchRef.current = { index: i };
-    setDraggedIndex(i);
-  };
-  const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (touchRef.current === null) return;
-    e.preventDefault();
-    // Hide dragged element from elementFromPoint hit-testing.
-    const target = e.target as HTMLElement;
-    const prevPE = target.style.pointerEvents;
-    target.style.pointerEvents = "none";
-    const idx = findIndexAtPoint(e.clientX, e.clientY);
-    target.style.pointerEvents = prevPE;
-    if (idx !== null) setOverIndex(idx);
-  };
-  const onPointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (touchRef.current === null) return;
-    const target = e.target as HTMLElement;
-    const prevPE = target.style.pointerEvents;
-    target.style.pointerEvents = "none";
-    const idx = findIndexAtPoint(e.clientX, e.clientY);
-    target.style.pointerEvents = prevPE;
-    if (idx !== null) swapAt(touchRef.current.index, idx);
-    touchRef.current = null;
-    setDraggedIndex(null);
-    setOverIndex(null);
-  };
-  const onPointerCancel = () => {
-    touchRef.current = null;
-    setDraggedIndex(null);
-    setOverIndex(null);
+    const startIndex = i;
+    touchRef.current = { index: startIndex };
+    setDraggedIndex(startIndex);
+
+    const handleMove = (ev: PointerEvent) => {
+      ev.preventDefault();
+      const idx = findIndexAtPoint(ev.clientX, ev.clientY);
+      setOverIndex(idx);
+    };
+    const cleanup = () => {
+      document.removeEventListener("pointermove", handleMove);
+      document.removeEventListener("pointerup", handleUp);
+      document.removeEventListener("pointercancel", handleCancel);
+    };
+    const handleUp = (ev: PointerEvent) => {
+      cleanup();
+      const idx = findIndexAtPoint(ev.clientX, ev.clientY);
+      if (idx !== null) swapAt(startIndex, idx);
+      touchRef.current = null;
+      setDraggedIndex(null);
+      setOverIndex(null);
+    };
+    const handleCancel = () => {
+      cleanup();
+      touchRef.current = null;
+      setDraggedIndex(null);
+      setOverIndex(null);
+    };
+
+    document.addEventListener("pointermove", handleMove, { passive: false });
+    document.addEventListener("pointerup", handleUp);
+    document.addEventListener("pointercancel", handleCancel);
   };
 
   return (
@@ -375,15 +376,12 @@ export function ThemeSwitcher() {
                     key={i}
                     data-swatch-index={i}
                     onPointerDown={(e) => onPointerDown(e, i)}
-                    onPointerMove={onPointerMove}
-                    onPointerUp={onPointerUp}
-                    onPointerCancel={onPointerCancel}
                     onMouseEnter={() => setHoveredIndex(i)}
                     onMouseLeave={() => setHoveredIndex(null)}
                     className={[
-                      "h-8 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-transform touch-none select-none",
-                      draggedIndex === i ? "opacity-40 scale-95" : "",
-                      overIndex === i && draggedIndex !== i ? "ring-2 ring-slate-500 scale-110" : "",
+                      "h-10 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-transform touch-none select-none",
+                      draggedIndex === i ? "opacity-50 scale-95" : "",
+                      overIndex === i && draggedIndex !== i ? "ring-2 ring-slate-700 scale-110" : "",
                       hoveredIndex === i && draggedIndex === null ? "ring-2 ring-slate-400" : "",
                     ].join(" ")}
                     style={{ backgroundColor: getThemeById(active).colors[role] }}

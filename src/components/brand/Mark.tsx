@@ -2,32 +2,25 @@ export function Mark({ className }: { className?: string }) {
   return (
     <svg
       className={className}
-      viewBox="0 0 48 48"
-      fill="none"
+      viewBox="0 0 64 64"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden
     >
-      <path
-        d="M10 28c6-14 22-18 28-10"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-      />
-      <path
-        d="M14 30c8-10 20-12 26-4"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        opacity="0.45"
-      />
-      <path d="M22 18l6 8-6 3" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-      <path
-        d="M12 24h24"
-        stroke="currentColor"
-        strokeWidth="1.2"
-        strokeLinecap="round"
-        opacity="0.35"
-      />
+      <rect width="64" height="64" rx="10" fill="#1B1714" />
+      <text
+        x="32"
+        y="44"
+        textAnchor="middle"
+        fontFamily="'Cormorant Garamond','Playfair Display','Bodoni 72',Didot,Georgia,'Times New Roman',serif"
+        fontSize="42"
+        fontWeight="500"
+        fontStyle="italic"
+        fill="#EDE4D3"
+        letterSpacing="-0.01em"
+      >
+        N
+      </text>
+      <rect x="22" y="50" width="20" height="1.2" fill="#C9A96E" opacity="0.85" />
     </svg>
   );
 }
