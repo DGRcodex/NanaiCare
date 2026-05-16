@@ -270,15 +270,15 @@ export function ThemeSwitcher() {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex w-full items-center justify-between gap-3 rounded-2xl border border-nanai-rose/40 bg-white/95 px-4 py-3 text-left shadow-nanai-soft backdrop-blur-md sm:w-auto sm:min-w-[17rem]"
+        className="flex w-full items-center justify-between gap-3 rounded-2xl border border-slate-300 bg-white px-4 py-3 text-left shadow-lg backdrop-blur-md sm:w-auto sm:min-w-[17rem]"
         aria-expanded={open}
         aria-controls="theme-panel"
       >
         <span>
-          <span className="block text-[10px] font-semibold uppercase tracking-[0.24em] text-nanai-sage">
+          <span className="block text-[10px] font-semibold uppercase tracking-[0.24em] text-slate-500">
             {t("toggleLabel")}
           </span>
-          <span className="mt-0.5 block text-sm font-semibold text-nanai-ink">
+          <span className="mt-0.5 block text-sm font-semibold text-slate-900">
             {t(getThemeById(active).labelKey)}
           </span>
         </span>
@@ -298,17 +298,17 @@ export function ThemeSwitcher() {
       {open ? (
         <div
           id="theme-panel"
-          className="mt-2 max-h-[min(70vh,28rem)] overflow-y-auto rounded-2xl border border-nanai-rose/35 bg-white/97 p-3 shadow-nanai-soft backdrop-blur-xl"
+          className="mt-2 max-h-[min(70vh,28rem)] overflow-y-auto rounded-2xl border border-slate-300 bg-white p-3 shadow-lg backdrop-blur-xl"
           role="listbox"
           aria-label={t("panelLabel")}
         >
-          <p className="px-2 pb-2 text-xs leading-relaxed text-nanai-ink-soft">{t("panelIntro")}</p>
+          <p className="px-2 pb-2 text-xs leading-relaxed text-slate-500">{t("panelIntro")}</p>
 
-          <div className="mb-3 space-y-3 rounded-xl border border-nanai-rose/25 bg-nanai-blush/25 p-3">
+          <div className="mb-3 space-y-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
             <div>
               <div className="mb-1 flex items-center justify-between">
-                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-nanai-ink">{t("intensityLabel")}</span>
-                <span className="text-[10px] text-nanai-ink-soft">{intensity}%</span>
+                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-900">{t("intensityLabel")}</span>
+                <span className="text-[10px] text-slate-500">{intensity}%</span>
               </div>
               <input
                 type="range"
@@ -316,14 +316,14 @@ export function ThemeSwitcher() {
                 max={200}
                 value={intensity}
                 onChange={(e) => handleIntensity(parseInt(e.target.value, 10))}
-                className="w-full accent-nanai-sage"
+                className="w-full accent-slate-500"
                 aria-label={t("intensityLabel")}
               />
             </div>
             <div>
               <div className="mb-1 flex items-center justify-between">
-                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-nanai-ink">{t("contrastLabel")}</span>
-                <span className="text-[10px] text-nanai-ink-soft">{contrast}%</span>
+                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-900">{t("contrastLabel")}</span>
+                <span className="text-[10px] text-slate-500">{contrast}%</span>
               </div>
               <input
                 type="range"
@@ -331,21 +331,21 @@ export function ThemeSwitcher() {
                 max={200}
                 value={contrast}
                 onChange={(e) => handleContrast(parseInt(e.target.value, 10))}
-                className="w-full accent-nanai-sage"
+                className="w-full accent-slate-500"
                 aria-label={t("contrastLabel")}
               />
             </div>
           </div>
 
-          <div className="mb-3 rounded-xl border border-nanai-rose/25 bg-nanai-blush/25 p-3">
+          <div className="mb-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
             <div className="mb-2 flex items-center justify-between">
-              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-nanai-ink">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-900">
                 {t("orderLabel")}
               </span>
               <button
                 type="button"
                 onClick={resetOrder}
-                className="text-[10px] font-medium text-nanai-ink-soft underline hover:text-nanai-ink"
+                className="text-[10px] font-medium text-slate-500 underline hover:text-slate-900"
               >
                 {t("orderReset")}
               </button>
@@ -357,13 +357,10 @@ export function ThemeSwitcher() {
                 const role = colorOrder[focus];
                 return (
                   <div
-                    className="pointer-events-none absolute -top-1 left-1/2 z-10 -translate-x-1/2 -translate-y-full rounded-md bg-nanai-ink px-2 py-1 text-center shadow-md"
+                    className="pointer-events-none absolute -top-1 left-1/2 z-10 -translate-x-1/2 -translate-y-full whitespace-nowrap rounded-md bg-slate-900 px-2.5 py-1.5 text-center shadow-md"
                     role="tooltip"
                   >
-                    <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white">
-                      {t(`roles.${role}`)}
-                    </div>
-                    <div className="text-[10px] text-white/80">{t(`roleHints.${role}`)}</div>
+                    <div className="text-[11px] font-medium text-white">{t(`roleHints.${role}`)}</div>
                   </div>
                 );
               })()}
@@ -381,8 +378,8 @@ export function ThemeSwitcher() {
                     className={[
                       "h-8 flex-1 rounded-md ring-1 ring-black/10 cursor-grab active:cursor-grabbing transition-transform touch-none select-none",
                       draggedIndex === i ? "opacity-40 scale-95" : "",
-                      overIndex === i && draggedIndex !== i ? "ring-2 ring-nanai-sage scale-110" : "",
-                      hoveredIndex === i && draggedIndex === null ? "ring-2 ring-nanai-ink/40" : "",
+                      overIndex === i && draggedIndex !== i ? "ring-2 ring-slate-500 scale-110" : "",
+                      hoveredIndex === i && draggedIndex === null ? "ring-2 ring-slate-400" : "",
                     ].join(" ")}
                     style={{ backgroundColor: getThemeById(active).colors[role] }}
                     aria-label={`${t(`roles.${role}`)}: ${t(`roleHints.${role}`)}`}
@@ -390,12 +387,12 @@ export function ThemeSwitcher() {
                 ))}
               </div>
             </div>
-            <p className="mt-1.5 text-[10px] leading-snug text-nanai-ink-soft">{t("orderHint")}</p>
+            <p className="mt-1.5 text-[10px] leading-snug text-slate-500">{t("orderHint")}</p>
           </div>
 
-          <div className="mb-3 space-y-3 rounded-xl border border-nanai-rose/25 bg-nanai-blush/25 p-3">
+          <div className="mb-3 space-y-3 rounded-xl border border-slate-200 bg-slate-50 p-3">
             <div className="flex items-center justify-between">
-              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-nanai-ink">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-slate-900">
                 {t("typographyLabel")}
               </span>
               <button
@@ -404,19 +401,19 @@ export function ThemeSwitcher() {
                   handleHeadingFont("");
                   handleBodyFont("");
                 }}
-                className="text-[10px] font-medium text-nanai-ink-soft underline hover:text-nanai-ink"
+                className="text-[10px] font-medium text-slate-500 underline hover:text-slate-900"
               >
                 {t("orderReset")}
               </button>
             </div>
             <label className="block">
-              <span className="mb-1 block text-[10px] font-medium text-nanai-ink-soft">
+              <span className="mb-1 block text-[10px] font-medium text-slate-500">
                 {t("headingFontLabel")}
               </span>
               <select
                 value={headingFont ?? ""}
                 onChange={(e) => handleHeadingFont(e.target.value)}
-                className="w-full rounded-md border border-nanai-rose/30 bg-white px-2 py-1.5 text-xs text-nanai-ink focus:outline-none focus:ring-2 focus:ring-nanai-sage/50"
+                className="w-full rounded-md border border-slate-300 bg-white px-2 py-1.5 text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-400"
                 style={{ fontFamily: headingFont ? `var(${headingFont})` : undefined }}
               >
                 <option value="">{t("fontDefault")}</option>
@@ -428,13 +425,13 @@ export function ThemeSwitcher() {
               </select>
             </label>
             <label className="block">
-              <span className="mb-1 block text-[10px] font-medium text-nanai-ink-soft">
+              <span className="mb-1 block text-[10px] font-medium text-slate-500">
                 {t("bodyFontLabel")}
               </span>
               <select
                 value={bodyFont ?? ""}
                 onChange={(e) => handleBodyFont(e.target.value)}
-                className="w-full rounded-md border border-nanai-rose/30 bg-white px-2 py-1.5 text-xs text-nanai-ink focus:outline-none focus:ring-2 focus:ring-nanai-sage/50"
+                className="w-full rounded-md border border-slate-300 bg-white px-2 py-1.5 text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-400"
                 style={{ fontFamily: bodyFont ? `var(${bodyFont})` : undefined }}
               >
                 <option value="">{t("fontDefault")}</option>
@@ -450,7 +447,7 @@ export function ThemeSwitcher() {
           <button
             type="button"
             onClick={handleDownload}
-            className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl border border-nanai-sage/40 bg-nanai-sage/10 px-3 py-2 text-xs font-semibold text-nanai-ink transition hover:bg-nanai-sage/20"
+            className="mb-3 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-900 transition hover:bg-slate-100"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5" aria-hidden>
               <path d="M10 3a.75.75 0 0 1 .75.75v7.69l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 1 1 1.06-1.06l2.22 2.22V3.75A.75.75 0 0 1 10 3Z" />
@@ -475,8 +472,8 @@ export function ThemeSwitcher() {
                     className={[
                       "w-full rounded-xl px-3 py-2.5 text-left transition",
                       isActive
-                        ? "bg-nanai-ink text-white shadow-sm"
-                        : "hover:bg-nanai-blush/70 text-nanai-ink",
+                        ? "bg-slate-900 text-white shadow-sm"
+                        : "hover:bg-slate-100 text-slate-900",
                     ].join(" ")}
                   >
                     <span className="flex items-center justify-between gap-2">
@@ -485,7 +482,7 @@ export function ThemeSwitcher() {
                         <span
                           className={[
                             "mt-0.5 block text-[11px] leading-snug",
-                            isActive ? "text-white/75" : "text-nanai-ink-soft",
+                            isActive ? "text-white/80" : "text-slate-500",
                           ].join(" ")}
                         >
                           {t(theme.hintKey)}
