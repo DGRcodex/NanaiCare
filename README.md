@@ -27,8 +27,8 @@ The name **"Nanai"** originates from the Quechua word meaning a *very tender car
 This digital experience is a collaborative effort:
 
 * **NanaiCare Owners (Amsterdam)**: Concept, client vision, brand guidelines, and copy text.
-* **DGRcodex (Daniel García Rojas)**: Lead frontend developer, system architect, custom visual features implementation, and SEO optimizer.
-* **Sambalab**: Design coordination, creative direction, project publishing, and agency management.
+* **[DGRcodex](https://github.com/DGRcodex) (Daniel García Rojas)**: Lead frontend developer, system architect, custom visual features implementation, and SEO optimizer. Portfolio: [dgrcodex.me](https://dgrcodex.me).
+* **[Sambalab](https://sambalab.pro)**: Design coordination, creative direction, project publishing, and agency management.
 
 ---
 
