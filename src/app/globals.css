@@ -71,6 +71,174 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
     mix-blend-mode: multiply;
   }
+
+  #nanai-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-bg-overlay-pct, 0%), transparent),
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-bg-overlay-pct, 0%), transparent)
+      ),
+      var(--nanai-bg-image, none);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: var(--nanai-bg-attachment, fixed);
+    filter: blur(var(--nanai-bg-blur, 0px));
+    opacity: var(--nanai-bg-opacity, 0);
+    mix-blend-mode: var(--nanai-bg-blend, normal);
+    pointer-events: none;
+    z-index: 0;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+  }
+
+  /* Section-specific backgrounds styling */
+  #nanai-content > main > section:first-of-type,
+  #treatments,
+  #policies,
+  #stories,
+  #wellness,
+  #shop,
+  #roadmap {
+    position: relative;
+  }
+
+  #nanai-content > main > section:first-of-type::before,
+  #treatments::before,
+  #policies::before,
+  #stories::before,
+  #wellness::before,
+  #shop::before,
+  #roadmap::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 0;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+  }
+
+  /* Target 1: Hero Section */
+  #nanai-content > main > section:first-of-type::before {
+    background-image:
+      linear-gradient(
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-1, var(--nanai-bg-overlay-pct, 0%)), transparent),
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-1, var(--nanai-bg-overlay-pct, 0%)), transparent)
+      ),
+      var(--nanai-bg-image-1, none);
+    opacity: var(--nanai-section-bg-opacity-1, 0);
+    filter: blur(var(--nanai-section-bg-blur-1, var(--nanai-bg-blur, 0px)));
+    mix-blend-mode: var(--nanai-section-bg-blend-1, var(--nanai-bg-blend, normal));
+    background-attachment: var(--nanai-section-bg-attachment-1, var(--nanai-bg-attachment, fixed));
+  }
+
+  /* Target 2: Treatments Section */
+  #treatments::before {
+    background-image:
+      linear-gradient(
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-2, var(--nanai-bg-overlay-pct, 0%)), transparent),
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-2, var(--nanai-bg-overlay-pct, 0%)), transparent)
+      ),
+      var(--nanai-bg-image-2, none);
+    opacity: var(--nanai-section-bg-opacity-2, 0);
+    filter: blur(var(--nanai-section-bg-blur-2, var(--nanai-bg-blur, 0px)));
+    mix-blend-mode: var(--nanai-section-bg-blend-2, var(--nanai-bg-blend, normal));
+    background-attachment: var(--nanai-section-bg-attachment-2, var(--nanai-bg-attachment, fixed));
+  }
+
+  /* Target 3: Policies Section */
+  #policies::before {
+    background-image:
+      linear-gradient(
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-3, var(--nanai-bg-overlay-pct, 0%)), transparent),
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-3, var(--nanai-bg-overlay-pct, 0%)), transparent)
+      ),
+      var(--nanai-bg-image-3, none);
+    opacity: var(--nanai-section-bg-opacity-3, 0);
+    filter: blur(var(--nanai-section-bg-blur-3, var(--nanai-bg-blur, 0px)));
+    mix-blend-mode: var(--nanai-section-bg-blend-3, var(--nanai-bg-blend, normal));
+    background-attachment: var(--nanai-section-bg-attachment-3, var(--nanai-bg-attachment, fixed));
+  }
+
+  /* Target 4: Testimonials / Stories Section */
+  #stories::before {
+    background-image:
+      linear-gradient(
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-4, var(--nanai-bg-overlay-pct, 0%)), transparent),
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-4, var(--nanai-bg-overlay-pct, 0%)), transparent)
+      ),
+      var(--nanai-bg-image-4, none);
+    opacity: var(--nanai-section-bg-opacity-4, 0);
+    filter: blur(var(--nanai-section-bg-blur-4, var(--nanai-bg-blur, 0px)));
+    mix-blend-mode: var(--nanai-section-bg-blend-4, var(--nanai-bg-blend, normal));
+    background-attachment: var(--nanai-section-bg-attachment-4, var(--nanai-bg-attachment, fixed));
+  }
+
+  /* Target 5: Wellness Section */
+  #wellness::before {
+    background-image:
+      linear-gradient(
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-5, var(--nanai-bg-overlay-pct, 0%)), transparent),
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-5, var(--nanai-bg-overlay-pct, 0%)), transparent)
+      ),
+      var(--nanai-bg-image-5, none);
+    opacity: var(--nanai-section-bg-opacity-5, 0);
+    filter: blur(var(--nanai-section-bg-blur-5, var(--nanai-bg-blur, 0px)));
+    mix-blend-mode: var(--nanai-section-bg-blend-5, var(--nanai-bg-blend, normal));
+    background-attachment: var(--nanai-section-bg-attachment-5, var(--nanai-bg-attachment, fixed));
+  }
+
+  /* Target 6: Shop Section */
+  #shop::before {
+    background-image:
+      linear-gradient(
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-6, var(--nanai-bg-overlay-pct, 0%)), transparent),
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-6, var(--nanai-bg-overlay-pct, 0%)), transparent)
+      ),
+      var(--nanai-bg-image-6, none);
+    opacity: var(--nanai-section-bg-opacity-6, 0);
+    filter: blur(var(--nanai-section-bg-blur-6, var(--nanai-bg-blur, 0px)));
+    mix-blend-mode: var(--nanai-section-bg-blend-6, var(--nanai-bg-blend, normal));
+    background-attachment: var(--nanai-section-bg-attachment-6, var(--nanai-bg-attachment, fixed));
+  }
+
+  /* Target 7: Roadmap Section */
+  #roadmap::before {
+    background-image:
+      linear-gradient(
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-7, var(--nanai-bg-overlay-pct, 0%)), transparent),
+        color-mix(in oklab, var(--nanai-canvas) var(--nanai-section-bg-overlay-7, var(--nanai-bg-overlay-pct, 0%)), transparent)
+      ),
+      var(--nanai-bg-image-7, none);
+    opacity: var(--nanai-section-bg-opacity-7, 0);
+    filter: blur(var(--nanai-section-bg-blur-7, var(--nanai-bg-blur, 0px)));
+    mix-blend-mode: var(--nanai-section-bg-blend-7, var(--nanai-bg-blend, normal));
+    background-attachment: var(--nanai-section-bg-attachment-7, var(--nanai-bg-attachment, fixed));
+  }
+
+  /* Make sure internal content layers above section pseudo-backgrounds */
+  #nanai-content > main > section:first-of-type > *,
+  #treatments > *,
+  #policies > *,
+  #stories > *,
+  #wellness > *,
+  #shop > *,
+  #roadmap > * {
+    position: relative;
+    z-index: 10;
+  }
+
+  #nanai-content > header,
+  #nanai-content > main,
+  #nanai-content > footer {
+    position: relative;
+    z-index: 10;
+  }
 }
 
 @keyframes float-soft {

@@ -34,6 +34,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// ThemeSwitcher is a design-time tool — only visible in preview and local dev.
+// In Vercel production (nanaicare.com) NEXT_PUBLIC_VERCEL_ENV === 'production',
+// so the panel is completely removed from the build output.
+const isPreview = process.env.NEXT_PUBLIC_VERCEL_ENV !== "production";
+
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -48,7 +53,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <main className="relative flex-1 pb-32">{children}</main>
           <SiteFooter />
         </div>
-        <ThemeSwitcher />
+        {isPreview && <ThemeSwitcher />}
       </ThemeProvider>
     </NextIntlClientProvider>
   );

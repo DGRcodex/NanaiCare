@@ -46,7 +46,7 @@ export async function SiteHeader({ locale }: { locale: string }) {
         <div className="flex items-center gap-3 sm:gap-4">
           <LocaleSwitcher active={active} />
           <Link
-            href="/#book"
+            href="/book"
             className="hidden rounded-full bg-nanai-ink px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white shadow-nanai-soft transition hover:bg-nanai-ink/90 sm:inline-flex"
           >
             {t("book")}
@@ -75,12 +75,12 @@ export async function SiteHeader({ locale }: { locale: string }) {
               <a className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/#stories">
                 {t("stories")}
               </a>
-              <a
+              <Link
                 className="mt-1 block rounded-xl bg-nanai-ink px-3 py-2 text-center text-xs uppercase tracking-[0.16em] text-white"
-                href="/#book"
+                href="/book"
               >
                 {t("book")}
-              </a>
+              </Link>
             </div>
           </details>
         </div>

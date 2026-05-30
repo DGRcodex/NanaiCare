@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NanaiCare — Amsterdam Facial Wellness
 
-## Getting Started
+[![Next.js 16](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-blue?logo=vercel)](https://vercel.com/)
+[![i18n Supported](https://img.shields.io/badge/i18n-EN%20%7C%20ES%20%7C%20NL-green)](#internationalization-i18n)
 
-First, run the development server:
+> **Nanai Care:** Salud para tu rostro y tranquilidad para tu alma. ✨
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**NanaiCare** is a premium digital platform for a boutique facial wellness and holistic beauty studio located in Amsterdam. Built with modern, responsive web technologies, this site reflects the brand's core values: calm, clarity, and personalized care.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌸 The Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The name **"Nanai"** originates from the Quechua word meaning a *very tender caress intended to soothe pain or sorrow*. This portal is designed as a warm, intuitive, and visually state-of-the-art space that departs from generic aesthetics.
 
-## Learn More
+### Key Features
+* **Interactive Visual Customizer (Theme Switcher V2)**: Allows real-time visualization of 6 custom curated brand palettes (e.g. *Sacred Sound*, *Atardecer*, *Crepúsculo*, etc.) and custom typography.
+* **Granular Background Control**: Features 10 independent background slots with multi-layer property controls (independent opacity, overlay color contrast, blur, mix-blend-mode, and parallax scroll attachment) per section.
+* **High-Performance Architecture**: Scaled with Next.js Turbopack, ensuring zero-latency transitions and optimal Lighthouse performance.
+* **Full SEO Optimization**: Hardened meta structure for organic positioning in the Amsterdam wellness and skincare market.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Collaboration & Roles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This digital experience is a collaborative effort:
 
-## Deploy on Vercel
+* **NanaiCare Owners (Amsterdam)**: Concept, client vision, brand guidelines, and copy text.
+* **[DGRcodex](https://github.com/DGRcodex) (Daniel García Rojas)**: Lead frontend developer, system architect, custom visual features implementation, and SEO optimizer. Portfolio: [dgrcodex.me](https://dgrcodex.me).
+* **[Sambalab](https://sambalab.pro)**: Design coordination, creative direction, project publishing, and agency management.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Technology Stack
+
+* **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack)
+* **Styling**: Tailwind CSS & Vanilla CSS Variables
+* **Internationalization**: `next-intl` (English, Spanish, Dutch)
+* **Deployment**: [Vercel](https://vercel.com/) (CI/CD connected to preview and production pipelines)
+* **Persistence**: LocalStorage state serialization for layout templates.
+
+---
+
+## 🚀 Getting Started
+
+To run the project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DGRcodex/NanaiCare.git
+   cd NanaiCare
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 📧 Contact
+
+For business inquiries or scheduling coordinates:
+* **Email**: [contact@nanaicare.com](mailto:contact@nanaicare.com)
+* **Location**: Amsterdam, Netherlands
+
+---
+
+## 📈 SEO & Positioning Keywords
+
+This platform has been optimized to position keywords related to:
+* `Nanai Care`, `Nanai Care Amsterdam`, `facial wellness Amsterdam`
+* Developed by `DGRcodex` / `Daniel García Rojas`
+* Coordinated and published by `Sambalab`
+* Technologies: `Next.js i18n`, `Vercel preview deployment`, `boutique skincare portfolio`
