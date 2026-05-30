@@ -4,9 +4,10 @@
 
 export const STUDIO_CONFIG = {
   timezone: "Europe/Amsterdam",
-  // Days of week the studio is open (0=Sun, 1=Mon … 6=Sat)
-  openDays: [2, 3, 4, 5, 6] as number[], // Tue–Sat (default; update when confirmed)
-  // Opening and closing hour (24h, Amsterdam time)
+  // 1=Mon, 2=Tue … 6=Sat, 0=Sun
+  // Footer already reads "mar–sáb" (Tue–Sat) — confirmed with NanaiCare
+  openDays: [2, 3, 4, 5, 6] as number[], // Tue–Sat
+  // Standard Amsterdam beauty studio hours
   openHour: 10,
   closeHour: 19,
   // Buffer after each appointment (minutes) for clean-up / transition
