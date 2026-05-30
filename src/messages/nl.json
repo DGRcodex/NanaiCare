@@ -395,5 +395,39 @@
     "bgAttachmentLabel": "Scrolleffect",
     "bgAttachmentFixed": "Vast (Parallax)",
     "bgAttachmentScroll": "Scroll mee met pagina"
+  },
+  "Booking": {
+    "meta": {
+      "title": "Boek je afspraak — NanaiCare Amsterdam",
+      "description": "Boek je facial, massage of welzijnsritueel bij NanaiCare Amsterdam. Online reserveren in enkele minuten."
+    },
+    "title": "Boek je ritueel",
+    "subtitle": "Kies je behandeling, selecteer datum en tijd, en bevestig in 3 eenvoudige stappen.",
+    "step1Title": "Welke behandeling wil je?",
+    "step2Title": "Wanneer wil je langskomen?",
+    "step3Title": "Jouw gegevens",
+    "nextButton": "Volgende",
+    "backButton": "Terug",
+    "confirmButton": "Afspraak bevestigen",
+    "submitting": "Bevestigen...",
+    "errorGeneric": "Er is iets misgegaan. Probeer het opnieuw.",
+    "namePlaceholder": "Volledige naam",
+    "emailPlaceholder": "jij@email.com",
+    "phonePlaceholder": "+31 6 xxxxxxxx",
+    "healthNotePlaceholder": "Allergieën, aandoeningen of iets anders dat we moeten weten (optioneel)",
+    "successTitle": "Afspraak bevestigd! ✨",
+    "successBody": "We hebben een bevestigingsmail gestuurd naar [email] met alle details en een .ics-bestand voor je agenda.",
+    "backHome": "Terug naar home",
+    "slotsLoading": "Beschikbaarheid controleren...",
+    "noSlots": "Geen tijdslots beschikbaar op deze dag. Kies een andere datum.",
+    "pickDate": "Selecteer een datum om beschikbare tijdslots te zien.",
+    "closedDay": "De studio is op deze dag gesloten.",
+    "depositNote": "Er is een aanbetaling van 50% vereist om je boeking te bevestigen. De studio neemt contact met je op voor de betaling.",
+    "cancelPolicy": "Gratis annulering tot minimaal 24 uur van tevoren.",
+    "categoryBody": "Lichaamsverzorging",
+    "categoryFacial": "Gezichtsbehandelingen",
+    "categoryPackages": "Pakketten",
+    "minutesSuffix": "min"
   }
 }
+

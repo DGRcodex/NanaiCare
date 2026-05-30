@@ -378,5 +378,38 @@
     "weekGoal": "Target: settle the outstanding first-half balance this week, as verbally agreed between the parties.",
     "diagramCaption": "Scope view: phase 1 vs optional later work.",
     "diagramAlt": "Flow: Phase 1 delivers Next site, brand UI, deploy; Phase 2 options include e-commerce, bookings, extra legal."
+  },
+  "Booking": {
+    "meta": {
+      "title": "Book your appointment — NanaiCare Amsterdam",
+      "description": "Book your facial, massage or wellness ritual at NanaiCare Amsterdam. Reserve online in minutes."
+    },
+    "title": "Book your ritual",
+    "subtitle": "Choose your treatment, pick a date and time, and confirm in 3 simple steps.",
+    "step1Title": "Which treatment would you like?",
+    "step2Title": "When would you like to come?",
+    "step3Title": "Your details",
+    "nextButton": "Next",
+    "backButton": "Back",
+    "confirmButton": "Confirm booking",
+    "submitting": "Confirming...",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "you@email.com",
+    "phonePlaceholder": "+31 6 xxxxxxxx",
+    "healthNotePlaceholder": "Allergies, conditions or anything we should know (optional)",
+    "successTitle": "Booking confirmed! ✨",
+    "successBody": "We’ve sent a confirmation email to [email] with all the details and a .ics file to add to your calendar.",
+    "backHome": "Back to home",
+    "slotsLoading": "Checking availability...",
+    "noSlots": "No time slots available on this day. Please choose another date.",
+    "pickDate": "Select a date to see available time slots.",
+    "closedDay": "The studio is closed on this day.",
+    "depositNote": "A 50% deposit is required to confirm your booking. The studio will contact you to arrange payment.",
+    "cancelPolicy": "Free cancellation with at least 24 hours notice.",
+    "categoryBody": "Body treatments",
+    "categoryFacial": "Facial treatments",
+    "categoryPackages": "Packages",
+    "minutesSuffix": "min"
   }
 }
