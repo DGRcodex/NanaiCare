@@ -1,7 +1,7 @@
-export function Mark({ className }: { className?: string }) {
+export function Mark({ className, src = "/logolanding.jpeg" }: { className?: string; src?: string }) {
   return (
     <img 
-      src="/logo-v.png" 
+      src={src} 
       alt="NanaiCare" 
       className={className} 
     />

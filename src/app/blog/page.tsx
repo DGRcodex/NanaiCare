@@ -33,7 +33,7 @@ export default async function BlogPage() {
       <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-24">
         <header className="mb-16 text-center max-w-2xl mx-auto">
           <p className="text-sm uppercase tracking-[0.2em] mb-4 text-nanai-sage font-medium">Stories & Care Notes</p>
-          <h1 className="text-4xl md:text-5xl font-serif mb-6 text-nanai-ink">The Nanai Journal</h1>
+          <h1 className="text-4xl md:text-5xl font-serif mb-6 text-nanai-ink">Nanai Rituals</h1>
           <p className="text-lg text-nanai-ink/80 leading-relaxed font-light">
             Insights on skin health, barrier repair, and finding rhythm in a busy world. Written with care, for you.
           </p>
@@ -41,7 +41,7 @@ export default async function BlogPage() {
 
         {posts.length === 0 ? (
           <div className="text-center py-20 bg-nanai-canvas/60 backdrop-blur-md rounded-2xl border border-nanai-blush/30">
-            <h2 className="text-2xl font-serif mb-3 text-nanai-ink">The journal is quiet today</h2>
+            <h2 className="text-2xl font-serif mb-3 text-nanai-ink">The rituals space is quiet today</h2>
             <p className="text-nanai-ink/70">Check back soon for new stories and care notes.</p>
           </div>
         ) : (

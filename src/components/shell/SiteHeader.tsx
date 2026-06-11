@@ -16,7 +16,7 @@ export async function SiteHeader({ locale }: { locale: string }) {
           className="group flex items-center rounded-full pr-3 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-nanai-sage"
         >
           <img 
-            src="/logo.png" 
+            src="/logolanding.jpeg" 
             alt="NanaiCare Amsterdam" 
             className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]" 
           />
@@ -36,7 +36,7 @@ export async function SiteHeader({ locale }: { locale: string }) {
             {t("policies")}
           </a>
           <Link href="/blog" className="transition hover:text-nanai-ink">
-            Journal
+            Nanai Rituals
           </Link>
         </nav>
 
@@ -73,7 +73,7 @@ export async function SiteHeader({ locale }: { locale: string }) {
                 {t("stories")}
               </a>
               <Link className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/blog">
-                Journal
+                Nanai Rituals
               </Link>
               <Link
                 className="mt-1 block rounded-xl bg-nanai-ink px-3 py-2 text-center text-xs uppercase tracking-[0.16em] text-white"

@@ -15,16 +15,16 @@
 
   /* Applied Backgrounds */
   --nanai-bg-image: url("/bg/velas.jpeg");
-  --nanai-bg-opacity: 0.15;
+  --nanai-bg-opacity: 0.5;
   --nanai-bg-overlay-pct: 40%;
-  --nanai-bg-blur: 5px;
+  --nanai-bg-blur: 2px;
   --nanai-bg-blend: luminosity;
   --nanai-bg-attachment: fixed;
 
   --nanai-bg-image-1: url("/bg/mujer.jpeg");
-  --nanai-section-bg-opacity-1: 0.4;
+  --nanai-section-bg-opacity-1: 0.6;
   --nanai-section-bg-overlay-1: 50%;
-  --nanai-section-bg-blur-1: 4px;
+  --nanai-section-bg-blur-1: 0px;
   --nanai-section-bg-blend-1: normal;
   --nanai-section-bg-attachment-1: fixed;
 
@@ -36,16 +36,16 @@
   --nanai-section-bg-attachment-2: scroll;
 
   --nanai-bg-image-3: url("/bg/notas.jpeg");
-  --nanai-section-bg-opacity-3: 0.3;
+  --nanai-section-bg-opacity-3: 0.4;
   --nanai-section-bg-overlay-3: 70%;
-  --nanai-section-bg-blur-3: 8px;
+  --nanai-section-bg-blur-3: 2px;
   --nanai-section-bg-blend-3: normal;
   --nanai-section-bg-attachment-3: scroll;
 
-  --nanai-bg-image-4: url("/bg/imagen.jpeg");
-  --nanai-section-bg-opacity-4: 0.4;
+  --nanai-bg-image-4: url("/bg/masaje.jpeg");
+  --nanai-section-bg-opacity-4: 0.6;
   --nanai-section-bg-overlay-4: 55%;
-  --nanai-section-bg-blur-4: 4px;
+  --nanai-section-bg-blur-4: 0px;
   --nanai-section-bg-blend-4: normal;
   --nanai-section-bg-attachment-4: scroll;
 
@@ -57,16 +57,16 @@
   --nanai-section-bg-attachment-5: fixed;
 
   --nanai-bg-image-6: url("/bg/facial.jpeg");
-  --nanai-section-bg-opacity-6: 0.3;
+  --nanai-section-bg-opacity-6: 0.5;
   --nanai-section-bg-overlay-6: 70%;
-  --nanai-section-bg-blur-6: 8px;
+  --nanai-section-bg-blur-6: 0px;
   --nanai-section-bg-blend-6: normal;
   --nanai-section-bg-attachment-6: scroll;
 
   --nanai-bg-image-7: url("/bg/masajecabeza.jpeg");
-  --nanai-section-bg-opacity-7: 0.4;
+  --nanai-section-bg-opacity-7: 0.6;
   --nanai-section-bg-overlay-7: 60%;
-  --nanai-section-bg-blur-7: 5px;
+  --nanai-section-bg-blur-7: 0px;
   --nanai-section-bg-blend-7: luminosity;
   --nanai-section-bg-attachment-7: scroll;
 }

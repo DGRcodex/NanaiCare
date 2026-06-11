@@ -16,7 +16,7 @@
   "Hero": {
     "eyebrow": "Amsterdam · body & facial care · www.nanaicare.com",
     "title": "Nanai, care that softens pain and sorrow.",
-    "lead": "Nanai (Quechua): a very tender caress used to calm pain or sorrow. NanaiCare is a warm, intuitive studio in Amsterdam for body and facial rituals, not a basic template, but a space that feels coherent, human, and close.",
+    "lead": "Nanai means a tender caress used to calm and soothe. We bring this philosophy into the science of skincare. True skin maintenance is never a one-size-fits-all template. We trade rigid beauty templates for real, close, and human wisdom to help you care for yourself completely.",
     "primaryCta": "All treatments",
     "secondaryCta": "Read client stories",
     "badge": "New · evening appointments",
@@ -42,64 +42,99 @@
     },
     "items": [
       {
+        "tag": "Body · 60/90 min",
+        "title": "Release Ritual: The Passionate Escape",
+        "description": "Surrender your senses and dissolve into pure bliss. Disconnect from the chaos and step into a sanctuary of pure peace. This deeply comforting, slow-rhythm massage acts as a love letter to your nervous system."
+      },
+      {
+        "tag": "Body · 60/90 min",
+        "title": "The Deep-Tissue Release",
+        "description": "Stop enduring your pain. This high-intensity massage therapy fearlessly hunts down your deepest discomfort—shattering stubborn knots, easing chronic pain, and re-architecting your posture."
+      },
+      {
+        "tag": "Body · 60 min",
+        "title": "The Volcanic Hot Stone Massage",
+        "description": "60 minutes of deep, molten relaxation. Surrender to the intoxicating warmth of the earth. This sensory ritual harnesses heated volcanic rocks to dissolve your stubbornest physical knots."
+      },
+      {
+        "tag": "Body · 50 min",
+        "title": "Indian head Nanai massage",
+        "description": "50 minutes to dissolve your mental burdens and transcend daily stress. Surrender to an intoxicating oasis of pure stillness."
+      },
+      {
+        "tag": "Body · 50 min",
+        "title": "The Crown & Face Masterpiece",
+        "description": "A powerful fusion of Shiatsu pressure points and Lymphatic Drainage to release TMJ jaw tension, relieve headaches, and banish micro-puffiness."
+      },
+      {
+        "tag": "Body",
+        "title": "Pure Nanai for Mother To Be",
+        "description": "A pregnancy massage is a sacred pause in your journey. A deeply intuitive, gravity-defying ritual designed to cradle you and your baby in absolute safety."
+      },
+      {
+        "tag": "Body · 60 min",
+        "title": "The Lymphatic Fluid-Sculpt & Detox",
+        "description": "60 minutes of pure, lightweight ecstasy and deep cellular renewal. The Intoxicating Cellular Reset that completely liberates your body from heavy, stagnant fluids and hidden toxins."
+      },
+      {
+        "tag": "Body · 45 min",
+        "title": "Energizing leg ritual",
+        "description": "A revitalizing leg ritual massage is an invigorating treatment designed to banish heaviness and restore vitality to tired limbs."
+      },
+      {
         "tag": "Facial · 120 min",
-        "title": "Deep Cleansing Care",
-        "description": "A multi-step skin care treatment designed to go far beyond your daily routine. It purifies the skin and unclogs the pores, removing dead cells and extracting impurities, and leaving you with a fresh, balanced, and radiant skin."
+        "title": "Deep cleansing care",
+        "description": "Is a multi step skin care treatments design to go far beyond your daily routine. Purifies the skin unclogging the pores removing dead cells and extracting impurities."
       },
       {
         "tag": "Facial · 60 min",
-        "title": "Sensitive Nanai Care",
-        "description": "This facial treatment is designed to calm, detoxify, strengthen and hydrate the skin barrier, with quality cosmetological products especially formulated for sensitive skin."
+        "title": "Sensitive Nanai care",
+        "description": "The Ritual cloud cleanse: A ultra-gentle, whisper-soft purification. An exquisitely calm, sculpted, and intensely hydrated complexion tailored exclusively for sensitive skin."
       },
       {
-        "tag": "Facial · 50 min",
-        "title": "Sculp & Glow Lymphatic Drainage",
+        "tag": "Facial",
+        "title": "Sculpt and Glow Lymphatic Drainage",
         "description": "Say goodbye to morning puffiness. This gentle, rhythmic massage channels your body’s natural drainage network to flush toxins, release jaw tension, and boost cellular circulation."
       },
       {
         "tag": "Facial · 90 min",
         "title": "Post Acné Treatment",
-        "description": "Improve the appearance of your skin and feel comfortable and secure of yourself. Here you will find the support that you need with a tailor-made treatment."
+        "description": "After an acne treatment, you want to improve the appearance of your skin & feel comfortable. Here you have the support that you need with a tailor made treatment."
       },
       {
         "tag": "Facial",
-        "title": "Microneedling with Peptides",
-        "description": "Unlock your Skin's Natural Glow with Microneedling! This minimally invasive treatment uses tiny, precise needles to stimulate collagen and elastin production."
+        "title": "Microneedling with peptides",
+        "description": "Unlock your Skin's Natural Glow! This minimally invasive treatment uses tiny, precise needles to stimulate collagen and elastin production."
       },
       {
         "tag": "Facial",
-        "title": "Clear Skin",
-        "description": "If you suffer from hyperpigmentation like melasma, sunspots or acne scars, in Nanai Care you can press the reset button to peel away years of sun damage."
+        "title": "Exosomes & Clear skin",
+        "description": "If you have some hyperpigmentation like melasma, sun spots or acne scars, in Nanai Care you can press the reset button to peel away years of sun damage."
       },
       {
         "tag": "Facial",
-        "title": "Summer Glow & Cryo Hydration",
+        "title": "Summer Glow and Cryo Hydration Facial",
         "description": "The Ultimate Summer Melt-Proof Formula. Crafted to rescue sun-drenched skin, this high-performance treatment floods your skin barrier with advanced hydration."
       },
       {
         "tag": "Facial",
-        "title": "Nanain Signature Care",
-        "description": "The Ultimate 'Me Time' Obsession. Deep Cleanse & HydraFacial, Lymphatic & Uplifting Massage, Infrared, Aroma & Premium Mask."
+        "title": "Nanai Signature care",
+        "description": "The Ultimate 'Me Time' Obsession. Deep Cleanse & Hydrafacial, Lymphatic & Uplifting Massage, Infrared, Aroma & Premium Mask."
       },
       {
         "tag": "Package · 60 min",
-        "title": "The Sole & Soul Serenety Ritual",
-        "description": "A session of 60 minutes of pure, weightless luxury for head and legs. This targeted dual-action ritual completely lightens heavy lower bodies while melting away chronic tension from the neck up."
+        "title": "The Sole & Soul Serenity Ritual (Legs & Head)",
+        "description": "60 minutes of pure, weightless luxury from head to toe. This targeted dual-action ritual completely lightens heavy lower bodies while melting away chronic tension from the neck up."
       },
       {
         "tag": "Package · 60 min",
-        "title": "Head to Toe Refreshing Glow Ritual",
-        "description": "The Instant Reset: The ultimate high-performance escape. This 60-minute, dual-action treatment completely relieves heavy lower bodies while unleashing a jaw-dropping facial radiance."
+        "title": "Head To Toe Refreshing Glow Ritual (Legs & Face)",
+        "description": "60 Minutes of Pure Haute-Skincare Luxury. The ultimate high-performance escape that relieves heavy lower bodies while unleashing a lit-from-within facial radiance."
       },
       {
-        "tag": "Package · 50 min",
-        "title": "Back Side Beauty & Relax Ritual",
-        "description": "A session of 50 Minutes of ultimate deep-pore purification and muscle-melting escape for your back."
-      },
-      {
-        "tag": "Body · 45 min",
-        "title": "Energizing Legs & Feet Ritual",
-        "description": "A session of 45 minutes of revitalizing legs and feet massage designed to banish heaviness and restore vitality to tired limbs."
+        "tag": "Package",
+        "title": "The Back Side Beauty & Relax Ritual",
+        "description": "The ultimate deep-pore purification and muscle-melting escape. Give the most neglected part of your body the high-performance luxury it begs for."
       }
     ]
   },
@@ -168,8 +203,8 @@
   "About": {
     "label": "The name",
     "title": "Nanai Care",
-    "meaning": "Nanai comes from Quechua: a very tender caress with which we try to calm pain or sorrow. That is the heart of this studio, touch with intention, never rush.",
-    "vision": "You asked for a friendly, intuitive, warm website, coherent and far from basic. Sacred Sound palette, Amsterdam presence, and room to grow into booking, charts, and online health forms.",
+    "meaning": "The word Nanai means a tender caress used to calm pain or sorrow. When we perform an intuitive massage or facial ritual, we are not just applying products. Through slow, intentional, and deeply comforting touch, we send a direct signal back up that neural highway to your brain, telling your nervous system that it is safe to relax.",
+    "vision": "By calming the brain, we turn off the stress response, lower inflammation, and allow your skin to truly heal from within. Caring for it regularly isn't a luxury—it’s how you say thank you to the body that carries you every day.",
     "logoTitle": "Logo direction (options)",
     "logoBrief": "A woman’s face with a hand on her head, enclosed in a circle. The name can sit inside the mark or below it.",
     "logoOptions": [
@@ -221,43 +256,24 @@
   },
   "Policies": {
     "label": "Booking & payments",
-    "title": "Policies that protect your time and ours",
-    "subtitle": "As agreed with NanaiCare: deposits, rescheduling, cancellations, and studio-led changes.",
+    "title": "Our Appointment & Cancellation Policy",
+    "subtitle": "To ensure a seamless, luxurious experience for every guest, we kindly ask you to review our booking standards.",
     "items": [
       {
-        "title": "Deposit & advance payment",
-        "body": "50% of the treatment is paid in advance as a deposit. Payment methods will be integrated in phase 2 (online booking & checkout)."
+        "title": "Secure Your Sanctuary (50% Advanced Deposit)",
+        "body": "To guarantee your desired time slot, a 50% deposit is required at the time of booking. Your appointment is only fully confirmed once this deposit is processed."
       },
       {
-        "title": "Cancellation by the client",
-        "body": "If you do not notify at least 24 hours in advance, the 50% deposit is non-refundable. With notice, you may reschedule up to two times or transfer the appointment to another person."
+        "title": "The 24-Hour Rule (Cancellations & Rescheduling)",
+        "body": "We respect your schedule, and we ask that you respect ours. You must cancel or reschedule your appointment at least 24 hours in advance. Failure to do so, or failing to show up to your appointment, results in the automatic forfeit of your 50% deposit (no refunds will be issued)."
       },
       {
-        "title": "Cancellation by NanaiCare",
-        "body": "If we must cancel, you may reschedule or receive a full refund of monies paid."
-      }
-    ]
-  },
-  "Roadmap": {
-    "label": "Phase 2 · studio tools",
-    "title": "Next: agenda, charts & health form",
-    "subtitle": "Your brief also includes operational features, we scope them as phase 2 so the public site can launch first, beautifully.",
-    "items": [
-      {
-        "title": "Easy booking agenda",
-        "body": "Calendar that is simple to fill in and correct, with your treatment catalogue linked."
+        "title": "Respecting the Clock (Punctuality Policy)",
+        "body": "Please arrive on time to immerse yourself fully in your treatment. If you arrive late, your session will be shortened to protect the schedule of the next guest. The full treatment price will still apply."
       },
       {
-        "title": "Monthly & annual charts",
-        "body": "Graphs of treatments performed per month and year, plus revenue tracking."
-      },
-      {
-        "title": "Payment methods",
-        "body": "Integrated payment options aligned with the 50% deposit workflow."
-      },
-      {
-        "title": "Online health & aesthetics form",
-        "body": "Client intake (ficha de salud y estética) available before the visit."
+        "title": "Our Commitment to You (Therapist Cancellations)",
+        "body": "In the rare event that your therapist is unable to perform your session due to unforeseen circumstances, your investment is fully protected. You will be able to seamlessly reschedule your treatment to a mutually agreed upon date and time."
       }
     ]
   },
@@ -372,71 +388,6 @@
     "contact": "contact@nanaicare.com",
     "hours": "Tue–Sat · by appointment",
     "charter": "Project charter"
-  },
-  "Charter": {
-    "meta": {
-      "title": "Project charter, NanaiCare",
-      "description": "Scope, roles, and agreed budget reference for the NanaiCare digital project (Sambalab · DGRcodex)."
-    },
-    "eyebrow": "Internal reference · Sambalab × DGRcodex",
-    "title": "NanaiCare project charter",
-    "lead": "Single-page agreement for scope boundaries, responsibilities, and the agreed payment structure. Figures are planning references; final amounts follow the issued invoice.",
-    "overviewTitle": "Purpose",
-    "overviewP1": "Align NanaiCare, Sambalab, and development on what is in and out of scope for the first web phase, and record the agreed budget split (50% + 50%).",
-    "overviewP2": "Digital vision: mobile-first, warm and professional, EN / ES / NL, services, stories, wellness notes, and a clear path toward a future skincare shop.",
-    "partiesTitle": "Parties & roles",
-    "partyClientLabel": "Client / brand",
-    "partyClientName": "NanaiCare",
-    "partyClientBody": "Final copy, tone, legal and pricing decisions, appointments, domain purchase, and agreed payments.",
-    "partyAgencyLabel": "Coordination",
-    "partyAgencyName": "Sambalab",
-    "partyAgencyBody": "Client liaison, prioritisation, and communication of deliverables.",
-    "partyDevLabel": "Development",
-    "partyDevName": "DGRcodex, Daniel García Rojas",
-    "partyDevBody": "Next.js architecture, i18n, UI aligned with the brand system, deployment, and concise technical handover.",
-    "briefTitle": "Client brief (from NanaiCare)",
-    "briefIntro": "Client brief (Nanai Care), integrated May 2026.",
-    "briefBullets": [
-      "Brand: Nanai Care · Quechua Nanai = tender caress to calm pain or sorrow.",
-      "Logo: woman’s face, hand on head, inside a circle; name inside or below (three layout options on site).",
-      "Palette: Sacred Sound · domain www.nanaicare.com · warm, intuitive, non-basic site.",
-      "Treatments tabs: body, facial, packages (Spring/Summer, Autumn/Winter, Legs & Head, Legs & Face), subscriptions (1 & 6 months).",
-      "Policies: 50% deposit upfront; 24h cancellation rule; reschedule ×2 or transfer; Nanai cancellation = reschedule or refund.",
-      "Phase 2: booking agenda, monthly/annual treatment & revenue charts, payment methods, online health/aesthetics form."
-    ],
-    "briefPlaceholder": "Full treatment names and durations are listed on the Treatments page and in docs/NanaiCare-Project-Charter.md.",
-    "scopeTitle": "Scope boundaries",
-    "scopeInTitle": "In scope (phase 1)",
-    "scopeIn": [
-      "Phase 1 live site: brand story (Nanai meaning), Sacred Sound UI, EN/ES/NL.",
-      "Full treatment catalogue page (body, facial, packages, subscriptions) from client list.",
-      "Policies section (deposit, 24h cancellation, reschedule/transfer, studio cancellation).",
-      "Charter with budget; deploy on Vercel; GitHub handover."
-    ],
-    "scopeOutTitle": "Phase 2 (client brief, separate quote)",
-    "scopeOut": [
-      "Booking agenda with easy edit, payment integrations, monthly/annual charts (treatments & revenue).",
-      "Online health & aesthetics intake form.",
-      "Full e-commerce shop and native apps unless newly scoped."
-    ],
-    "changeTitle": "Change control",
-    "changeBody": "Features not listed here, or integrations that require new vendors, are quoted as phase 2 or a written change request. Work that invalidates already approved deliverables may affect timeline and cost.",
-    "budgetTitle": "Budget reference (CLP, Chilean pesos)",
-    "rowBase": "Development base",
-    "rowVat": "IVA (19% on base, confirm on invoice)",
-    "rowDomain": "Domain (estimate · 3 years)",
-    "rowTotal": "Indicative total",
-    "budgetNote": "Amounts in Chilean pesos (CLP). IVA at 19% and domain cost depend on provider; the issued invoice is the binding reference.",
-    "paymentTitle": "Payment milestones",
-    "paymentIntro": "Agreed structure: two halves of the indicative total. First half: 50%. Second half: 50% upon the agreed completion milestone.",
-    "milestoneFirst": "First half (50%)",
-    "milestoneSecond": "Second half (50%)",
-    "paidToDate": "Paid to date",
-    "dueFirstHalf": "Outstanding for first half",
-    "dueSecondHalf": "Second half (after agreed delivery)",
-    "weekGoal": "Target: settle the outstanding first-half balance this week, as verbally agreed between the parties.",
-    "diagramCaption": "Scope view: phase 1 vs optional later work.",
-    "diagramAlt": "Flow: Phase 1 delivers Next site, brand UI, deploy; Phase 2 options include e-commerce, bookings, extra legal."
   },
   "Booking": {
     "meta": {

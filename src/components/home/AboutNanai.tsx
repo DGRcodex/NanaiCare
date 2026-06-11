@@ -3,7 +3,7 @@ import { Mark } from "@/components/brand/Mark";
 
 export async function AboutNanai() {
   const t = await getTranslations("About");
-  const logoOptions = t.raw("logoOptions") as string[];
+
 
   return (
     <section id="about" className="scroll-mt-28 px-4 py-20 sm:px-6 lg:px-8">
@@ -26,15 +26,7 @@ export async function AboutNanai() {
           >
             www.nanaicare.com
           </a>
-          <div className="rounded-[1.25rem] border border-nanai-rose/30 bg-white/80 p-5 shadow-sm backdrop-blur">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-nanai-ink-soft">{t("logoTitle")}</h3>
-            <p className="mt-2 text-sm text-nanai-ink-soft">{t("logoBrief")}</p>
-            <ul className="mt-3 space-y-2 text-sm text-nanai-ink">
-              {logoOptions.map((opt) => (
-                <li key={opt}>{opt}</li>
-              ))}
-            </ul>
-          </div>
+
         </div>
       </div>
     </section>
