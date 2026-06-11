@@ -13,7 +13,62 @@
   --font-theme-heading: var(--font-playfair), system-ui, sans-serif;
   --font-theme-body: var(--font-playfair), system-ui, sans-serif;
 
-  /* Applied from AMMA Config V2 */
+  /* Applied Backgrounds */
+  --nanai-bg-image: url("/bg/velas.jpeg");
+  --nanai-bg-opacity: 0.15;
+  --nanai-bg-overlay-pct: 40%;
+  --nanai-bg-blur: 5px;
+  --nanai-bg-blend: luminosity;
+  --nanai-bg-attachment: fixed;
+
+  --nanai-bg-image-1: url("/bg/mujer.jpeg");
+  --nanai-section-bg-opacity-1: 0.4;
+  --nanai-section-bg-overlay-1: 50%;
+  --nanai-section-bg-blur-1: 4px;
+  --nanai-section-bg-blend-1: normal;
+  --nanai-section-bg-attachment-1: fixed;
+
+  --nanai-bg-image-2: url("/bg/facial.jpeg");
+  --nanai-section-bg-opacity-2: 0.5;
+  --nanai-section-bg-overlay-2: 60%;
+  --nanai-section-bg-blur-2: 2px;
+  --nanai-section-bg-blend-2: multiply;
+  --nanai-section-bg-attachment-2: scroll;
+
+  --nanai-bg-image-3: url("/bg/notas.jpeg");
+  --nanai-section-bg-opacity-3: 0.3;
+  --nanai-section-bg-overlay-3: 70%;
+  --nanai-section-bg-blur-3: 8px;
+  --nanai-section-bg-blend-3: normal;
+  --nanai-section-bg-attachment-3: scroll;
+
+  --nanai-bg-image-4: url("/bg/imagen.jpeg");
+  --nanai-section-bg-opacity-4: 0.4;
+  --nanai-section-bg-overlay-4: 55%;
+  --nanai-section-bg-blur-4: 4px;
+  --nanai-section-bg-blend-4: normal;
+  --nanai-section-bg-attachment-4: scroll;
+
+  --nanai-bg-image-5: url("/bg/masaje.jpeg");
+  --nanai-section-bg-opacity-5: 0.5;
+  --nanai-section-bg-overlay-5: 45%;
+  --nanai-section-bg-blur-5: 3px;
+  --nanai-section-bg-blend-5: normal;
+  --nanai-section-bg-attachment-5: fixed;
+
+  --nanai-bg-image-6: url("/bg/facial.jpeg");
+  --nanai-section-bg-opacity-6: 0.3;
+  --nanai-section-bg-overlay-6: 70%;
+  --nanai-section-bg-blur-6: 8px;
+  --nanai-section-bg-blend-6: normal;
+  --nanai-section-bg-attachment-6: scroll;
+
+  --nanai-bg-image-7: url("/bg/masajecabeza.jpeg");
+  --nanai-section-bg-opacity-7: 0.4;
+  --nanai-section-bg-overlay-7: 60%;
+  --nanai-section-bg-blur-7: 5px;
+  --nanai-section-bg-blend-7: luminosity;
+  --nanai-section-bg-attachment-7: scroll;
 }
 
 @theme inline {
