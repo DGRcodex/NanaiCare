@@ -6,7 +6,12 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export default async function BlogPage() {
-  const posts = await client.fetch(getPostsQuery);
+  let posts = [];
+  try {
+    posts = await client.fetch(getPostsQuery);
+  } catch (error) {
+    console.warn("Could not fetch posts, dataset might not exist yet:", error);
+  }
 
   return (
     <div

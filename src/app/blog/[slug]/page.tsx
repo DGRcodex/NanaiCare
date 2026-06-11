@@ -7,14 +7,24 @@ import { notFound } from "next/navigation";
 export const dynamic = "force-dynamic";
 
 export async function generateStaticParams() {
-  const posts = await client.fetch(getPostsQuery);
-  return posts.map((post: any) => ({
-    slug: post.slug.current,
-  }));
+  try {
+    const posts = await client.fetch(getPostsQuery);
+    return posts.map((post: any) => ({
+      slug: post.slug.current,
+    }));
+  } catch (error) {
+    console.warn("Could not fetch posts for generateStaticParams, returning empty array:", error);
+    return [];
+  }
 }
 
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = await client.fetch(getPostBySlugQuery, { slug: params.slug });
+  let post = null;
+  try {
+    post = await client.fetch(getPostBySlugQuery, { slug: params.slug });
+  } catch (error) {
+    console.warn("Could not fetch post, dataset might not exist yet:", error);
+  }
 
   if (!post) {
     return notFound();
