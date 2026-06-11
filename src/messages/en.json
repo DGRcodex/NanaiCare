@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "NanaiCare, Beauty & facial care in Amsterdam",
-    "description": "A calm, professional studio in Amsterdam for facials, skin health guidance, and curated skincare, rooted in care."
+    "title": "NanaiCare | Beauty Salon & Facial Wellness in Amsterdam",
+    "description": "A calm, professional studio in Amsterdam for facials, skin health guidance, and curated skincare. Designed and programmed by Daniel Garcia Rojas (dgrcodex) for Sambalab.pro."
   },
   "Nav": {
     "treatments": "Treatments",
@@ -29,7 +29,11 @@
     "label": "What we offer",
     "title": "Treatments shaped around rhythm, not rush.",
     "subtitle": "Every session is paced for listening: your lifestyle, your barrier, your goals.",
-    "signatureChips": ["slow tempo", "tailored masks", "facial massage"],
+    "signatureChips": [
+      "slow tempo",
+      "tailored masks",
+      "facial massage"
+    ],
     "panel": {
       "title": "Studio rhythm",
       "body": "Quiet music, warmed towels, and language you can understand, no gatekeeping, just care.",
@@ -38,24 +42,64 @@
     },
     "items": [
       {
-        "tag": "Signature",
-        "title": "Nanai facial ritual",
-        "description": "A slow, layered facial with gentle massage, tailored masks, and finishing care for luminous balance."
+        "tag": "Facial · 120 min",
+        "title": "Deep Cleansing Care",
+        "description": "A multi-step skin care treatment designed to go far beyond your daily routine. It purifies the skin and unclogs the pores, removing dead cells and extracting impurities, and leaving you with a fresh, balanced, and radiant skin."
       },
       {
-        "tag": "Sculpt & lift",
-        "title": "Facial contour massage",
-        "description": "Light manual techniques to soften tension, support circulation, and leave the face feeling lifted and at ease."
+        "tag": "Facial · 60 min",
+        "title": "Sensitive Nanai Care",
+        "description": "This facial treatment is designed to calm, detoxify, strengthen and hydrate the skin barrier, with quality cosmetological products especially formulated for sensitive skin."
       },
       {
-        "tag": "Clarity",
-        "title": "Barrier reset treatment",
-        "description": "For sensitized or over-stimulated skin: soothing steps that rebuild comfort and clarity over time."
+        "tag": "Facial · 50 min",
+        "title": "Sculp & Glow Lymphatic Drainage",
+        "description": "Say goodbye to morning puffiness. This gentle, rhythmic massage channels your body’s natural drainage network to flush toxins, release jaw tension, and boost cellular circulation."
       },
       {
-        "tag": "Education",
-        "title": "Skin consultation",
-        "description": "A guided conversation with a practical home routine, fewer products, better decisions."
+        "tag": "Facial · 90 min",
+        "title": "Post Acné Treatment",
+        "description": "Improve the appearance of your skin and feel comfortable and secure of yourself. Here you will find the support that you need with a tailor-made treatment."
+      },
+      {
+        "tag": "Facial",
+        "title": "Microneedling with Peptides",
+        "description": "Unlock your Skin's Natural Glow with Microneedling! This minimally invasive treatment uses tiny, precise needles to stimulate collagen and elastin production."
+      },
+      {
+        "tag": "Facial",
+        "title": "Clear Skin",
+        "description": "If you suffer from hyperpigmentation like melasma, sunspots or acne scars, in Nanai Care you can press the reset button to peel away years of sun damage."
+      },
+      {
+        "tag": "Facial",
+        "title": "Summer Glow & Cryo Hydration",
+        "description": "The Ultimate Summer Melt-Proof Formula. Crafted to rescue sun-drenched skin, this high-performance treatment floods your skin barrier with advanced hydration."
+      },
+      {
+        "tag": "Facial",
+        "title": "Nanain Signature Care",
+        "description": "The Ultimate 'Me Time' Obsession. Deep Cleanse & HydraFacial, Lymphatic & Uplifting Massage, Infrared, Aroma & Premium Mask."
+      },
+      {
+        "tag": "Package · 60 min",
+        "title": "The Sole & Soul Serenety Ritual",
+        "description": "A session of 60 minutes of pure, weightless luxury for head and legs. This targeted dual-action ritual completely lightens heavy lower bodies while melting away chronic tension from the neck up."
+      },
+      {
+        "tag": "Package · 60 min",
+        "title": "Head to Toe Refreshing Glow Ritual",
+        "description": "The Instant Reset: The ultimate high-performance escape. This 60-minute, dual-action treatment completely relieves heavy lower bodies while unleashing a jaw-dropping facial radiance."
+      },
+      {
+        "tag": "Package · 50 min",
+        "title": "Back Side Beauty & Relax Ritual",
+        "description": "A session of 50 Minutes of ultimate deep-pore purification and muscle-melting escape for your back."
+      },
+      {
+        "tag": "Body · 45 min",
+        "title": "Energizing Legs & Feet Ritual",
+        "description": "A session of 45 minutes of revitalizing legs and feet massage designed to banish heaviness and restore vitality to tired limbs."
       }
     ]
   },
@@ -135,11 +179,26 @@
     ],
     "paletteTitle": "Six colors per theme, switch with the button below",
     "paletteSwatches": [
-      { "label": "Canvas", "hex": "#FFFFFF" },
-      { "label": "Blush", "hex": "#F1D8D8" },
-      { "label": "Rose", "hex": "#CBAEAE" },
-      { "label": "Sage", "hex": "#B4AA86" },
-      { "label": "Ink", "hex": "#464C50" }
+      {
+        "label": "Canvas",
+        "hex": "#FFFFFF"
+      },
+      {
+        "label": "Blush",
+        "hex": "#F1D8D8"
+      },
+      {
+        "label": "Rose",
+        "hex": "#CBAEAE"
+      },
+      {
+        "label": "Sage",
+        "hex": "#B4AA86"
+      },
+      {
+        "label": "Ink",
+        "hex": "#464C50"
+      }
     ]
   },
   "Treatments": {

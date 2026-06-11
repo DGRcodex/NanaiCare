@@ -82,7 +82,7 @@ export const NANAI_THEMES: NanaiTheme[] = [
       ink: "#3D2E32",
       accent: "#6B4A5A",
     },
-    fonts: { headingVar: "--font-playfair", bodyVar: "--font-josefin" },
+    fonts: { headingVar: "--font-playfair", bodyVar: "--font-playfair" },
   },
   {
     id: "nanai-ritual",
@@ -114,7 +114,7 @@ export const NANAI_THEMES: NanaiTheme[] = [
   },
 ];
 
-export const DEFAULT_THEME_ID: NanaiThemeId = "sacred-sound";
+export const DEFAULT_THEME_ID: NanaiThemeId = "amma";
 
 export const THEME_STORAGE_KEY = "nanaicare-theme";
 
