@@ -238,7 +238,6 @@ export function BookingForm({ labels, locale }: Props) {
           </button>
         </div>
       )}
-      </div>
     </div>
   );
 }
