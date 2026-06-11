@@ -13,19 +13,13 @@ export async function SiteHeader({ locale }: { locale: string }) {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="group flex items-center gap-3 rounded-full pr-3 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-nanai-sage"
+          className="group flex items-center rounded-full pr-3 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-nanai-sage"
         >
-          <Mark className="h-11 w-11 rounded-2xl shadow-nanai-soft ring-1 ring-nanai-rose/30 transition group-hover:-translate-y-0.5 group-hover:ring-nanai-sage/50" />
-
-          <span className="flex flex-col leading-none">
-            <span className="font-heading text-lg font-semibold tracking-[0.08em] text-nanai-ink sm:text-xl">
-              NANAI
-              <span className="font-normal text-nanai-rose">CARE</span>
-            </span>
-            <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-nanai-ink-soft">
-              Amsterdam
-            </span>
-          </span>
+          <img 
+            src="/logo.png" 
+            alt="NanaiCare Amsterdam" 
+            className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]" 
+          />
         </Link>
 
         <nav

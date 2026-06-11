@@ -11,8 +11,7 @@ export async function AboutNanai() {
         <div className="relative flex justify-center lg:justify-start">
           <div className="relative flex h-56 w-56 items-center justify-center rounded-full bg-gradient-to-br from-nanai-blush via-white to-nanai-sage/30 p-1 shadow-nanai-soft ring-1 ring-nanai-rose/40 sm:h-64 sm:w-64">
             <div className="flex h-full w-full flex-col items-center justify-center rounded-full bg-white/90 text-center">
-              <Mark className="h-20 w-20 text-nanai-ink sm:h-24 sm:w-24" />
-              <p className="mt-3 font-heading text-sm tracking-[0.2em] text-nanai-ink">NANAI CARE</p>
+              <Mark className="h-28 w-auto sm:h-32" />
             </div>
           </div>
         </div>

@@ -49,8 +49,8 @@ export async function Hero() {
                   <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-nanai-ink-soft">{t("cardEyebrow")}</p>
                   <p className="mt-2 font-heading text-2xl tracking-[0.12em] text-nanai-ink">NANAI</p>
                 </div>
-                <span className="rounded-2xl bg-nanai-blush/70 p-3 ring-1 ring-nanai-rose/35">
-                  <Mark className="h-10 w-10 text-nanai-ink" />
+                <span className="flex rounded-2xl bg-nanai-blush/70 p-3 ring-1 ring-nanai-rose/35">
+                  <Mark className="h-10 w-auto" />
                 </span>
               </div>
 

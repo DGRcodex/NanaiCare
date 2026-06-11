@@ -9,11 +9,8 @@ export async function SiteFooter() {
     <footer id="book" className="border-t border-nanai-rose/30 bg-white/70 py-14 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:px-8">
         <div className="max-w-md space-y-4">
-          <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-nanai-blush/70 ring-1 ring-nanai-rose/35">
-              <Mark className="h-6 w-6 text-nanai-ink" aria-hidden />
-            </span>
-            <p className="font-heading text-sm font-semibold tracking-[0.22em] text-nanai-ink">NANAI CARE</p>
+          <div className="flex items-center">
+            <Mark className="h-16 w-auto" aria-hidden />
           </div>
           <p className="text-sm leading-relaxed text-nanai-ink-soft">{t("tagline")}</p>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-nanai-sage">{t("hours")}</p>
