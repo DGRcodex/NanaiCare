@@ -41,6 +41,9 @@ export async function SiteHeader({ locale }: { locale: string }) {
           <a href="/#policies" className="transition hover:text-nanai-ink">
             {t("policies")}
           </a>
+          <Link href="/blog" className="transition hover:text-nanai-ink">
+            Journal
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3 sm:gap-4">
@@ -75,6 +78,9 @@ export async function SiteHeader({ locale }: { locale: string }) {
               <a className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/#stories">
                 {t("stories")}
               </a>
+              <Link className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/blog">
+                Journal
+              </Link>
               <Link
                 className="mt-1 block rounded-xl bg-nanai-ink px-3 py-2 text-center text-xs uppercase tracking-[0.16em] text-white"
                 href="/book"
