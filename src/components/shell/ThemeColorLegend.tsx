@@ -17,7 +17,10 @@ export function ThemeColorLegend() {
 
   useEffect(() => {
     const stored = localStorage.getItem(THEME_STORAGE_KEY) as NanaiThemeId | null;
-    if (stored && NANAI_THEMES.some((th) => th.id === stored)) setThemeId(stored);
+    if (stored && NANAI_THEMES.some((th) => th.id === stored)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setThemeId(stored);
+    }
 
     const onChange = (e: Event) => {
       const detail = (e as CustomEvent<NanaiThemeId>).detail;

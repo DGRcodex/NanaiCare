@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import type { AppLocale } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import { LocaleSwitcher } from "@/components/shell/LocaleSwitcher";
-import { Mark } from "@/components/brand/Mark";
+
 
 export async function SiteHeader({ locale }: { locale: string }) {
   const t = await getTranslations("Nav");
@@ -15,6 +15,7 @@ export async function SiteHeader({ locale }: { locale: string }) {
           href="/"
           className="group flex items-center rounded-full pr-3 outline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-nanai-sage"
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src="/logolanding.jpeg" 
             alt="NanaiCare Amsterdam" 
@@ -29,12 +30,12 @@ export async function SiteHeader({ locale }: { locale: string }) {
           <Link href="/treatments" className="transition hover:text-nanai-ink">
             {t("treatments")}
           </Link>
-          <a href="/#about" className="transition hover:text-nanai-ink">
+          <Link href="/#about" className="transition hover:text-nanai-ink">
             {t("about")}
-          </a>
-          <a href="/#policies" className="transition hover:text-nanai-ink">
+          </Link>
+          <Link href="/#policies" className="transition hover:text-nanai-ink">
             {t("policies")}
-          </a>
+          </Link>
           <Link href="/blog" className="transition hover:text-nanai-ink">
             Nanai Rituals
           </Link>
@@ -63,15 +64,15 @@ export async function SiteHeader({ locale }: { locale: string }) {
               <Link className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/treatments">
                 {t("treatments")}
               </Link>
-              <a className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/#about">
+              <Link className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/#about">
                 {t("about")}
-              </a>
-              <a className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/#policies">
+              </Link>
+              <Link className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/#policies">
                 {t("policies")}
-              </a>
-              <a className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/#stories">
+              </Link>
+              <Link className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/#stories">
                 {t("stories")}
-              </a>
+              </Link>
               <Link className="block rounded-xl px-3 py-2 hover:bg-nanai-blush/60" href="/blog">
                 Nanai Rituals
               </Link>

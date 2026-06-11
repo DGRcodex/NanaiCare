@@ -98,6 +98,7 @@ export function ThemeSwitcher() {
   useEffect(() => {
     const stored = localStorage.getItem(THEME_STORAGE_KEY) as NanaiThemeId | null;
     if (stored && NANAI_THEMES.some((th) => th.id === stored)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setActive(stored);
     }
 
