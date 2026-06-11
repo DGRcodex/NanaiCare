@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-// ThemeSwitcher is a design-time tool — temporarily visible in production as well.
-const isPreview = true;
+// ThemeSwitcher is only visible in development or Vercel preview environments
+const isPreview = process.env.NEXT_PUBLIC_VERCEL_ENV === "preview" || process.env.NODE_ENV === "development";
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
