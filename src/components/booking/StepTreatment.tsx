@@ -6,6 +6,7 @@ import { BOOKABLE_TREATMENTS } from "@/content/bookableTreatments";
 interface Props {
   selected: BookableTreatment | null;
   onSelect: (t: BookableTreatment) => void;
+  onConfirm: () => void;
   labels: {
     body: string;
     facial: string;
@@ -22,7 +23,7 @@ const CATEGORY_ICONS: Record<string, string> = {
   packages: "🎁",
 };
 
-export function StepTreatment({ selected, onSelect, labels }: Props) {
+export function StepTreatment({ selected, onSelect, onConfirm, labels }: Props) {
   const byCategory = CATEGORY_ORDER.map((cat) => ({
     cat,
     items: BOOKABLE_TREATMENTS.filter((t) => t.category === cat),
@@ -45,7 +46,7 @@ export function StepTreatment({ selected, onSelect, labels }: Props) {
                 <button
                   key={t.name}
                   type="button"
-                  onClick={() => onSelect(t)}
+                  onClick={() => { onSelect(t); onConfirm(); }}
                   aria-pressed={isSelected}
                   className={[
                     "group flex items-center justify-between rounded-2xl border px-4 py-3.5 text-left",

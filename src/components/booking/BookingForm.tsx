@@ -190,6 +190,7 @@ export function BookingForm({ labels, locale }: Props) {
           <StepTreatment
             selected={form.treatment}
             onSelect={(t: BookableTreatment) => setForm((prev) => ({ ...prev, treatment: t }))}
+            onConfirm={() => setStep(2)}
             labels={{
               body: labels.categoryBody,
               facial: labels.categoryFacial,
@@ -201,8 +202,11 @@ export function BookingForm({ labels, locale }: Props) {
 
         {step === 2 && form.treatment && (
           <div className="mt-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <p className="text-xs text-nanai-ink/60 mb-3 text-center">
+              Reservando: <span className="font-semibold text-nanai-sage">{form.treatment.name}</span> · {form.treatment.durationLabel}
+            </p>
             <CalEmbed 
-              calLink={`nanai-care-tuxi4k/${form.treatment.durationMin}min`} 
+              calLink={`nanai-care-tuxi4k`} 
               theme="light" 
               config={{
                 notes: `Tratamiento deseado: ${form.treatment.name} (${form.treatment.durationLabel}).`
@@ -211,20 +215,6 @@ export function BookingForm({ labels, locale }: Props) {
           </div>
         )}
       </div>
-
-      {/* Navigation for Step 1 only (Cal.com handles its own navigation for the rest) */}
-      {step === 1 && (
-        <div className="mt-8 flex items-center justify-end">
-          <button
-            type="button"
-            disabled={!canAdvance}
-            onClick={() => setStep(2)}
-            className="inline-flex items-center justify-center rounded-full bg-nanai-accent px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-nanai-soft transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            {labels.nextButton} →
-          </button>
-        </div>
-      )}
 
       {/* Back button for Step 2 */}
       {step === 2 && (
