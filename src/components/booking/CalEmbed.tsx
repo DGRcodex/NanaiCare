@@ -4,11 +4,12 @@ import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 
 interface CalEmbedProps {
-  calLink?: string; // Example: "nanaicare/facial-treatment"
+  calLink?: string; // Example: "nanai-care-tuxi4k/60min"
   theme?: "light" | "dark" | "auto";
+  config?: Record<string, any>;
 }
 
-export function CalEmbed({ calLink = "nanaicare", theme = "light" }: CalEmbedProps) {
+export function CalEmbed({ calLink = "nanaicare", theme = "light", config = {} }: CalEmbedProps) {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
@@ -25,7 +26,7 @@ export function CalEmbed({ calLink = "nanaicare", theme = "light" }: CalEmbedPro
       <Cal
         calLink={calLink}
         style={{ width: "100%", height: "100%", overflow: "scroll" }}
-        config={{ layout: "month_view", theme }}
+        config={{ layout: "month_view", theme, ...config }}
       />
     </div>
   );

@@ -6,6 +6,7 @@ import { StepTreatment } from "./StepTreatment";
 import { StepDateTime } from "./StepDateTime";
 import { StepPersonal } from "./StepPersonal";
 import { BookingConfirmation } from "./BookingConfirmation";
+import { CalEmbed } from "./CalEmbed";
 
 interface BookingLabels {
   step1Title: string;
@@ -199,92 +200,44 @@ export function BookingForm({ labels, locale }: Props) {
         )}
 
         {step === 2 && form.treatment && (
-          <StepDateTime
-            treatment={form.treatment}
-            selectedDate={form.date}
-            selectedTime={form.timeSlot}
-            onDateSelect={(d) => setForm((prev) => ({ ...prev, date: d, timeSlot: null }))}
-            onTimeSelect={(t) => setForm((prev) => ({ ...prev, timeSlot: t }))}
-            labels={{
-              pickDate: labels.pickDate,
-              pickTime: "",
-              slotsLoading: labels.slotsLoading,
-              noSlots: labels.noSlots,
-              closedDay: labels.closedDay,
-            }}
-            locale={locale}
-          />
-        )}
-
-        {step === 3 && (
-          <StepPersonal
-            fullName={form.fullName}
-            email={form.email}
-            phone={form.phone}
-            healthNote={form.healthNote}
-            onChange={handleFieldChange}
-            labels={{
-              namePlaceholder: labels.namePlaceholder,
-              emailPlaceholder: labels.emailPlaceholder,
-              phonePlaceholder: labels.phonePlaceholder,
-              healthNotePlaceholder: labels.healthNotePlaceholder,
-              depositNote: labels.depositNote,
-              cancelPolicy: labels.cancelPolicy,
-            }}
-          />
+          <div className="mt-4 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <CalEmbed 
+              calLink={`nanai-care-tuxi4k/${form.treatment.durationMin}min`} 
+              theme="light" 
+              config={{
+                notes: `Tratamiento deseado: ${form.treatment.name} (${form.treatment.durationLabel}).`
+              }}
+            />
+          </div>
         )}
       </div>
 
-      {/* Server error */}
-      {serverError && (
-        <p className="mt-3 rounded-xl bg-red-50 px-4 py-2 text-sm text-red-600">
-          {serverError}
-        </p>
-      )}
-
-      {/* Navigation */}
-      <div className="mt-8 flex items-center justify-between gap-4">
-        {step > 1 ? (
-          <button
-            type="button"
-            onClick={() => setStep((s) => (typeof s === "number" ? (s - 1) as BookingStep : 3))}
-            className="inline-flex items-center gap-2 rounded-full border border-nanai-rose/35 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-nanai-ink/70 transition hover:border-nanai-sage/50 hover:text-nanai-ink"
-          >
-            ← {labels.backButton}
-          </button>
-        ) : (
-          <span />
-        )}
-
-        {step < 3 ? (
+      {/* Navigation for Step 1 only (Cal.com handles its own navigation for the rest) */}
+      {step === 1 && (
+        <div className="mt-8 flex items-center justify-end">
           <button
             type="button"
             disabled={!canAdvance}
-            onClick={() => setStep((s) => (typeof s === "number" ? (s + 1) as BookingStep : 1))}
+            onClick={() => setStep(2)}
             className="inline-flex items-center justify-center rounded-full bg-nanai-accent px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-nanai-soft transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
           >
             {labels.nextButton} →
           </button>
-        ) : (
+        </div>
+      )}
+
+      {/* Back button for Step 2 */}
+      {step === 2 && (
+        <div className="mt-8 flex items-center justify-start">
           <button
             type="button"
-            disabled={!canAdvance || isPending}
-            onClick={handleSubmit}
-            className="inline-flex items-center justify-center rounded-full bg-nanai-accent px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-nanai-soft transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
+            onClick={() => setStep(1)}
+            className="inline-flex items-center gap-2 rounded-full border border-nanai-rose/35 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-nanai-ink/70 transition hover:border-nanai-sage/50 hover:text-nanai-ink"
           >
-            {isPending ? (
-              <span className="flex items-center gap-2">
-                <svg className="h-3.5 w-3.5 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8h4z" />
-                </svg>
-                {labels.submitting}
-              </span>
-            ) : (
-              labels.confirmButton
-            )}
+            ← {labels.backButton}
           </button>
-        )}
+        </div>
+      )}
       </div>
     </div>
   );
