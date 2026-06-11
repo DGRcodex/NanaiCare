@@ -121,6 +121,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <p className="text-nanai-ink/60 italic font-light">This story has no content yet.</p>
           )}
         </div>
+
+        <div className="mt-16 text-center border-t border-nanai-rose/20 pt-12">
+          <h3 className="text-3xl font-serif text-nanai-ink mb-4">Ready for your ritual?</h3>
+          <p className="text-nanai-ink/80 mb-8 font-light max-w-lg mx-auto leading-relaxed">
+            Take a moment for yourself. Book your session today and discover a space dedicated exclusively to your wellbeing and skin health.
+          </p>
+          <Link href="/book" className="inline-flex items-center justify-center rounded-full bg-nanai-accent px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-nanai-soft transition hover:opacity-90">
+            Book your appointment
+          </Link>
+        </div>
       </article>
     </div>
   );
