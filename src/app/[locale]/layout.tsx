@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: t("description"),
       locale,
       type: "website",
+      siteName: "NanaiCare",
     },
   };
 }
@@ -42,6 +43,31 @@ export default async function LocaleLayout({ children, params }: Props) {
   setRequestLocale(locale);
   const messages = await getMessages();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    name: "NanaiCare",
+    image: "https://www.nanaicare.com/icon.png",
+    "@id": "https://www.nanaicare.com",
+    url: "https://www.nanaicare.com",
+    telephone: "",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "",
+      addressLocality: "Amsterdam",
+      postalCode: "",
+      addressCountry: "NL",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 52.3676,
+      longitude: 4.9041,
+    },
+    priceRange: "$$",
+    description:
+      "Beauty salon and facial wellness in Amsterdam. Curated skincare and treatments.",
+  };
+
   return (
     <NextIntlClientProvider messages={messages}>
       <HtmlLang locale={locale} />
@@ -52,6 +78,10 @@ export default async function LocaleLayout({ children, params }: Props) {
           <SiteFooter />
         </div>
         {isPreview && <ThemeSwitcher />}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </ThemeProvider>
     </NextIntlClientProvider>
   );

@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --nanai-canvas: #ffffff;
-  --nanai-blush: #f1d8d8;
-  --nanai-rose: #cbaeae;
-  --nanai-sage: #b4aa86;
-  --nanai-ink: #464c50;
-  --nanai-accent: #8f8468;
+  --nanai-canvas: #F5F0E8;
+  --nanai-blush: #E8D5C8;
+  --nanai-rose: #C9A99A;
+  --nanai-sage: #9E6B5C;
+  --nanai-ink: #3D2E32;
+  --nanai-accent: #6B4A5A;
   --nanai-ink-soft: color-mix(in oklab, var(--nanai-ink) 72%, white);
   --nanai-frost: color-mix(in oklab, white 78%, var(--nanai-blush));
   --nanai-shadow: 0 24px 80px color-mix(in oklab, var(--nanai-ink) 12%, transparent);
-  --font-theme-heading: var(--font-oswald), system-ui, sans-serif;
-  --font-theme-body: var(--font-quicksand), system-ui, sans-serif;
+  --font-theme-heading: var(--font-playfair), system-ui, sans-serif;
+  --font-theme-body: var(--font-playfair), system-ui, sans-serif;
+
+  /* Applied from AMMA Config V2 */
 }
 
 @theme inline {

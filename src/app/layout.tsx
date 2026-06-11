@@ -92,8 +92,26 @@ const fontVars = [
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nanaicare.com"),
   title: {
-    default: "NanaiCare",
+    default: "NanaiCare | Beauty Salon & Facial Wellness in Amsterdam",
     template: "%s · NanaiCare",
+  },
+  authors: [{ name: "Daniel Garcia Rojas (dgrcodex)", url: "https://dgrcodex.me" }],
+  creator: "Sambalab (sambalab.pro)",
+  publisher: "NanaiCare",
+  keywords: [
+    "NanaiCare", 
+    "beauty salon amsterdam", 
+    "facial wellness", 
+    "skincare amsterdam", 
+    "masaje facial amsterdam", 
+    "skincare studio", 
+    "sambalab", 
+    "sambalab.pro"
+  ],
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
   },
 };
 
