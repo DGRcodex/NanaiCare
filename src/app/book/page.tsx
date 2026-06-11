@@ -31,11 +31,12 @@ export default function BookPage() {
         </header>
 
         {/* 
-          Replace "nanaicare/facial-treatment" with your actual Cal.com event type link 
-          once you set up your account at cal.com.
+          Replace "nanai-care-tuxi4k" with a specific event type if you want to embed a specific one, 
+          e.g. "nanai-care-tuxi4k/facial-treatment". 
+          Leaving it as "nanai-care-tuxi4k" will show all your public events.
         */}
         <div className="bg-nanai-canvas/50 backdrop-blur-md rounded-[2rem] p-4 md:p-8 border border-nanai-blush shadow-nanai-soft">
-          <CalEmbed calLink="nanaicare" theme="light" />
+          <CalEmbed calLink="nanai-care-tuxi4k" theme="light" />
         </div>
       </div>
     </div>
