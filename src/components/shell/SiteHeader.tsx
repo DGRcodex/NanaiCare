@@ -17,7 +17,7 @@ export async function SiteHeader({ locale }: { locale: string }) {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
-            src="/logolanding.jpeg" 
+            src="/PNG%20Transparente/nanai-logo-v.png" 
             alt="NanaiCare Amsterdam" 
             className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-[1.02]" 
           />

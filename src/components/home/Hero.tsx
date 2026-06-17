@@ -17,6 +17,11 @@ export async function Hero() {
           </p>
 
           <div className="space-y-5">
+            <img 
+              src="/PNG%20Transparente/nanai-logo-h-amsterdam.png" 
+              alt="Nanai Care Amsterdam Logo" 
+              className="h-48 w-auto sm:h-60 object-contain"
+            />
             <h1 className="font-heading text-4xl font-medium leading-[1.05] tracking-tight text-nanai-ink sm:text-5xl lg:text-6xl">
               {t("title")}
             </h1>

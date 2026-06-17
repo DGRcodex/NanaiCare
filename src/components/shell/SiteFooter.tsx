@@ -10,7 +10,7 @@ export async function SiteFooter() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:px-8">
         <div className="max-w-md space-y-4">
           <div className="flex items-center">
-            <Mark src="/logofooter.jpeg" className="h-16 w-auto" aria-hidden />
+            <Mark src="/PNG%20Transparente/nanai-logo-v.png" className="h-16 w-auto" aria-hidden />
           </div>
           <p className="text-sm leading-relaxed text-nanai-ink-soft">{t("tagline")}</p>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-nanai-sage">{t("hours")}</p>
