@@ -8,6 +8,7 @@ export interface BookableTreatment {
   category: "body" | "facial" | "packages";
   durationMin: number; // canonical minutes (used for slot calculation)
   durationLabel: string; // display string e.g. "60 min"
+  calLink?: string; // specific Cal.com event link for this treatment
 }
 
 export interface TimeSlot {

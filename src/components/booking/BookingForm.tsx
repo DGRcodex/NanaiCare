@@ -206,7 +206,7 @@ export function BookingForm({ labels, locale }: Props) {
               Reservando: <span className="font-semibold text-nanai-sage">{form.treatment.name}</span> · {form.treatment.durationLabel}
             </p>
             <CalEmbed 
-              calLink={`nanai-care-tuxi4k`} 
+              calLink={form.treatment.calLink || `nanai-care-tuxi4k`} 
               theme="light" 
               config={{
                 notes: `Tratamiento deseado: ${form.treatment.name} (${form.treatment.durationLabel}).`

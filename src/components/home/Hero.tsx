@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Mark } from "@/components/brand/Mark";
+import QRCode from "react-qr-code";
 
 export async function Hero() {
   const t = await getTranslations("Hero");
@@ -54,9 +55,24 @@ export async function Hero() {
                   <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-nanai-ink-soft">{t("cardEyebrow")}</p>
                   <p className="mt-2 font-heading text-2xl tracking-[0.12em] text-nanai-ink">NANAI</p>
                 </div>
-                <span className="flex rounded-2xl bg-nanai-blush/70 p-3 ring-1 ring-nanai-rose/35">
-                  <Mark className="h-10 w-auto" />
-                </span>
+                <div className="text-right">
+                  <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-nanai-sage">
+                    ID Digital
+                  </p>
+                  <p className="text-[8px] text-nanai-ink-soft mt-1">Escanea para guardar</p>
+                </div>
+              </div>
+
+              <div className="flex flex-1 items-center justify-center py-4">
+                <div className="rounded-[1.5rem] bg-white p-4 shadow-sm ring-1 ring-nanai-rose/35 transition hover:scale-105">
+                  <QRCode
+                    value={`BEGIN:VCARD\nVERSION:3.0\nN:Care;Nanai;;;\nFN:Nanai Care\nORG:Nanai Care Amsterdam\nEMAIL:contact@nanaicare.com\nTEL:+31000000000\nADR:;;Amsterdam;;;;Netherlands\nURL:https://nanaicare.com\nEND:VCARD`}
+                    size={164}
+                    bgColor="#ffffff"
+                    fgColor="#3D2E32"
+                    level="L"
+                  />
+                </div>
               </div>
 
               <div className="mt-10 space-y-4">
