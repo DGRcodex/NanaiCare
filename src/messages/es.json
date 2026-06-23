@@ -107,21 +107,47 @@
   "Testimonials": {
     "label": "Historias",
     "title": "Palabras cálidas de quienes se sientan aquí.",
+    "leaveReview": "Deja tu historia",
     "items": [
       {
-        "quote": "Salgo más suave por dentro y por fuera. El espacio se siente intencional, y el consejo nunca parece venta.",
-        "name": "Maya R.",
-        "role": "Ámsterdam · faciales regulares"
+        "quote": "Nicol es súper profesional, me explicó todo lo que necesitaba saber. Me sentí mejor de inmediato.",
+        "name": "Anónimo",
+        "role": "Tratamiento de masaje"
       },
       {
-        "quote": "Por fin un lugar que explica lo que mi piel necesita sin agobiar. La parte de masaje es increíble.",
-        "name": "Jonas V.",
-        "role": "Haarlem · primera visita"
+        "quote": "Un masaje de relajación increíble de parte de Nicol. Muy profesional.",
+        "name": "Anónimo",
+        "role": "Tratamiento de masaje"
       },
       {
-        "quote": "Lujoso, pero con los pies en la tierra. Mi piel con rosácea nunca había estado tan estable.",
-        "name": "Elena S.",
-        "role": "Ámsterdam · foco en barrera"
+        "quote": "Nicole fue increíble. Me quitó todos los nudos. Me sentí como una hoja flotando después.",
+        "name": "Anónimo",
+        "role": "Tratamiento de masaje"
+      },
+      {
+        "quote": "Una cálida bienvenida con Nicol. Una masajista excelente y experta. Muy atenta.",
+        "name": "Roos",
+        "role": "Tratamiento de masaje"
+      },
+      {
+        "quote": "Nicol fue encantadora, realmente me hizo sentir cómoda. El masaje fue asombroso, la presión fue la correcta y los puntos donde tenía tensión fueron muy bien tratados. Me sentí muchísimo mejor.",
+        "name": "Anónimo",
+        "role": "Tratamiento de masaje"
+      },
+      {
+        "quote": "¡El masaje de tejido profundo que Nicol me dio fue INCREÍBLE! En 50 minutos todos mis músculos fueron masajeados tan bien que mi dolor de cuello desapareció inmediatamente. Nicol tiene manos de oro.",
+        "name": "Melisa",
+        "role": "Masaje de tejido profundo"
+      },
+      {
+        "quote": "Un facial muy relajante. La piel se siente tan limpia e hidratada ahora. Lo recomiendo definitivamente.",
+        "name": "Anónimo",
+        "role": "Tratamiento facial"
+      },
+      {
+        "quote": "El masaje de relajación de Nicol fue genial. Desde que Nicol me da masajes, ya no voy a fisioterapia. Mi cuello y espalda se sienten mucho más flexibles.",
+        "name": "Jolanda",
+        "role": "Tratamiento de masaje"
       }
     ]
   },

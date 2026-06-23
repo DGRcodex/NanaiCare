@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { ReviewForm } from "./ReviewForm";
 
 type Quote = {
   quote: string;
@@ -19,9 +20,9 @@ export async function Testimonials() {
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <figure
-              key={item.name}
+              key={index}
               className="group relative flex h-full flex-col justify-between rounded-[1.65rem] bg-gradient-to-b from-white/95 to-nanai-frost/90 p-7 shadow-nanai-soft ring-1 ring-nanai-rose/25 transition hover:-translate-y-1 hover:ring-nanai-sage/35"
             >
               <div className="text-4xl font-heading leading-none text-nanai-blush transition group-hover:text-nanai-rose" aria-hidden>
@@ -35,6 +36,8 @@ export async function Testimonials() {
             </figure>
           ))}
         </div>
+        
+        <ReviewForm label={t("leaveReview")} />
       </div>
     </section>
   );

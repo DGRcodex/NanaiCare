@@ -66,7 +66,7 @@ export async function Hero() {
               <div className="flex flex-1 items-center justify-center py-4">
                 <div className="rounded-[1.5rem] bg-white p-4 shadow-sm ring-1 ring-nanai-rose/35 transition hover:scale-105">
                   <QRCode
-                    value={`BEGIN:VCARD\nVERSION:3.0\nN:Care;Nanai;;;\nFN:Nanai Care\nORG:Nanai Care Amsterdam\nEMAIL:contact@nanaicare.com\nTEL:+31000000000\nADR:;;Amsterdam;;;;Netherlands\nURL:https://nanaicare.com\nEND:VCARD`}
+                    value={`BEGIN:VCARD\nVERSION:3.0\nN:Castro;Nicol;;;\nFN:Nicol Castro Cosmetologa\nORG:Nanai Care Amsterdam\nEMAIL:contact@nanaicare.com\nTEL:+31639519491\nADR:;;Amsterdam;;;;Netherlands\nURL:https://nanaicare.com\nEND:VCARD`}
                     size={164}
                     bgColor="#ffffff"
                     fgColor="#3D2E32"
@@ -89,8 +89,6 @@ export async function Hero() {
               </div>
             </div>
           </div>
-
-          <div className="pointer-events-none absolute -bottom-6 -left-4 hidden h-24 w-24 rounded-full border border-nanai-sage/35 sm:block" />
         </div>
       </div>
     </section>

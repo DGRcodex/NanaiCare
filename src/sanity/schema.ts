@@ -39,4 +39,30 @@ export const schemaTypes = [
       },
     ],
   },
+  {
+    name: "testimonial",
+    title: "Testimonial",
+    type: "document",
+    fields: [
+      {
+        name: "name",
+        title: "Name",
+        type: "string",
+        validation: (Rule: any) => Rule.required(),
+      },
+      {
+        name: "quote",
+        title: "Quote",
+        type: "text",
+        validation: (Rule: any) => Rule.required(),
+      },
+      {
+        name: "approved",
+        title: "Approved for Web",
+        type: "boolean",
+        initialValue: false,
+        description: "Set to true to show this review on the website",
+      },
+    ],
+  },
 ];

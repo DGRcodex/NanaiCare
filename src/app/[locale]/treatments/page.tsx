@@ -17,7 +17,7 @@ export default async function TreatmentsPage({ params }: Props) {
   setRequestLocale(locale);
   const t = await getTranslations("Treatments");
 
-  const tabs = ["body", "facial", "packages", "subscriptions"] as const;
+  const tabs = ["body", "facial", "packages"] as const;
 
   return (
     <article className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">

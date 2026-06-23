@@ -141,21 +141,47 @@
   "Testimonials": {
     "label": "Stories",
     "title": "Warm words from people who sit in our chair.",
+    "leaveReview": "Leave your story",
     "items": [
       {
-        "quote": "I leave softer, inside and out. The space feels intentional, and the advice never feels like a sales pitch.",
-        "name": "Maya R.",
-        "role": "Amsterdam · regular facials"
+        "quote": "Nicol is super professional, she explained me everything I needed to know. I felt better right away.",
+        "name": "Anonymous",
+        "role": "Massage treatment"
       },
       {
-        "quote": "Finally a place that explains what my skin needs without overwhelm. The massage portion is unreal.",
-        "name": "Jonas V.",
-        "role": "Haarlem · first-time client"
+        "quote": "Een geweldige ontspanningsmassage van Nicol. Zeer professioneel.",
+        "name": "Anonymous",
+        "role": "Massage treatment"
       },
       {
-        "quote": "Luxurious, but grounded. My rosacea-prone skin has never been this steady.",
-        "name": "Elena S.",
-        "role": "Amsterdam · barrier-focused care"
+        "quote": "Nicole was amazing. She took all my knots away. I felt like a leaf afterwards.",
+        "name": "Anonymous",
+        "role": "Massage treatment"
+      },
+      {
+        "quote": "Bij Nicol is een warm ontvangst. Voortreffelijk, vakbekwaamheid masseuse. Heel attent.",
+        "name": "Roos",
+        "role": "Massage treatment"
+      },
+      {
+        "quote": "Nicol was so lovely, she really made me feel at ease. The massage was amazing, the pressure was exactly right and all the spots where I had tension were treated very well. I felt so much better afterwards.",
+        "name": "Anonymous",
+        "role": "Massage treatment"
+      },
+      {
+        "quote": "De deep tissue massage die Nicol mij heeft gegeven was GEWELDIG!!! In 50 minuten werden alle spieren zo goed gemasseerd dat mijn nekpijn meteen was verdwenen. Nicol heeft handjes van goud.",
+        "name": "Melisa",
+        "role": "Deep tissue massage"
+      },
+      {
+        "quote": "Such a relaxing facial. Skin feels so clean and hydrated now. Would definitely recommend.",
+        "name": "Anonymous",
+        "role": "Facial treatment"
+      },
+      {
+        "quote": "De ontspanningsmassage van Nicol was geweldig. Sinds Nicol mijn masseert, ga ik niet meer naar fysiotherapie. Mijn nek en rug voelen nu veel soepeler aan.",
+        "name": "Jolanda",
+        "role": "Massage treatment"
       }
     ]
   },
