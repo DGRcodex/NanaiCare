@@ -48,13 +48,13 @@ export const schemaTypes = [
         name: "name",
         title: "Name",
         type: "string",
-        validation: (Rule: any) => Rule.required(),
+        validation: (Rule) => Rule.required(),
       },
       {
         name: "quote",
         title: "Quote",
         type: "text",
-        validation: (Rule: any) => Rule.required(),
+        validation: (Rule) => Rule.required().max(300),
       },
       {
         name: "approved",

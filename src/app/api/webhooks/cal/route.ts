@@ -1,4 +1,4 @@
-import { NextResponse } from "next";
+import { NextResponse } from "next/server";
 
 // This webhook is triggered by Cal.com when a new booking is created.
 // It sends an email to the client with the payment instructions (Tikkie / IBAN) for the 50% deposit.
