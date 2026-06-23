@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { projectId, dataset } from "@/sanity/client";
 
 export async function POST(request: Request) {
   try {
@@ -7,8 +8,6 @@ export async function POST(request: Request) {
     if (!quote) {
       return NextResponse.json({ error: "Quote is required" }, { status: 400 });
     }
-
-    const { projectId, dataset } = require("../../sanity/client");
     const token = process.env.SANITY_API_TOKEN;
 
     if (!projectId || !token) {
