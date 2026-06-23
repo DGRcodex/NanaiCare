@@ -21,3 +21,12 @@ export const getPostBySlugQuery = groq`
     body
   }
 `;
+
+export const getTestimonialsQuery = groq`
+  *[_type == "testimonial" && approved == true] | order(_createdAt desc) {
+    _id,
+    name,
+    quote,
+    _createdAt
+  }
+`;

@@ -8,8 +8,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Quote is required" }, { status: 400 });
     }
 
-    const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-    const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
+    const { projectId, dataset } = require("../../sanity/client");
     const token = process.env.SANITY_API_TOKEN;
 
     if (!projectId || !token) {
@@ -29,7 +28,7 @@ export async function POST(request: Request) {
           _type: "testimonial",
           name: name || "Anónimo",
           quote: quote,
-          approved: false, // Default to false so it requires manual approval
+          approved: true, // Auto-approve for web
         },
       },
     ];

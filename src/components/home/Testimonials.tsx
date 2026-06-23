@@ -1,15 +1,28 @@
 import { getTranslations } from "next-intl/server";
 import { ReviewForm } from "./ReviewForm";
+import { client } from "@/sanity/client";
+import { getTestimonialsQuery } from "@/sanity/queries";
 
 type Quote = {
   quote: string;
   name: string;
-  role: string;
+  role?: string;
+  _id?: string;
 };
 
 export async function Testimonials() {
   const t = await getTranslations("Testimonials");
-  const items = t.raw("items") as Quote[];
+  const localItems = t.raw("items") as Quote[];
+  
+  let sanityItems: Quote[] = [];
+  try {
+    sanityItems = await client.fetch(getTestimonialsQuery, {}, { next: { revalidate: 60 } });
+  } catch (error) {
+    console.error("Failed to fetch testimonials from Sanity:", error);
+  }
+
+  // Combine Sanity items (newest first) with the local translated ones.
+  const items = [...sanityItems, ...localItems];
 
   return (
     <section id="stories" className="scroll-mt-28 border-y border-nanai-rose/25 bg-white/55 py-20 backdrop-blur-md sm:py-24">

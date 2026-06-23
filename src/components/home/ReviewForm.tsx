@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export function ReviewForm({ label }: { label: string }) {
   const [submitted, setSubmitted] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [content, setContent] = useState("");
   const [name, setName] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -13,6 +14,7 @@ export function ReviewForm({ label }: { label: string }) {
     if (!content.trim()) return;
 
     setIsLoading(true);
+    setErrorMsg("");
     try {
       const response = await fetch("/api/reviews", {
         method: "POST",
@@ -31,10 +33,13 @@ export function ReviewForm({ label }: { label: string }) {
         setName("");
         setTimeout(() => setSubmitted(false), 8000);
       } else {
-        console.error("Failed to submit review");
+        const data = await response.json().catch(() => null);
+        console.error("Failed to submit review", data);
+        setErrorMsg("Falta configurar la clave de Sanity para poder guardar las reseñas.");
       }
     } catch (error) {
       console.error("Error submitting review:", error);
+      setErrorMsg("Ocurrió un error de red al intentar guardar la reseña.");
     } finally {
       setIsLoading(false);
     }
@@ -44,10 +49,15 @@ export function ReviewForm({ label }: { label: string }) {
     <div className="mx-auto mt-16 max-w-2xl">
       {submitted ? (
         <div className="rounded-2xl border border-nanai-sage/30 bg-nanai-sage/10 p-4 text-center text-sm font-medium text-nanai-ink">
-          ¡Gracias por tus hermosas palabras! Han sido enviadas para revisión.
+          ¡Gracias por tus hermosas palabras! Tu reseña ha sido publicada.
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          {errorMsg && (
+            <div className="rounded-xl border border-red-200 bg-red-50 p-3 text-center text-sm text-red-600">
+              {errorMsg}
+            </div>
+          )}
           <div className="flex gap-3">
             <div className="w-1/3">
               <label htmlFor="name" className="sr-only">
