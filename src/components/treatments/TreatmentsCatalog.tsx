@@ -1,9 +1,11 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { treatmentCatalog } from "@/content/treatments";
 import Image from "next/image";
+import { TreatmentCard } from "./TreatmentCard";
 
 export async function TreatmentsCatalog() {
   const t = await getTranslations("Treatments");
+  const locale = await getLocale();
 
   return (
     <div className="space-y-24">
@@ -39,27 +41,7 @@ export async function TreatmentsCatalog() {
           {/* Treatment List */}
           <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:gap-6">
             {category.items.map((item) => (
-              <li
-                key={item.name}
-                className="group relative flex items-start justify-between gap-4 rounded-3xl border border-white/40 bg-white/60 px-6 py-5 shadow-sm ring-1 ring-nanai-rose/10 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white/90 hover:shadow-md hover:ring-nanai-rose/30"
-              >
-                <div className="flex flex-col gap-1 pr-4">
-                  <span className="font-heading text-lg font-medium text-nanai-ink transition-colors group-hover:text-nanai-accent">{item.name}</span>
-                  {/* Future-proofing for descriptions */}
-                </div>
-                <div className="flex shrink-0 flex-col items-end gap-1.5">
-                  {item.price ? (
-                    <span className="text-base font-bold text-nanai-ink">
-                      €{item.price}
-                    </span>
-                  ) : null}
-                  {item.duration ? (
-                    <span className="rounded-full bg-nanai-blush/40 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-nanai-sage">
-                      {item.duration}
-                    </span>
-                  ) : null}
-                </div>
-              </li>
+              <TreatmentCard key={item.name} item={item} locale={locale} />
             ))}
           </ul>
         </section>

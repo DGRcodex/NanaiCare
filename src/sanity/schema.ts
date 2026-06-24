@@ -59,6 +59,20 @@ export const schemaTypes = [
         validation: (Rule: Rule) => Rule.required().max(300),
       },
       {
+        name: "language",
+        title: "Language",
+        type: "string",
+        options: {
+          list: [
+            { title: "English", value: "en" },
+            { title: "Spanish", value: "es" },
+            { title: "Dutch", value: "nl" },
+          ],
+        },
+        initialValue: "en",
+        validation: (Rule: Rule) => Rule.required(),
+      },
+      {
         name: "approved",
         title: "Approved for Web",
         type: "boolean",

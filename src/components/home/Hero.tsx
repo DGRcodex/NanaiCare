@@ -48,7 +48,7 @@ export async function Hero() {
         </div>
 
         <div className="relative mx-auto flex w-full max-w-md items-center justify-center lg:mx-0 lg:max-w-none">
-          <div className="animate-float-soft relative aspect-square w-full max-w-sm rounded-[2.2rem] bg-gradient-to-br from-white via-nanai-blush/55 to-nanai-rose/35 p-[1px] shadow-nanai-soft ring-1 ring-white/70">
+          <div className="animate-float-soft relative w-full max-w-sm rounded-[2.2rem] bg-gradient-to-br from-white via-nanai-blush/55 to-nanai-rose/35 p-[1px] shadow-nanai-soft ring-1 ring-white/70">
             <div className="relative flex h-full w-full flex-col justify-between rounded-[2.15rem] bg-gradient-to-b from-white/95 to-nanai-frost/90 p-8 sm:p-10">
               <div className="flex items-start justify-between gap-4">
                 <div>
@@ -57,9 +57,9 @@ export async function Hero() {
                 </div>
                 <div className="text-right">
                   <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-nanai-sage">
-                    ID Digital
+                    {t("digitalId")}
                   </p>
-                  <p className="text-[8px] text-nanai-ink-soft mt-1">Escanea para guardar</p>
+                  <p className="text-[8px] text-nanai-ink-soft mt-1">{t("scanToSave")}</p>
                 </div>
               </div>
 
@@ -77,12 +77,12 @@ export async function Hero() {
 
               <div className="mt-10 space-y-4">
                 <div className="h-px w-full bg-gradient-to-r from-transparent via-nanai-rose/55 to-transparent" />
-                <div className="flex items-end justify-between gap-4">
+                <div className="flex flex-col items-start gap-4">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-[0.2em] text-nanai-ink-soft">{t("weekLabel")}</p>
                     <p className="mt-1 text-sm font-semibold text-nanai-ink">{t("weekTitle")}</p>
                   </div>
-                  <p className="rounded-full bg-white/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-nanai-sage ring-1 ring-nanai-sage/35">
+                  <p className="w-fit rounded-full bg-white/80 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-nanai-sage ring-1 ring-nanai-sage/35 text-center whitespace-nowrap">
                     {t("mantra")}
                   </p>
                 </div>

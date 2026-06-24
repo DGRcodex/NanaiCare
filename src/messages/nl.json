@@ -23,7 +23,9 @@
     "cardEyebrow": "Ritual card",
     "weekLabel": "Deze week",
     "weekTitle": "Facials met focus op je huidbarrière",
-    "mantra": "rustig · helder · dichtbij"
+    "mantra": "rustig · helder · dichtbij",
+    "digitalId": "Digitale ID",
+    "scanToSave": "Scan om op te slaan"
   },
   "Services": {
     "label": "Aanbod",
@@ -104,9 +106,11 @@
     ]
   },
   "Testimonials": {
-    "label": "Ervaringen",
-    "title": "Hartelijke woorden van mensen in onze stoel.",
-    "leaveReview": "Deel je ervaring"
+    "label": "Verhalen",
+    "title": "Warme woorden van de mensen in onze stoel.",
+    "leaveReview": "Deel je ervaring",
+    "namePlaceholder": "Je naam (optioneel)",
+    "reviewPlaceholder": "Plaats een reactie..."
   },
   "Wellness": {
     "label": "Care notes",

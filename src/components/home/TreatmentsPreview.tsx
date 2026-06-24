@@ -1,10 +1,12 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { treatmentCatalog } from "@/content/treatments";
 import Image from "next/image";
+import { TreatmentCard } from "../treatments/TreatmentCard";
 
 export async function TreatmentsPreview() {
   const t = await getTranslations("Treatments");
+  const locale = await getLocale();
 
   return (
     <section id="treatments" className="scroll-mt-28 px-4 py-20 sm:px-6 lg:px-8">
@@ -53,26 +55,9 @@ export async function TreatmentsPreview() {
                 {!category.image && (
                   <h3 className="mb-6 font-heading text-2xl text-nanai-ink">{t(`categories.${category.id}`)}</h3>
                 )}
-                <ul className="space-y-3">
+                <ul className="space-y-0">
                   {category.items.map((item) => (
-                    <li
-                      key={item.name}
-                      className="flex items-start justify-between gap-3 border-b border-nanai-rose/15 pb-3 text-sm last:border-0 last:pb-0"
-                    >
-                      <span className="font-medium text-nanai-ink transition-colors group-hover:text-nanai-accent">{item.name}</span>
-                      <div className="flex shrink-0 flex-col items-end gap-1.5">
-                        {item.price ? (
-                          <span className="text-sm font-bold text-nanai-ink">
-                            €{item.price}
-                          </span>
-                        ) : null}
-                        {item.duration ? (
-                          <span className="rounded-full bg-nanai-sage/10 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.12em] text-nanai-sage">
-                            {item.duration}
-                          </span>
-                        ) : null}
-                      </div>
-                    </li>
+                    <TreatmentCard key={item.name} item={item} locale={locale} variant="preview" />
                   ))}
                 </ul>
               </div>

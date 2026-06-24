@@ -10,8 +10,8 @@
   --nanai-ink-soft: color-mix(in oklab, var(--nanai-ink) 72%, white);
   --nanai-frost: color-mix(in oklab, white 78%, var(--nanai-blush));
   --nanai-shadow: 0 24px 80px color-mix(in oklab, var(--nanai-ink) 12%, transparent);
-  --font-theme-heading: var(--font-playfair), system-ui, sans-serif;
-  --font-theme-body: var(--font-playfair), system-ui, sans-serif;
+  --font-theme-heading: var(--font-cormorant), system-ui, sans-serif;
+  --font-theme-body: var(--font-dm-sans), system-ui, sans-serif;
 
   /* Applied Backgrounds */
   --nanai-bg-image: url("/bg/velas.jpeg");

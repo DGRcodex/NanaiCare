@@ -24,7 +24,9 @@
     "cardEyebrow": "Tarjeta ritual",
     "weekLabel": "Esta semana",
     "weekTitle": "Faciales con foco en barrera",
-    "mantra": "calma · claridad · cercanía"
+    "mantra": "calma · claridad · cercanía",
+    "digitalId": "ID Digital",
+    "scanToSave": "Escanea para guardar"
   },
   "Services": {
     "label": "Lo que ofrecemos",
@@ -106,8 +108,10 @@
   },
   "Testimonials": {
     "label": "Historias",
-    "title": "Palabras cálidas de quienes se sientan aquí.",
-    "leaveReview": "Deja tu historia"
+    "title": "Cálidas palabras de quienes se sientan en nuestra silla.",
+    "leaveReview": "Deja tu historia",
+    "namePlaceholder": "Tu nombre (opcional)",
+    "reviewPlaceholder": "Añade un comentario..."
   },
   "Wellness": {
     "label": "Notas de cuidado",

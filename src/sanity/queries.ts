@@ -23,7 +23,7 @@ export const getPostBySlugQuery = groq`
 `;
 
 export const getTestimonialsQuery = groq`
-  *[_type == "testimonial" && approved == true] | order(_createdAt desc) {
+  *[_type == "testimonial" && approved == true && (!defined(language) || language == $language)] | order(_createdAt desc) {
     _id,
     name,
     quote,

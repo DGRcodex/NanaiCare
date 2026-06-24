@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getTranslations, getLocale } from "next-intl/server";
 import { ReviewForm } from "./ReviewForm";
 import { client } from "@/sanity/client";
 import { getTestimonialsQuery } from "@/sanity/queries";
@@ -12,9 +12,11 @@ type Quote = {
 
 export async function Testimonials() {
   const t = await getTranslations("Testimonials");
+  const locale = await getLocale();
+  
   let sanityItems: Quote[] = [];
   try {
-    sanityItems = await client.fetch(getTestimonialsQuery, {}, { next: { revalidate: 60 } });
+    sanityItems = await client.fetch(getTestimonialsQuery, { language: locale }, { next: { revalidate: 60 } });
   } catch (error) {
     console.error("Failed to fetch testimonials from Sanity:", error);
   }
@@ -76,7 +78,11 @@ export async function Testimonials() {
         </div>
         
         <div className="mt-12 flex justify-center">
-          <ReviewForm label={t("leaveReview")} />
+          <ReviewForm 
+            label={t("leaveReview")} 
+            namePlaceholder={t("namePlaceholder")}
+            reviewPlaceholder={t("reviewPlaceholder")}
+          />
         </div>
       </div>
     </section>

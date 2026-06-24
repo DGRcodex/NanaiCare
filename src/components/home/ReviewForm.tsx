@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export function ReviewForm({ label }: { label: string }) {
+export function ReviewForm({ label, namePlaceholder, reviewPlaceholder }: { label: string; namePlaceholder: string; reviewPlaceholder: string; }) {
   const [submitted, setSubmitted] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const [content, setContent] = useState("");
@@ -58,8 +58,8 @@ export function ReviewForm({ label }: { label: string }) {
               {errorMsg}
             </div>
           )}
-          <div className="flex gap-3">
-            <div className="w-1/3">
+          <div className="flex flex-col sm:flex-row gap-3">
+            <div className="w-full sm:w-1/3">
               <label htmlFor="name" className="sr-only">
                 Nombre
               </label>
@@ -68,11 +68,11 @@ export function ReviewForm({ label }: { label: string }) {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Tu nombre (opcional)"
+                placeholder={namePlaceholder}
                 className="block w-full rounded-[1rem] border-0 bg-white/70 py-3 pl-4 pr-4 text-sm text-nanai-ink shadow-sm ring-1 ring-inset ring-nanai-rose/30 backdrop-blur focus:ring-2 focus:ring-inset focus:ring-nanai-sage/50 sm:leading-6"
               />
             </div>
-            <div className="flex-1 relative">
+            <div className="flex-1 relative w-full">
               <label htmlFor="review" className="sr-only">
                 {label}
               </label>
@@ -81,13 +81,13 @@ export function ReviewForm({ label }: { label: string }) {
                 rows={1}
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
-                placeholder="Añade un comentario..."
-                className="block w-full resize-none rounded-[1rem] border-0 bg-white/70 py-3 pl-4 pr-24 text-sm text-nanai-ink shadow-sm ring-1 ring-inset ring-nanai-rose/30 backdrop-blur focus:ring-2 focus:ring-inset focus:ring-nanai-sage/50 sm:leading-6"
+                placeholder={reviewPlaceholder}
+                className="block w-full resize-none rounded-[1rem] border-0 bg-white/70 py-3 pl-4 pr-[110px] text-sm text-nanai-ink shadow-sm ring-1 ring-inset ring-nanai-rose/30 backdrop-blur focus:ring-2 focus:ring-inset focus:ring-nanai-sage/50 sm:leading-6"
               />
               <button
                 type="submit"
                 disabled={!content.trim() || isLoading}
-                className="absolute right-2 top-2 bottom-2 inline-flex items-center justify-center rounded-[0.6rem] bg-nanai-ink px-4 text-xs font-semibold tracking-wide text-white transition hover:bg-nanai-ink/90 disabled:cursor-not-allowed disabled:opacity-50"
+                className="absolute right-2 top-2 bottom-2 inline-flex items-center justify-center rounded-[0.6rem] bg-nanai-ink px-3 sm:px-4 text-[10px] sm:text-xs font-semibold tracking-wide text-white transition hover:bg-nanai-ink/90 disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {isLoading ? "..." : label}
               </button>
