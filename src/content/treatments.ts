@@ -6,12 +6,14 @@ export type TreatmentItem = {
 
 export type TreatmentCategory = {
   id: "body" | "facial" | "packages" | "subscriptions";
+  image?: string;
   items: TreatmentItem[];
 };
 
 export const treatmentCatalog: TreatmentCategory[] = [
   {
     id: "body",
+    image: "/images/treatments/spa_body_category_1782263626091.png",
     items: [
       { name: "RELEASE RITUAL", duration: "60 or 90 min", price: 85 },
       { name: "DEEP TISSUE RELEASE", duration: "60 or 90 min", price: 95 },
@@ -24,6 +26,7 @@ export const treatmentCatalog: TreatmentCategory[] = [
   },
   {
     id: "facial",
+    image: "/images/treatments/spa_facial_category_1782263635367.png",
     items: [
       { name: "DEEP CLEANSING CARE", duration: "120 min", price: 150 },
       { name: "SENSITIVE NANAI CARE", duration: "60 min", price: 85 },
@@ -37,6 +40,7 @@ export const treatmentCatalog: TreatmentCategory[] = [
   },
   {
     id: "packages",
+    image: "/images/treatments/spa_packages_category_1782263643859.png",
     items: [
       { name: "THE SOLE & SOUL SERENTY RITUAL", duration: "60 min", price: 100 },
       { name: "HEAD TO TOE REFRESHING GLOW RITUAL", duration: "60 min", price: 110 },

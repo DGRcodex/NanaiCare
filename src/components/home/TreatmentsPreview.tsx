@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { treatmentCatalog } from "@/content/treatments";
+import Image from "next/image";
 
 export async function TreatmentsPreview() {
   const t = await getTranslations("Treatments");
@@ -23,38 +24,58 @@ export async function TreatmentsPreview() {
           </Link>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2">
           {treatmentCatalog
             .filter((category) => category.id !== "subscriptions")
             .map((category) => (
             <article
               key={category.id}
               id={category.id}
-              className="rounded-[1.5rem] border border-nanai-rose/30 bg-white/85 p-6 shadow-sm backdrop-blur"
+              className="group flex flex-col overflow-hidden rounded-[2rem] border border-white/40 bg-white/60 shadow-nanai-soft ring-1 ring-nanai-rose/15 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:ring-nanai-rose/30"
             >
-              <h3 className="font-heading text-xl text-nanai-ink">{t(`categories.${category.id}`)}</h3>
-              <ul className="mt-4 space-y-2">
-                {category.items.map((item) => (
-                  <li
-                    key={item.name}
-                    className="flex items-start justify-between gap-3 border-b border-nanai-rose/15 pb-2 text-sm last:border-0 last:pb-0"
-                  >
-                    <span className="font-medium text-nanai-ink">{item.name}</span>
-                    <div className="flex shrink-0 flex-col items-end gap-1">
-                      {item.price ? (
-                        <span className="text-sm font-bold text-nanai-ink">
-                          €{item.price}
-                        </span>
-                      ) : null}
-                      {item.duration ? (
-                        <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-nanai-sage">
-                          {item.duration}
-                        </span>
-                      ) : null}
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              {category.image && (
+                <div className="relative h-48 w-full shrink-0 overflow-hidden sm:h-56">
+                  <div className="absolute inset-0 z-10 bg-gradient-to-t from-nanai-ink/40 to-transparent" />
+                  <Image 
+                    src={category.image} 
+                    alt=""
+                    fill 
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <h3 className="absolute bottom-5 left-6 z-20 font-heading text-2xl font-medium tracking-wide text-white drop-shadow-md sm:text-3xl">
+                    {t(`categories.${category.id}`)}
+                  </h3>
+                </div>
+              )}
+              
+              <div className="flex-1 p-6 sm:p-8">
+                {!category.image && (
+                  <h3 className="mb-6 font-heading text-2xl text-nanai-ink">{t(`categories.${category.id}`)}</h3>
+                )}
+                <ul className="space-y-3">
+                  {category.items.map((item) => (
+                    <li
+                      key={item.name}
+                      className="flex items-start justify-between gap-3 border-b border-nanai-rose/15 pb-3 text-sm last:border-0 last:pb-0"
+                    >
+                      <span className="font-medium text-nanai-ink transition-colors group-hover:text-nanai-accent">{item.name}</span>
+                      <div className="flex shrink-0 flex-col items-end gap-1.5">
+                        {item.price ? (
+                          <span className="text-sm font-bold text-nanai-ink">
+                            €{item.price}
+                          </span>
+                        ) : null}
+                        {item.duration ? (
+                          <span className="rounded-full bg-nanai-sage/10 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.12em] text-nanai-sage">
+                            {item.duration}
+                          </span>
+                        ) : null}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </article>
           ))}
         </div>
