@@ -106,49 +106,7 @@
   "Testimonials": {
     "label": "Ervaringen",
     "title": "Hartelijke woorden van mensen in onze stoel.",
-    "leaveReview": "Deel je ervaring",
-    "items": [
-      {
-        "quote": "Nicol is super professioneel, ze legde me alles uit wat ik moest weten. Ik voelde me meteen beter.",
-        "name": "Anoniem",
-        "role": "Massagebehandeling"
-      },
-      {
-        "quote": "Een geweldige ontspanningsmassage van Nicol. Zeer professioneel.",
-        "name": "Anoniem",
-        "role": "Massagebehandeling"
-      },
-      {
-        "quote": "Nicole was geweldig. Ze nam al mijn knopen weg. Ik voelde me als een blad naderhand.",
-        "name": "Anoniem",
-        "role": "Massagebehandeling"
-      },
-      {
-        "quote": "Bij Nicol is een warm ontvangst. Voortreffelijk, vakbekwaamheid masseuse. Heel attent.",
-        "name": "Roos",
-        "role": "Massagebehandeling"
-      },
-      {
-        "quote": "Nicol was zo lief, ze stelde me echt op mijn gemak. De massage was geweldig, de druk was precies goed en alle plekken waar ik spanning had, werden heel goed behandeld. Ik voelde me naderhand zoveel beter.",
-        "name": "Anoniem",
-        "role": "Massagebehandeling"
-      },
-      {
-        "quote": "De deep tissue massage die Nicol mij heeft gegeven was GEWELDIG!!! In 50 minuten werden alle spieren zo goed gemasseerd dat mijn nekpijn meteen was verdwenen. Nicol heeft handjes van goud.",
-        "name": "Melisa",
-        "role": "Diep weefsel massage"
-      },
-      {
-        "quote": "Zo'n ontspannende facial. De huid voelt nu zo schoon en gehydrateerd aan. Zou het zeker aanraden.",
-        "name": "Anoniem",
-        "role": "Gezichtsbehandeling"
-      },
-      {
-        "quote": "De ontspanningsmassage van Nicol was geweldig. Sinds Nicol mijn masseert, ga ik niet meer naar fysiotherapie. Mijn nek en rug voelen nu veel soepeler aan.",
-        "name": "Jolanda",
-        "role": "Massagebehandeling"
-      }
-    ]
+    "leaveReview": "Deel je ervaring"
   },
   "Wellness": {
     "label": "Care notes",

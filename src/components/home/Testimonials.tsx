@@ -12,8 +12,6 @@ type Quote = {
 
 export async function Testimonials() {
   const t = await getTranslations("Testimonials");
-  const localItems = t.raw("items") as Quote[];
-  
   let sanityItems: Quote[] = [];
   try {
     sanityItems = await client.fetch(getTestimonialsQuery, {}, { next: { revalidate: 60 } });
@@ -21,8 +19,8 @@ export async function Testimonials() {
     console.error("Failed to fetch testimonials from Sanity:", error);
   }
 
-  // Combine Sanity items (newest first) with the local translated ones.
-  const items = [...sanityItems, ...localItems];
+  // Use only Sanity items
+  const items = sanityItems;
 
   return (
     <section id="stories" className="scroll-mt-28 border-y border-nanai-rose/25 bg-white/55 py-20 backdrop-blur-md sm:py-24">
