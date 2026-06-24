@@ -111,7 +111,10 @@
     "title": "Cálidas palabras de quienes se sientan en nuestra silla.",
     "leaveReview": "Deja tu historia",
     "namePlaceholder": "Tu nombre (opcional)",
-    "reviewPlaceholder": "Añade un comentario..."
+    "reviewPlaceholder": "Añade un comentario...",
+    "successMessage": "¡Gracias por tus hermosas palabras! Tu reseña ha sido publicada.",
+    "errorMissingKey": "Falta configurar la clave de Sanity para poder guardar las reseñas.",
+    "errorNetwork": "Ocurrió un error de red al intentar guardar la reseña."
   },
   "Wellness": {
     "label": "Notas de cuidado",

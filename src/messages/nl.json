@@ -110,7 +110,10 @@
     "title": "Warme woorden van de mensen in onze stoel.",
     "leaveReview": "Deel je ervaring",
     "namePlaceholder": "Je naam (optioneel)",
-    "reviewPlaceholder": "Plaats een reactie..."
+    "reviewPlaceholder": "Plaats een reactie...",
+    "successMessage": "Bedankt voor je mooie woorden! Je reactie is geplaatst.",
+    "errorMissingKey": "Sanity configuratie ontbreekt. Kan reacties niet opslaan.",
+    "errorNetwork": "Er is een netwerkfout opgetreden bij het opslaan van de reactie."
   },
   "Wellness": {
     "label": "Care notes",

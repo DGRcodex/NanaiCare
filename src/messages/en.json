@@ -145,7 +145,10 @@
     "title": "Warm words from people who sit in our chair.",
     "leaveReview": "Leave your story",
     "namePlaceholder": "Your name (optional)",
-    "reviewPlaceholder": "Add a comment..."
+    "reviewPlaceholder": "Add a comment...",
+    "successMessage": "Thank you for your beautiful words! Your review has been published.",
+    "errorMissingKey": "Sanity configuration is missing. Cannot save reviews.",
+    "errorNetwork": "A network error occurred while trying to save the review."
   },
   "Wellness": {
     "label": "Care notes",

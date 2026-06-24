@@ -2,7 +2,16 @@
 
 import { useState } from "react";
 
-export function ReviewForm({ label, namePlaceholder, reviewPlaceholder }: { label: string; namePlaceholder: string; reviewPlaceholder: string; }) {
+interface ReviewFormProps {
+  label: string;
+  namePlaceholder: string;
+  reviewPlaceholder: string;
+  successMessage: string;
+  errorMissingKey: string;
+  errorNetwork: string;
+}
+
+export function ReviewForm({ label, namePlaceholder, reviewPlaceholder, successMessage, errorMissingKey, errorNetwork }: ReviewFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const [content, setContent] = useState("");
@@ -35,11 +44,11 @@ export function ReviewForm({ label, namePlaceholder, reviewPlaceholder }: { labe
       } else {
         const data = await response.json().catch(() => null);
         console.error("Failed to submit review", data);
-        setErrorMsg("Falta configurar la clave de Sanity para poder guardar las reseñas.");
+        setErrorMsg(errorMissingKey);
       }
     } catch (error) {
       console.error("Error submitting review:", error);
-      setErrorMsg("Ocurrió un error de red al intentar guardar la reseña.");
+      setErrorMsg(errorNetwork);
     } finally {
       setIsLoading(false);
     }
@@ -49,7 +58,7 @@ export function ReviewForm({ label, namePlaceholder, reviewPlaceholder }: { labe
     <div className="mx-auto mt-16 max-w-2xl">
       {submitted ? (
         <div className="rounded-2xl border border-nanai-sage/30 bg-nanai-sage/10 p-4 text-center text-sm font-medium text-nanai-ink">
-          ¡Gracias por tus hermosas palabras! Tu reseña ha sido publicada.
+          {successMessage}
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">

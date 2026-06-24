@@ -82,6 +82,9 @@ export async function Testimonials() {
             label={t("leaveReview")} 
             namePlaceholder={t("namePlaceholder")}
             reviewPlaceholder={t("reviewPlaceholder")}
+            successMessage={t("successMessage")}
+            errorMissingKey={t("errorMissingKey")}
+            errorNetwork={t("errorNetwork")}
           />
         </div>
       </div>
