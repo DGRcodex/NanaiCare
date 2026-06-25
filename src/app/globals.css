@@ -311,3 +311,10 @@
 @utility animate-float-soft {
   animation: float-soft 7s ease-in-out infinite;
 }
+
+/* Scale down the entire site by 30% for low resolution desktop monitors (e.g. 1360x768, 1366x768) */
+@media (hover: hover) and (pointer: fine) and (max-width: 1380px) and (max-height: 850px) {
+  html {
+    font-size: 12.8px;
+  }
+}

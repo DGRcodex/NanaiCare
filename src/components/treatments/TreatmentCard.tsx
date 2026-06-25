@@ -48,7 +48,7 @@ export function TreatmentCard({ item, locale, variant = "catalog" }: Props) {
         <div className="flex shrink-0 flex-col items-end gap-1.5">
           {item.price ? (
             <span className={`font-bold text-nanai-ink ${variant === 'catalog' ? 'text-base' : 'text-sm'}`}>
-              €{item.price}
+              {typeof item.price === "number" ? `€${item.price}` : item.price}
             </span>
           ) : null}
           {item.duration ? (
